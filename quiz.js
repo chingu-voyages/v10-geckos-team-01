@@ -29,6 +29,8 @@ let true_false_box;
 let image1_display; // ---------new-------
 let start_button;
 let instructions;
+let image2_display; //--new------------------
+let congrats;
 
 
 
@@ -97,7 +99,7 @@ function retrieve_JSON(i) {
             var fetchedBoxType = dict.box_type_j;
             box_type = fetchedBoxType;
             console.log(box_type);
-            if (box_type == 'multiple') {
+            if (box_type == "multiple") {
                 setQuizBoxType(true);
                 let options = json_answer;
                 //console.log("options = ", options);
@@ -130,6 +132,9 @@ function setDOMconstants() {
     start_button = document.getElementById("start_button");
     image1_display = document.getElementById("image1");
     instructions = document.getElementById("instructions");
+    image2_display = document.getElementById("image2");
+    congrats = document.getElementById("congrats"); //starts at display: none
+
 
 
     // if we do only one question on the page, these elements don't ever need to change
@@ -143,11 +148,21 @@ function setDOMconstants() {
     results = document.getElementById("results");
     hide_element(start_button);
     hide_element(image1_display);
-    hide_element(instructions);
+    hide_element(instructions);   // maybe move end elements and start elements to entire function?
+    hide_element(congrats);
+    hide_element(image2_display);
+    show_element(quiz_box);
+
 };
 
 function hide_element(element) {
+    console.log(element);
     element.style.display = 'none';
+}
+
+
+function show_element(element) {
+    element.style.display = 'inline-block';
 }
 
 function loadCurrentQuestion(i) {
@@ -187,6 +202,16 @@ function check_answer(answer) {
 
             //load_quiz(current_index);
             loadCurrentQuestion(current_index);
+        }
+        else {
+            //end quiz
+            hide_element(quiz_box);
+            hide_element(true_false_box);
+            hide_element(results);
+            hide_element(which_question);
+            hide_element(Quiz_question);
+            show_element(congrats);
+            show_element(image2_display);
         }
     }
     else {
