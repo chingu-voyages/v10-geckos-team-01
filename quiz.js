@@ -24,8 +24,12 @@ let current_answer;
 let current_index;
 let which_question;
 let quiz_box;
-let start_button;
 let true_false_box;
+//items to hide on start of quiz ----
+let image1_display; // ---------new-------
+let start_button;
+let instructions;
+
 
 
 
@@ -33,8 +37,8 @@ let true_false_box;
 
 
 function retrieve_JSON(i) {
-    
-    
+
+
     return fetch('quiz_obj.json')
         .then(response => {
             console.log("getting json response...")
@@ -71,7 +75,7 @@ function retrieve_JSON(i) {
             //                           }
             //               },
             //  box_type 'TorF'  does not require answers.
-        
+
             var dict = data[i];
             questions = data; //for check answers-- needs length of array
             //console.log(dict);
@@ -103,11 +107,11 @@ function retrieve_JSON(i) {
                 answer_d.innerHTML = options.d;
             }
             else {
-                setQuizBoxType(false);                
+                setQuizBoxType(false);
             }
-            
-            
-            
+
+
+
         })
         .catch(err => {
             // Do something for an error here
@@ -117,14 +121,16 @@ function retrieve_JSON(i) {
 };
 
 function setDOMconstants() {
-    
+
 
     current_index = 0;
     which_question = document.getElementById('which_question');
     quiz_box = document.getElementById("quiz_box");
     true_false_box = document.getElementById("true_false_box");
     start_button = document.getElementById("start_button");
-    
+    image1_display = document.getElementById("image1");
+    instructions = document.getElementById("instructions");
+
 
     // if we do only one question on the page, these elements don't ever need to change
     Quiz_question = document.getElementById("question");
@@ -135,11 +141,17 @@ function setDOMconstants() {
     answer_T = document.getElementById("True");  // needed?
     answer_F = document.getElementById("False");  // needed?
     results = document.getElementById("results");
-    start_button.style.display = 'none';
+    hide_element(start_button);
+    hide_element(image1_display);
+    hide_element(instructions);
 };
 
+function hide_element(element) {
+    element.style.display = 'none';
+}
+
 function loadCurrentQuestion(i) {
-    retrieve_JSON(i);    
+    retrieve_JSON(i);
 };
 
 
@@ -154,8 +166,7 @@ function setQuizBoxType(multiple) {
     }
 };
 /*   
- *   end JSON  functions.  
- *  to switch back to old set,  just change the load_quiz type in start_quiz()*bottom*
+ *   end JSON  functions. 
 */
 
 function check_answer(answer) {
@@ -170,10 +181,10 @@ function check_answer(answer) {
         results.style.display = 'inline';
         results.innerHTML = 'Fantastic!';
         current_index += 1;
-        
+
         //move on to next question  i = i+1 load_quiz(i)
         if (current_index < questions.length) {
-            
+
             //load_quiz(current_index);
             loadCurrentQuestion(current_index);
         }
@@ -195,15 +206,15 @@ function set_current_answer() {
 function addEventHandlersToButtons() {
     // add event listeners to answer_a, b, c, d elements.
     // user clicks one of the answers and recieves results.
-   // I was going to add event listener but not sure how to add the 'a b c d' or whatnot.....
+    // I was going to add event listener but not sure how to add the 'a b c d' or whatnot.....
     let choices = document.getElementsByClassName('quiz_answers');
     for (let i = 0; i < choices.length; i++) {
         let element = choices[i];
         //let answer = element.id;
-        
+
         //console.log(answer);
         element.addEventListener("click", set_current_answer);
-        
+
     };
 };
 
@@ -234,12 +245,10 @@ function test_constants() {
 function start_quiz() {
     // set our constants now that page is loaded:
     addEventHandlersToButtons()
-    
     //updatePageWithNewElements()
-    //set_constants();   
     setDOMconstants();
     loadCurrentQuestion(current_index);
-   
+
     //test *since button can only be clicked after screen load, these constants should exist (not null):
     //test_constants()
 };
