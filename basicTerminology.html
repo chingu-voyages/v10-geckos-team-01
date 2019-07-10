@@ -4,12 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="quiz.js"></script>
+    <script type="text/javascript" src="static/js/quiz.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="quiz.css" />
+    <script src="https://kit.fontawesome.com/b570a31fd0.js"></script>
+    <link rel="stylesheet" href="static/css/quiz.css" />
     <title>Basic Terminology</title>
 </head>
 <body>
+    <div style="background: #424249; height: 7vh; margin-top: 0; margin-bottom: 2px; padding: 2px;">
+        <!--  link needs to be changed for the CHingu Repo -->
+        <button class="nav-button"><a href="https://nelliesnoodles.github.io/test_quiz_voyage10.github.io/"><i class="fas fa-home"></i></a></button>
+    </div>
     <div class="Instructions" id="instructions">
         <p>Test and learn some basic terminology. <br> Click Start Quiz to begin. <br /></p>
         <button class="start" id="start_button" onclick="start_quiz()"> Start Quiz </button>
@@ -21,14 +26,17 @@
     
     <main>
 
-        <img class="basic_term" id="image1" src="dark-blue-keyboard-by-Marta-Pexels.jpg" alt="close up of dark blue themed keyboard" />
-        <img class="end_quiz" id="image2" src="adventure-casual-cheerful-541518.jpg" alt="woman on a path with a backpack jumping in joy" />
+        <img class="basic_term" id="image1" src="static/images/dark-blue-keyboard-by-Marta-Pexels.jpg" alt="close up of dark blue themed keyboard" />
+        <img class="end_quiz" id="image2" src="static/images/adventure-casual-cheerful-541518.jpg" alt="woman on a path with a backpack jumping in joy" />
+        <div class="head-box">
+           
 
-        <div class="results" id="results">results div</div>
-
-        <h3 class="which_question" id="which_question"></h3>
-        <div class="line"></div>
-        <h2 class="question" id="question"></h2>
+            <h3 class="which_question" id="which_question"></h3>
+            <div class="line"></div>
+            <h2 class="question" id="question"></h2>
+            <div class="line"></div>
+            <div class="results" id="results">results div</div>
+        </div>
 
         <div class="quiz_box" id="quiz_box">
             <div class="results" id="results">results div</div>
