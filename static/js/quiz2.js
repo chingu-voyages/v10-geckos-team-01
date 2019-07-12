@@ -1,4 +1,5 @@
-// JavaScript source code for QuizMockV10
+// JavaScript source code for Gecko's team 1
+// quiz = strings and things quiz2.js
 let testing_something; // for 'set_a_constant'() test
 
 //  Quiz elements to be written to DOM
@@ -27,11 +28,11 @@ let which_question;
 let quiz_box;
 let true_false_box;
 //items to hide on start of quiz ----
-let image1_display; 
+let image1_display;
 let start_button;
 let instructions;
 //items to display at end of quiz ----
-let image2_display; 
+let image2_display;
 let congrats;
 
 
@@ -43,7 +44,7 @@ let congrats;
 function retrieve_JSON(i) {
 
 
-    return fetch('static/data/quiz_obj.json')
+    return fetch('static/data/quiz_obj2.json')
         .then(response => {
             console.log("getting json response...")
             return response.json()

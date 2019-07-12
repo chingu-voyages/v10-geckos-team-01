@@ -1,15 +1,14 @@
 ﻿/* css for Chingu V10 Geckos team 1
-    *colors are set so I can make sure the css is working
-    * remember to be careful with variations that use a lot of green/yellow orange/yellow.
-    * color blind have trouble with yellow most.  So if yellow is predominant in a background,
-    * and in a font color, it will make it hard to read... I need to look into it more.
+    * QUIZ 2
+    * orange / blue theme
+    
 */
 #constant {
     color: red;
 }
 
 body {
-    background-color: #FCFBF8;
+    background-color: #EEDFC9; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -18,7 +17,7 @@ body {
     padding: 0;
     width: 92vw;
     margin-left: 10px;
-    border: 2px groove #E6EAF7;
+    border: 2px groove #F2A97B;
 }
 
 .link-box {
@@ -31,12 +30,12 @@ body {
 
 
 .nav-bar {
-    background: #424249;
+    background: #89380A;
     height: 7vh;
     margin-top: 0;
     padding: 2px;
 }
-
+    
 .nav-button {
     border: 1px solid black;
     color: whitesmoke;
@@ -61,7 +60,7 @@ body {
 
 .start {
     position: relative;
-    background-color: #FCFBF8;
+    background-color: inherit;
     border: none;
     font-size: large;
     margin: 0 auto;
@@ -71,7 +70,7 @@ body {
 .basic_term {
     width: 75vw;
     height: 75vh;
-    padding: 5px;
+    padding:  5px;
     margin-left: 12.5vw;
     margin-right: 12.5vw;
 }
@@ -79,7 +78,7 @@ body {
 button {
     border-radius: 10%;
     background-color: #F7F7F9;
-    border: solid 2px aquamarine;
+    border: solid 2px #9B7346;
     font-size: large;
 }
 
@@ -116,7 +115,7 @@ ul, li {
     width: 75vw;
     margin-left: 12.5vw;
     margin-right: 12.5vw;
-    color: #424249;
+    color:  #424249;
     font-size: 2em;
 }
 
@@ -166,7 +165,7 @@ ul, li {
 
 .which_question {
     display: none;
-    color: cornflowerblue;
+    color: black;
 }
 
 .end_quiz {
@@ -183,9 +182,8 @@ ul, li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 75vw;
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
-    color: #424249;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #89380A;
     font-size: 2em;
 }

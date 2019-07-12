@@ -2,9 +2,8 @@
   {
     "question_j": "What is a boolean?",
     "correct_j": "c",
-    "box_type_j":  "multiple",
-    "answers_j":
-    {
+    "box_type_j": "multiple",
+    "answers_j": {
       "a": "True",
       "b": "False",
       "c": "A value of True or False, but never both.",
@@ -28,8 +27,8 @@
     "correct_j": "True",
     "box_type_j": "TorF",
     "answers_j": {
-      "T": "True",
-      "F": "False"
+      "T": "True, although there is space to argue magnetism is the true hero of modern data storage.",
+      "F": "False, this is the Matrix, binary data is stored in humans living in pods of fluid goo."
     }
 
   },
@@ -44,6 +43,36 @@
       "d": "all of the above.  wink wink, nudge nudge."
     }
 
+  },
+  {
+    "question_j": "A method is a procedure used in a particular manner to interpret and use data",
+    "correct_j": "True",
+    "box_type_j": "TorF",
+    "answers_j": {
+      "T": "True, some methods are simple recipes, some are highly complex data manipulation.",
+      "F": "False, Logically if she weighs the same as a duck, she's made of wood!"
+    }
+  },
+  {
+    "question_j": "How would you describe a recursive function?",
+    "correct_j": "c",
+    "box_type_j": "multiple",
+    "answers_j": {
+      "a": "a function that calls another function",
+      "b": "a function that breaks your app, computer and sometimes the wifi",
+      "c": "a function that calls itself until a base case is met",
+      "d": "a function that loops all day everyday"
+    }
+  },
+    {
+      "question_j": "Regular expressions help us do what?",
+      "correct_j": "b",
+      "box_type_j": "multiple",
+      "answers_j": {
+        "a": "alleviate stress through verbalizing emotions with code",
+        "b": "match combinations of characters in string values",
+        "c": "add description to code directly in the code without interfering",
+        "d": "join together multiple arrays into one"
+    }
   }
 ]
-

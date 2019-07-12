@@ -1,0 +1,14 @@
+[
+  {
+    "question_j": "What is a string type in computers?",
+    "correct_j": "b",
+    "box_type_j": "multiple",
+    "answers_j": {
+      "a": "something that ties a sequence of items together",
+      "b": "A sentence, a character, a word, usually denoted by the single or double quotes. Unicode and ASCII are examples of character encoding.",
+      "c": "Where particles are linked through the quantum gravity of one dimensional objects.",
+      "d": "The stuff in a can your parent never let you buy from the dollar store."
+    }
+  }
+
+]
