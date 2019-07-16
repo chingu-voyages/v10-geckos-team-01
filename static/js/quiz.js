@@ -1,6 +1,7 @@
 // JavaScript source code for QuizMockV10
 let testing_something; // for 'set_a_constant'() test
-
+// local Storage item WhichQuiz  will tell us which json to use.
+let which_quiz;
 //  Quiz elements to be written to DOM
 
 var questions;  // used for length of JSON array
@@ -18,7 +19,7 @@ let answer_d;
 let answer_T;
 let answer_F;
 let box_type;
-// constants NOT from JSON, control items 
+// constants NOT from JSON, control items
 let current_answer;
 let current_index;
 // items that show during quiz
@@ -27,11 +28,11 @@ let which_question;
 let quiz_box;
 let true_false_box;
 //items to hide on start of quiz ----
-let image1_display; 
+let image1_display;
 let start_button;
 let instructions;
 //items to display at end of quiz ----
-let image2_display; 
+let image2_display;
 let congrats;
 
 
@@ -54,10 +55,10 @@ function retrieve_JSON(i) {
             // had to add a _j  at the end of my content
             // because of variables declared above, these must be different
             //----------------------------------------//
-            //          data format:                  
+            //          data format:
             // array:[
             // quiz content {
-            //               'question_j': 'string',   
+            //               'question_j': 'string',
             //               'correct_j' : 'string',
             //               'box_type_j'  : 'string',
             //               'answers_j' : object{
@@ -68,7 +69,7 @@ function retrieve_JSON(i) {
             //                           }
             //               },
             // next content (same as above)  {
-            //               'question_j': 'string',   
+            //               'question_j': 'string',
             //               'correct_j' : 'string',
             //               'box_type_j'  : 'string',
             //               'answers_j' : object{
@@ -80,17 +81,22 @@ function retrieve_JSON(i) {
             //               },
             //  box_type 'TorF'  does not require answers.
 
-            var dict = data[i];
-            questions = data; //for check answers-- needs length of array
-            //console.log(dict);
-            var fetchedQuestion = dict.question_j;
+            if(which_quiz == 'one'){
+              dict = data.quizone;
+            }
+            if(which_quiz == 'two'){
+              dict = data.quiztwo;
+            }
+            if(which_quiz == 'three'){
+              dict = data.quizthree;
+            }
+            questions = dict[i];
+            console.log(questions);
+            var fetchedQuestion = questions.question_j;
             json_question = fetchedQuestion;
-            console.log(fetchedQuestion);
-            var fetchedCorrect = dict.correct_j;
+            var fetchedCorrect = questions.correct_j;
             correct = fetchedCorrect;
-            //console.log(fetchedCorrect);
-            var fetchedAnswer = dict.answers_j;
-            //console.log(fetchedAnswer)
+            var fetchedAnswer = questions.answers_j;
             json_answer = fetchedAnswer;
             var ques_num = i + 1;
             var message = "Question number:  " + " " + ques_num;
@@ -98,9 +104,8 @@ function retrieve_JSON(i) {
             which_question.style.display = 'inline';
             Quiz_question.innerHTML = json_question;
             //console.log("Quiz_question=")
-            var fetchedBoxType = dict.box_type_j;
+            var fetchedBoxType = questions.box_type_j;
             box_type = fetchedBoxType;
-            console.log(box_type);
             if (box_type == "multiple") {
                 setQuizBoxType(true);
                 let options = json_answer;
@@ -127,9 +132,15 @@ function retrieve_JSON(i) {
         })
 };
 
+
+
+
 function setDOMconstants() {
 
+    // the local storage item WhichQuiz tells us which json data to use.
+    which_quiz = localStorage.getItem('WhichQuiz');
 
+    // DOM elements not affected by JSON
     current_index = 0;
     which_question = document.getElementById('which_question');
     quiz_box = document.getElementById("quiz_box");
@@ -139,18 +150,20 @@ function setDOMconstants() {
     instructions = document.getElementById("instructions");
     image2_display = document.getElementById("image2");
     congrats = document.getElementById("congrats"); //starts at display: none
-
+    results = document.getElementById("results");
 
 
     // if we do only one question on the page, these elements don't ever need to change
+    // These are DOM elements set by JSON
     Quiz_question = document.getElementById("question");
     answer_a = document.getElementById("answerA");
     answer_b = document.getElementById("answerB");
     answer_c = document.getElementById("answerC");
     answer_d = document.getElementById("answerD");
-    answer_T = document.getElementById("True_line");  // needed?
-    answer_F = document.getElementById("False_line");  // needed?
-    results = document.getElementById("results");
+    answer_T = document.getElementById("True_line");
+    answer_F = document.getElementById("False_line");
+    // hiding and showing elements on page:
+
     hide_element(start_button);
     hide_element(image1_display);
     hide_element(instructions);   // maybe move end elements and start elements to entire function?
@@ -185,8 +198,8 @@ function setQuizBoxType(multiple) {
         true_false_box.style.display = 'inline-block';
     }
 };
-/*   
- *   end JSON  functions. 
+/*
+ *   end JSON  functions.
 */
 
 function check_answer(answer) {
@@ -245,7 +258,7 @@ function addEventHandlersToButtons() {
     };
 };
 
-/*   test functions: 
+/*   test functions:
 * test our constants have been loaded
  *
 function set_a_constant() {
