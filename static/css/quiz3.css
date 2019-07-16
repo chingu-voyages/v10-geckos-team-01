@@ -1,0 +1,208 @@
+/* css for Chingu V10 Geckos team 1
+    * QUIZ 3
+    * 80's theme--neons, purple yellow blue hot-pink
+    * hot-pink =   #f74aa3
+    * pale yellow =  #f4facf
+    * purple = #4a106f
+    * dark purple =  #150a1d
+    * turquoise =  #61c8c4
+    * dark blue =   #1c1952
+    * peach =  #f5edeb
+*/
+#constant {
+    color: red;
+}
+
+title:before {
+  content: "Well technically...";
+}
+
+body {
+    background-color:   #61c8c4;
+    font-family: 'Acme', sans-serif;
+}
+
+.line {
+    margin: 0;
+    padding: 0;
+    width: 92vw;
+    margin-left: 10px;
+    border: 2px groove  #f74aa3;
+}
+
+.link-box {
+    display: inline-block;
+    height: 90vh;
+    width: 100vw;
+    padding: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.nav-bar {
+    background: #4a106f;
+    height: 7vh;
+    margin-top: 0;
+    padding: 2px;
+}
+
+.nav-button {
+    border: 1px solid black;
+    color:  #f74aa3;
+    background-color: inherit;
+    float: left;
+    width: 7vw;
+    height: 7vh;
+}
+
+.head-box {
+    background-color: whitesmoke;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding-right: 5vw;
+    width: 100vw;
+    color: cornflowerblue;
+    font-size: 1em;
+}
+
+.start {
+    position: relative;
+    background-color: inherit;
+    border: none;
+    font-size: large;
+    margin: 0 auto;
+    width: 25vw;
+}
+
+.basic_term {
+    width: 75vw;
+    height: 75vh;
+    padding:  5px;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+    background-size: contain;
+    background-image: url("../images/classic-phonograph-record-retro.jpg");
+}
+
+button {
+    border-radius: 10%;
+    background-color: #F7F7F9;
+    border: solid 2px  #f74aa3;
+    font-size: large;
+}
+
+    button:hover {
+        background-color: #E4E7F2;
+    }
+
+.title-head {
+    text-align: center;
+    background: #424249;
+    border-bottom: 2px groove blue;
+    color: #E4E7F2;
+    margin: 0;
+    padding: 0;
+}
+
+.center-justify p {
+    text-align: center;
+    justify-content: space-around;
+}
+
+ul, li {
+    border: none;
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 5vw;
+    color:  #f5edeb;
+}
+
+.Instructions {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+    color:  #424249;
+    font-size: 2em;
+}
+
+.about_quiz:before {
+  content: "Let us get Technical. \a Click Start Quiz to begin.";
+}
+
+#load_image {
+    display: none;
+}
+
+.results {
+    color: #424249;
+    text-align: center;
+    font-size: 2em;
+    display: none;
+}
+
+.true_false {
+    display: none;
+    background-color: #F7F7F9;
+    border: 5px solid #054DF9;
+    width: 95vw;
+    margin-right: 10px;
+    margin-top: 10%;
+}
+
+.quiz_box {
+    display: none;
+    background-color:  #150a1d;
+    border: 5px solid  #1c1952;
+    width: 95vw;
+    margin-right: 10px;
+    margin-top: 10%;
+}
+
+.question_s {
+    border: none;
+    display: inline-block;
+    font-size: large;
+    color: black;
+}
+
+.question {
+    display: inline;
+    border: none;
+    font-size: 2em;
+    color:   #1c1952;
+    padding: 10px;
+}
+
+.which_question {
+    display: none;
+    color:   #1c1952;
+}
+
+.end_quiz {
+    display: none;
+    width: 75vw;
+    height: 75vh;
+    padding: 5px;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+    background-size: contain;
+    background-image: url("../images/adventure-casual-cheerful-541518.jpg");
+}
+
+.hidden_congrats {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #4a106f;
+    font-size: 2em;
+}
