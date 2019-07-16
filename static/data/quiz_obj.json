@@ -1,4 +1,4 @@
-[
+{ "quizone": [
   {
     "question_j": "What is a boolean?",
     "correct_j": "c",
@@ -75,4 +75,40 @@
         "d": "join together multiple arrays into one"
     }
   }
-]
+],
+  "quiztwo": [
+    {
+      "question_j": "What is a string type in computers?",
+      "correct_j": "b",
+      "box_type_j": "multiple",
+      "answers_j": {
+        "a": "something that ties a sequence of items together",
+        "b": "A sentence, a character, a word, usually denoted by the single or double quotes. Unicode and ASCII are examples of character encoding.",
+        "c": "Where particles are linked through the quantum gravity of one dimensional objects.",
+        "d": "The stuff in a can your parent never let you buy from the dollar store."
+      }
+    },
+    {
+      "question_j": "A string is stored in a computer as an array, (sequence of characters in byte code).",
+      "correct_j": "True",
+      "box_type_j": "TorF",
+      "answers_j": {
+        "T": "While the exact data structure may be different on a given machine, it is an array type structure.",
+        "F": "If a string is stored as an array, how come my spell check always wants to correct it to -duck-?"
+      }
+    }
+  ],
+  "quizthree": [
+    {
+      "question_j": "An example of how a off by one error can occur is:",
+      "correct_j": "d",
+      "box_type_j": "multiple",
+      "answers_j": {
+        "a": "On the count of 3",
+        "b": "So, after you say the word two... or after you say the word three?",
+        "c": "Lets just not count.",
+        "d": "The list/array has 10 items in it, so I try to loop through index 1 - 10."
+      }
+    }
+  ]
+}
