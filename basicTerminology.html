@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="static/js/quiz.js"></script>
+    <script type="text/javascript" src="static/js/setCSS.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b570a31fd0.js"></script>
-    <link rel="stylesheet" href="static/css/quiz.css" />
-    <title>Basic Terminology</title>
+
+    <title></title>
 </head>
 <body>
    <div class="nav-bar">
@@ -18,20 +19,20 @@
         </a>
     </div>
     <div class="Instructions" id="instructions">
-        <p>Test and learn some basic terminology. <br> Click Start Quiz to begin. <br /></p>
+        <p class="about_quiz"></p>
         <button class="start" id="start_button" onclick="start_quiz()"> Start Quiz </button>
-        
+
     </div>
     <div class="hidden_congrats" id="congrats">
     <p>You finished. Congrats!</p>
         </div>
-    
+
     <main>
 
-        <img class="basic_term" id="image1" src="static/images/dark-blue-keyboard-by-Marta-Pexels.jpg" alt="close up of dark blue themed keyboard" />
-        <img class="end_quiz" id="image2" src="static/images/adventure-casual-cheerful-541518.jpg" alt="woman on a path with a backpack jumping in joy" />
+        <img class="basic_term" id="image1"/>
+        <img class="end_quiz" id="image2"/>
         <div class="head-box">
-           
+
 
             <h3 class="which_question" id="which_question"></h3>
             <div class="line"></div>
