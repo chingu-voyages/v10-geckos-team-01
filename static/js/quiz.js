@@ -7,7 +7,9 @@ let which_quiz;
 var questions;  // used for length of JSON array
 var json_question;  // for JSON load
 let json_answer;    // for JSON load
-let correct;        // for JSON load
+let correct;  // JSON
+let dict;     // jSON
+
 
 
 // document elements to be modified by json data
@@ -91,7 +93,8 @@ function retrieve_JSON(i) {
               dict = data.quizthree;
             }
             questions = dict[i];
-            console.log(questions);
+            console.log("array length:");
+            console.log(dict.length);
             var fetchedQuestion = questions.question_j;
             json_question = fetchedQuestion;
             var fetchedCorrect = questions.correct_j;
@@ -174,7 +177,7 @@ function setDOMconstants() {
 };
 
 function hide_element(element) {
-    console.log(element);
+    //console.log(element);
     element.style.display = 'none';
 }
 
@@ -213,7 +216,7 @@ function check_answer(answer) {
         current_index += 1;
 
         //move on to next question  i = i+1 load_quiz(i)
-        if (current_index < questions.length) {
+        if (current_index < dict.length) {
 
             //load_quiz(current_index);
             loadCurrentQuestion(current_index);
