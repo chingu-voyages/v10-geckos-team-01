@@ -26,10 +26,16 @@ function load_three_html() {
 
 window.onload = function() {
     let one_link = document.getElementById("quizOne");
+    let one_drop_link = document.getElementById("quizOne-dropdown");
     one_link.addEventListener('click', load_one_html);
+    one_drop_link.addEventListener('click', load_one_html);
     let two_link = document.getElementById("quizTwo");
+    let two_drop_link = document.getElementById("quizTwo-dropdown");
     two_link.addEventListener('click', load_two_html);
+    two_drop_link.addEventListener('click', load_two_html);
     let three_link = document.getElementById("quizThree");
+    let three_drop_link = document.getElementById("quizThree-dropdown");
     three_link.addEventListener('click', load_three_html);
+    three_drop_link.addEventListener('click', load_three_html);
 
 };
