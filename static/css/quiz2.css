@@ -75,8 +75,9 @@ body {
     padding:  5px;
     margin-left: 12.5vw;
     margin-right: 12.5vw;
-    background-size: contain;
+    background-size: cover;
     background-image: url("../images/collection-education-knowledge-begin-pexel.jpg");
+    background-repeat:no-repeat;
 }
 
 button {
@@ -177,6 +178,42 @@ ul, li {
     color: black;
 }
 
+.quiz_buttons {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+  height: 12.5vh;
+
+}
+
+.hidden_continue_btn {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 99vw;
+}
+.continue_btn {
+  display: none;
+  background: inherit;
+  margin: 0 auto;
+  border: 1px solid #054DF9;
+  box-shadow: 2px 2px 5px grey;
+  width: 33vw;
+  font-size: 2em;
+}
+
+.continue_btn button {
+  display: none;
+  background: inherit;
+  border: 1px solid #054DF9;
+  box-shadow: 2px 2px 5px grey;
+  width: 25vw;
+  height: 8vh;
+  float: center;
+}
+
 .end_quiz {
     display: none;
     width: 75vw;
@@ -184,8 +221,9 @@ ul, li {
     padding: 5px;
     margin-left: 12.5vw;
     margin-right: 12.5vw;
-    background-size: contain;
+    background-size: cover;
     background-image: url("../images/book-pages-bookcase-browse-pexel.jpg");
+    background-repeat:no-repeat;
 }
 
 .hidden_congrats {
