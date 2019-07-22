@@ -1,0 +1,115 @@
+Documentation for Chingu V10 Geckos team 1
+::Nellie Tobey
+Front-End
+
+Structure:
+
+Two html pages are present at this time.
+The index.html and the basicTerminology.html
+*to-do -- remove all excess files used in earlier version.
+The index html links to the basicTerminology html that holds a template for quizes.
+This template takes form through the css file, 'cess_file' that is loaded from the index html link(s).
+The css file is not stored in localStorage, but a variable is that is checked by the 'setCSS.js' file
+on load of the basicTerminology(quiz page).html.
+The json data is also determined by a variable set in the 'QuizSelection.js'.   The QuizSelection.js is
+a short JavaScript file in the index.  It assigns the variable for which quiz css to use('cess_file'),
+and a varaible that is used in the quiz pages' js file, ('quiz.js') that determines which array
+from the json object to grab and use in assigning questions.
+There is one json file in use, and the object holds an array with objects inside it to set up each question.
+So far, a question's data is set up in this way:
+(( first question from the basic quiz.))
+{
+  "question_j": "What is a boolean?",
+  "correct_j": "c",
+  "box_type_j": "multiple",
+  "answers_j": {
+    "a": "True",
+    "b": "False",
+    "c": "A value of True or False, but never both.",
+    "d": "Something you add to soup."
+  }
+
+  A question can have one of two box_type_j's. "multiple" for multiple choice, and "TorF" for true or false.
+  Because the JavaScript file has declared variables of similar names as the items in the object, the
+  " _j " was added to keep the JavaScript from having two identifiers with the same names.
+
+  The JavaScript functions:
+
+  from bottom up.
+
+  start_quiz() --
+  This function calls three other functions to set up and begin the quiz process.  Because most DOM elements
+  need to be loaded before changes can be assigned to them, the start button that uses this call is very important
+  to keeping the page loading without error.
+  ----  the called functions:
+        setDOMconstants()--
+            grabs all needed DOM elements with getElementById() that will be assigned and changed throughout the
+            javascript.
+            such as:
+                the 'quiz_box'  where our quiz data from json will be rendered.
+                hidden and items that will be shown at the end of quiz such as 'congrats'.
+        addEventHandlersToButtons()--
+            add's the necessary event listeners to buttons used in the quiz.
+            such as:
+               in multiple choice:  a,b,c,d
+               in true or false: True and False selections
+               below the quiz_box the buttons for options to 'skip', 'previous', and hint.
+               Hint has not been added as a feature yet.
+               the continue_btn which is active on a correct answer so that the user may move on to the next question.
+        loadCurrentQuestion(current_index)--
+            This function uses the current_index (a declared variable set in setDOMconstants to 0) to control which question set is retrieved from jSON
+            it uses the function retrieve_JSON(i)
+
+  presentOption() --
+  This function decides if the previous or skip button are clicked through the 'this.id'. It uses if() to check if
+  moving the current_index up by one, or down by one is within the bounds of the dict array that is retrieved from jSON
+
+  set_current_answer() --
+  This function uses this.id to send the currently clicked answer, (a,b,c,d or True, False) to the functions
+  check_answer(current_answer)
+
+  check_answer(current_answer) --
+  This function uses the current_answer argument and a series of if/else clauses to check if the answer the
+  user clicked is correct, or incorrect, and whether or not the quiz is at it's end.
+  It will also increment the current_index on successful answers.
+  This function uses many hide_element() and show_element() functions to change the layout of the quiz upon completion.
+
+  reset_question() --
+  This function will hide the continue_btn and the results, and then call loadCurrentQuestion(current_index).
+
+  setQuizBoxType(multiple) --
+  This function uses the argument multiple, which is a boolean set in retrieve_JSON.  If more question types are added, this
+  will have to be changed to a case argument and if/else to check for which kind of box to render.
+  There are two displays controlled here,  the quiz_box which is for multiple choice, and the true_false_box which is for
+  true or false questions.
+
+  hide_element, show_element, load_quiz_buttons, show_continue_btn --
+  These functions change the display of elements to hide, style.display = 'none';  or show the element according to design needs.
+  For example, most items are inline-block,  but the quiz_buttons are in a flex.
+
+  loadCurrentQuestion(i) --
+  Uses i,  the current_index = i, is passed in for all uses so far, this calls the retrieve_JSON(i) function which
+  grabs the code block / object that holds the data to render to the html.
+
+  setDOMconstants() --
+  Assigns the necessary element's to their JavaScript variable that has been declared at the beginning of the file.
+  It also hides and shows the elements that are to be rendered for the start of the quiz.
+  *to-do:  move the hide/show to a separate function.
+
+  retrieve_JSON(i) --
+  This function uses 'fetch' to grab our json_obj.json.  Inside the json file our object has an array for each quiz template.
+  an if/else checks the localStorage for the variable that will tell json_obj which array to assign to the dict variable.
+  from the dict, we grab the question in the list by index i.  (i = current_index atm).
+  The elements for the quiz_box are then assigned by what object is retrieved from the array.
+  object:
+    (( first question from the basic quiz.))
+    {
+      "question_j": "What is a boolean?",
+      "correct_j": "c",
+      "box_type_j": "multiple",
+      "answers_j": {
+        "a": "True",
+        "b": "False",
+        "c": "A value of True or False, but never both.",
+        "d": "Something you add to soup."
+      }
