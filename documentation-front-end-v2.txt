@@ -22,6 +22,7 @@ So far, a question's data is set up in this way:
   "question_j": "What is a boolean?",
   "correct_j": "c",
   "box_type_j": "multiple",
+  "hint_j": "Do or do not, there is no try. -- Master Yoda",
   "answers_j": {
     "a": "True",
     "b": "False",
@@ -53,8 +54,8 @@ So far, a question's data is set up in this way:
             such as:
                in multiple choice:  a,b,c,d
                in true or false: True and False selections
-               below the quiz_box the buttons for options to 'skip', 'previous', and hint.
-               Hint has not been added as a feature yet.
+               below the quiz_box the buttons for options to 'skip', 'previous', and 'hint'.
+               Hints were added 7-23-19               
                the continue_btn which is active on a correct answer so that the user may move on to the next question.
         loadCurrentQuestion(current_index)--
             This function uses the current_index (a declared variable set in setDOMconstants to 0) to control which question set is retrieved from jSON
@@ -63,6 +64,7 @@ So far, a question's data is set up in this way:
   presentOption() --
   This function decides if the previous or skip button are clicked through the 'this.id'. It uses if() to check if
   moving the current_index up by one, or down by one is within the bounds of the dict array that is retrieved from jSON
+  Items that should be hidden on changing the question are hidden.  No check is made to see if they already have a display: none;
 
   set_current_answer() --
   This function uses this.id to send the currently clicked answer, (a,b,c,d or True, False) to the functions
@@ -75,7 +77,8 @@ So far, a question's data is set up in this way:
   This function uses many hide_element() and show_element() functions to change the layout of the quiz upon completion.
 
   reset_question() --
-  This function will hide the continue_btn and the results, and then call loadCurrentQuestion(current_index).
+  This function will hide the continue_btn, the results, and the hint.  It then call loadCurrentQuestion(current_index).
+  No checks are made to see if the items being hidden already have a display: none;
 
   setQuizBoxType(multiple) --
   This function uses the argument multiple, which is a boolean set in retrieve_JSON.  If more question types are added, this
@@ -83,9 +86,10 @@ So far, a question's data is set up in this way:
   There are two displays controlled here,  the quiz_box which is for multiple choice, and the true_false_box which is for
   true or false questions.
 
-  hide_element, show_element, load_quiz_buttons, show_continue_btn --
+  displayHint, hide_element, show_element, load_quiz_buttons, show_continue_btn--
   These functions change the display of elements to hide, style.display = 'none';  or show the element according to design needs.
   For example, most items are inline-block,  but the quiz_buttons are in a flex.
+  The hint needs the current json dict's  hint_j assigned to innerHTML.
 
   loadCurrentQuestion(i) --
   Uses i,  the current_index = i, is passed in for all uses so far, this calls the retrieve_JSON(i) function which
@@ -107,6 +111,7 @@ So far, a question's data is set up in this way:
       "question_j": "What is a boolean?",
       "correct_j": "c",
       "box_type_j": "multiple",
+      "hint_j": "Do or do not, there is no try. --Master Yoda.",
       "answers_j": {
         "a": "True",
         "b": "False",
