@@ -9,8 +9,7 @@ var json_question;  // for JSON load
 let json_answer;    // for JSON load
 let correct;  // JSON
 let dict;     // jSON
-
-
+let hint;   // <-- NEW
 
 // document elements to be modified by json data
 let Quiz_question;
@@ -21,16 +20,18 @@ let answer_d;
 let answer_T;
 let answer_F;
 let box_type;
+
 // constants NOT from JSON, control items
 let current_answer;
 let current_index;
-// items that show during quiz
+// items that show during quiz DOM elements to alter
 let results;
 let which_question;
 let quiz_box;
 let true_false_box;
 let quiz_buttons;
-let continue_btn; // <-- NEW
+let continue_btn;
+let h3Hint; //<---- NEW
 //items to hide on start of quiz ----
 let image1_display;
 let start_button;
@@ -65,6 +66,7 @@ function retrieve_JSON(i) {
             //               'question_j': 'string',
             //               'correct_j' : 'string',
             //               'box_type_j'  : 'string',
+            //               'hint_j' : 'string',
             //               'answers_j' : object{
             //                           'a': 'string',
             //                           'b': 'string',
@@ -76,6 +78,7 @@ function retrieve_JSON(i) {
             //               'question_j': 'string',
             //               'correct_j' : 'string',
             //               'box_type_j'  : 'string',
+            //               'hint_j'   : 'string',
             //               'answers_j' : object{
             //                           'a': 'string',
             //                           'b': 'string',
@@ -103,6 +106,8 @@ function retrieve_JSON(i) {
             correct = fetchedCorrect;
             var fetchedAnswer = questions.answers_j;
             json_answer = fetchedAnswer;
+            var fetchedHint = questions.hint_j; //<--- NEW
+            hint = fetchedHint;   //<------- NEW
             var ques_num = i + 1;
             var message = "Question number:  " + " " + ques_num;
             which_question.innerHTML = message;
@@ -168,7 +173,8 @@ function setDOMconstants() {
     answer_T = document.getElementById("True_line");
     answer_F = document.getElementById("False_line");
     quiz_buttons = document.getElementById("quiz_buttons");
-    continue_btn = document.getElementById("continue_btn"); //<-- NEW
+    continue_btn = document.getElementById("continue_btn");
+    h3Hint = document.getElementById("give_hint");  // <--- NEW
     // hiding and showing elements on page:
 
     hide_element(start_button);
@@ -182,19 +188,19 @@ function setDOMconstants() {
 
 };
 
+
+function loadCurrentQuestion(i) {
+    retrieve_JSON(i);
+};
+
 function hide_element(element) {
     //console.log(element);
     element.style.display = 'none';
 }
 
-
 function show_element(element) {
     element.style.display = 'inline-block';
 }
-
-function loadCurrentQuestion(i) {
-    retrieve_JSON(i);
-};
 
 function load_quiz_buttons(element) {
   element.style.display = 'flex';
@@ -202,6 +208,12 @@ function load_quiz_buttons(element) {
 
 function show_continue_btn(element){
   element.style.display = 'block';
+}
+
+function displayHint() {
+  //h3Hint = dom element, hint=JSON fetched string
+  h3Hint.innerHTML = hint;
+  show_element(h3Hint);
 }
 
 
@@ -222,6 +234,7 @@ function setQuizBoxType(multiple) {
 function reset_question(){
   hide_element(results);
   hide_element(continue_btn);
+  hide_element(h3Hint);
   loadCurrentQuestion(current_index);
 }
 
@@ -250,6 +263,7 @@ function check_answer(answer) {
             hide_element(Quiz_question);
             hide_element(quiz_buttons);
             hide_element(continue_btn);
+            hide_element(h3Hint);
             show_element(congrats);
             show_element(image2_display);
         }
@@ -276,12 +290,14 @@ function presentOption() {
     current_index -=1;
     hide_element(continue_btn);
     hide_element(results);
+    hide_element(h3Hint);
     retrieve_JSON(current_index);
   }
   if(selection == 'skip' && current_index + 1 < max){
     current_index += 1;
     hide_element(continue_btn);
     hide_element(results);
+    hide_element(h3Hint);
     retrieve_JSON(current_index);
   }
   // need to add hints in json for the 'hint' button
@@ -304,9 +320,11 @@ function addEventHandlersToButtons() {
     let skip = document.getElementById("skip");
     let previous = document.getElementById("previous");
     let proceed = document.getElementById("continue_btn");
+    let give_hint = document.getElementById("hint_button");
     skip.addEventListener('click', presentOption);
     previous.addEventListener('click', presentOption);
     proceed.addEventListener('click', reset_question);
+    give_hint.addEventListener('click', displayHint);
 };
 
 /*   test functions:
