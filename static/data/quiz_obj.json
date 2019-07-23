@@ -3,6 +3,7 @@
     "question_j": "What is a boolean?",
     "correct_j": "c",
     "box_type_j": "multiple",
+    "hint_j": "Do or do not, there is no try. --Master Yoda",
     "answers_j": {
       "a": "True",
       "b": "False",
@@ -11,12 +12,13 @@
     }
   },
   {
-    "question_j": "What makes a parameter different from an arguement?",
+    "question_j": "What makes a parameter different from an argument?",
     "correct_j": "b",
     "box_type_j": "multiple",
+    "hint_j": "I got the dog a bed, but the cat took it over.",
     "answers_j": {
       "a": "A parameter keeps the chickens from escaping. Arguements make them angry.",
-      "b": "The context. A parameter is a placeholder, the arguement is the thing that occupies that place.",
+      "b": "The context. A parameter is a placeholder, the argument is the thing that occupies that place.",
       "c": "They are exactly the same.",
       "d": "about 5 kilos give or take."
     }
@@ -26,6 +28,7 @@
     "question_j": "Modern computers use electrical signals in the hardware to store and transmit data.",
     "correct_j": "True",
     "box_type_j": "TorF",
+    "hint_j": "I turned the light switch to on, and light appeared.",
     "answers_j": {
       "T": "True, although there is space to argue magnetism is the true hero of modern data storage.",
       "F": "False, this is the Matrix, binary data is stored in humans living in pods of fluid goo."
@@ -36,6 +39,7 @@
     "question_j": "A files 'extenstion' is the type of file the computer reads it as.  A .txt file is also known as:",
     "correct_j": "d",
     "box_type_j": "multiple",
+    "hint_j": "Hello, Extension 560 dairy department please.",
     "answers_j": {
       "a": "a text file",
       "b": "plain text file",
@@ -48,6 +52,7 @@
     "question_j": "A method is a procedure used in a particular manner to interpret and use data",
     "correct_j": "True",
     "box_type_j": "TorF",
+    "hint_j": "Her method of straining the noodles, had four steps.",
     "answers_j": {
       "T": "True, some methods are simple recipes, some are highly complex data manipulation.",
       "F": "False, Logically if she weighs the same as a duck, she's made of wood!"
@@ -57,6 +62,7 @@
     "question_j": "How would you describe a recursive function?",
     "correct_j": "c",
     "box_type_j": "multiple",
+    "hint_j": "I will not stop until every apple has been plucked from this tree.",
     "answers_j": {
       "a": "a function that calls another function",
       "b": "a function that breaks your app, computer and sometimes the wifi",
@@ -68,6 +74,7 @@
       "question_j": "Regular expressions help us do what?",
       "correct_j": "b",
       "box_type_j": "multiple",
+      "hint_j": "I thought his name started with a B... Barnaby? Bob? Barkley?",
       "answers_j": {
         "a": "alleviate stress through verbalizing emotions with code",
         "b": "match combinations of characters in string values",
@@ -81,6 +88,7 @@
       "question_j": "What is a string type in computers?",
       "correct_j": "b",
       "box_type_j": "multiple",
+      "hint_j": "I wrote a letter, but it only has one.",
       "answers_j": {
         "a": "something that ties a sequence of items together",
         "b": "A sentence, a character, a word, usually denoted by the single or double quotes. Unicode and ASCII are examples of character encoding.",
@@ -92,6 +100,7 @@
       "question_j": "A string is stored in a computer as an array, (sequence of characters in byte code).",
       "correct_j": "True",
       "box_type_j": "TorF",
+      "hint_j": "An array is just a term for data that is held in sequence/arrangement in memory.",
       "answers_j": {
         "T": "While the exact data structure may be different on a given machine, it is an array type structure.",
         "F": "If a string is stored as an array, how come my spell check always wants to correct it to -duck-?"
@@ -103,6 +112,7 @@
       "question_j": "An example of how a off by one error can occur is:",
       "correct_j": "d",
       "box_type_j": "multiple",
+      "hint_j": "We start with 0, and add to that. So zero is often thought of as a starting point.",
       "answers_j": {
         "a": "On the count of 3",
         "b": "So, after you say the word two... or after you say the word three?",
