@@ -3,6 +3,7 @@
     "question_j": "What is a boolean?",
     "correct_j": "c",
     "box_type_j": "multiple",
+    "code_box_j": "none",
     "hint_j": "Do or do not, there is no try. --Master Yoda",
     "answers_j": {
       "a": "True",
@@ -15,6 +16,7 @@
     "question_j": "What makes a parameter different from an argument?",
     "correct_j": "b",
     "box_type_j": "multiple",
+    "code_box_j": "none",
     "hint_j": "I got the dog a bed, but the cat took it over.",
     "answers_j": {
       "a": "A parameter keeps the chickens from escaping. Arguements make them angry.",
@@ -25,9 +27,24 @@
 
   },
   {
+    "question_j": "An algorithm is which of these things:",
+    "correct_j": "d",
+    "box_type_j": "multiple",
+    "code_box_j": "none",
+    "hint_j": "A process or set of rules to be followed in obtaining some result.",
+    "answers_j":{
+      "a": "A chicken and dumplings recipe.",
+      "b": "The instructions for hooking up my computer moniter.",
+      "c": "a formula for determining the nth fibonacci number.",
+      "d": "All of the above."
+    }
+
+  },
+  {
     "question_j": "Modern computers use electrical signals in the hardware to store and transmit data.",
     "correct_j": "True",
     "box_type_j": "TorF",
+    "code_box_j": "none",
     "hint_j": "I turned the light switch to on, and light appeared.",
     "answers_j": {
       "T": "True, although there is space to argue magnetism is the true hero of modern data storage.",
@@ -39,6 +56,7 @@
     "question_j": "A files 'extenstion' is the type of file the computer reads it as.  A .txt file is also known as:",
     "correct_j": "d",
     "box_type_j": "multiple",
+    "code_box_j": "none",
     "hint_j": "Hello, Extension 560 dairy department please.",
     "answers_j": {
       "a": "a text file",
@@ -52,6 +70,7 @@
     "question_j": "A method is a procedure used in a particular manner to interpret and use data",
     "correct_j": "True",
     "box_type_j": "TorF",
+    "code_box_j": "none",
     "hint_j": "Her method of straining the noodles, had four steps.",
     "answers_j": {
       "T": "True, some methods are simple recipes, some are highly complex data manipulation.",
@@ -62,6 +81,7 @@
     "question_j": "How would you describe a recursive function?",
     "correct_j": "c",
     "box_type_j": "multiple",
+    "code_box_j": "none",
     "hint_j": "I will not stop until every apple has been plucked from this tree.",
     "answers_j": {
       "a": "a function that calls another function",
@@ -74,6 +94,7 @@
       "question_j": "Regular expressions help us do what?",
       "correct_j": "b",
       "box_type_j": "multiple",
+      "code_box_j": "none",
       "hint_j": "I thought his name started with a B... Barnaby? Bob? Barkley?",
       "answers_j": {
         "a": "alleviate stress through verbalizing emotions with code",
@@ -88,6 +109,7 @@
       "question_j": "What is a string type in computers?",
       "correct_j": "b",
       "box_type_j": "multiple",
+      "code_box_j": "none",
       "hint_j": "I wrote a letter, but it only has one.",
       "answers_j": {
         "a": "something that ties a sequence of items together",
@@ -100,24 +122,76 @@
       "question_j": "A string is stored in a computer as an array, (sequence of characters in byte code).",
       "correct_j": "True",
       "box_type_j": "TorF",
+      "code_box_j": "none",
       "hint_j": "An array is just a term for data that is held in sequence/arrangement in memory.",
       "answers_j": {
         "T": "While the exact data structure may be different on a given machine, it is an array type structure.",
         "F": "If a string is stored as an array, how come my spell check always wants to correct it to -duck-?"
       }
     }
+  ,
+  {
+    "question_j": "You can store characters, numbers, symbols in a string and a string can even be empty.",
+    "correct_j": "True",
+    "box_type_j": "TorF",
+    "code_box_j": "none",
+    "hint_j": "When they have you make complex passwords, eyeH8allth3s3Pa55w0rds, it is stored as a string.",
+    "answers_j": {
+      "T": "True, an empty string is stored basically as a string of length 0.",
+      "F": "False, three inch strings for: Tying up very small parcels, attatching notes to pigeons' legs, uh, destroying household pests..."
+    }
+  }
   ],
   "quizthree": [
     {
       "question_j": "An example of how a off by one error can occur is:",
       "correct_j": "d",
       "box_type_j": "multiple",
+      "code_box_j": "none",
       "hint_j": "We start with 0, and add to that. So zero is often thought of as a starting point.",
       "answers_j": {
         "a": "On the count of 3",
         "b": "So, after you say the word two... or after you say the word three?",
         "c": "Lets just not count.",
         "d": "The list/array has 10 items in it, so I try to loop through index 1 - 10."
+      }
+    },
+    {
+      "question_j": "A low level computer language simplified definition:",
+      "correct_j": "a",
+      "box_type_j": "multiple",
+      "code_box_j": "none",
+      "hint_j": "Many high-level languages use abstraction, are very human readable, but require being compiled/translated to a lower-level language.",
+      "answers_j": {
+        "a": "A language very close to machine. This kind of code is used by the machine for very specific and declared purposes set by the user written code.",
+        "b": "I told Hal to open the pod bay doors, but it refused.",
+        "c": "Python like other high-level languages rely on a compiler to translate the code into something the machine can understand.",
+        "d": "Within the code written by the user are many hidden processes the computer must translate without the coder's knowledge."
+      }
+    },
+    {
+      "question_j": "An if statement checks whether a given variable of some type, is existent, True, of some specified value.",
+      "correct_j": "True",
+      "box_type_j": "TorF",
+      "code_box_j": "none",
+      "hint_j": "If I fits, I sits.",
+      "answers_j": {
+        "T": "True, and it can also verify if something is NOT true, NOT equal to, or NOT existent (null-None), and many more.",
+        "F": "False, An if statement only qualifies wether an argument is plausible and deniable."
+      }
+    },
+    {
+      "question_j": "What do you think this code (JavaScript) does?",
+      "correct_j": "c",
+      "box_type_j": "multiple",
+      "code_box_j": "if(chocolate){\n     eat(choclate) };",
+      "hint_j": "there is chocolate in this room, and I shall EAT IT.",
+      "answers_j": {
+        "a": "Makes me happy.",
+        "b": "Defends against the Dementor's sadness.",
+        "c": "if chocolate exists, is true, and is not 0/null/none, then perform eat on chocolate.",
+        "d": "42"
+
       }
     }
   ]

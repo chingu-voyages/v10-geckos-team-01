@@ -20,6 +20,7 @@ let answer_d;
 let answer_T;
 let answer_F;
 let box_type;
+let code_box; //<-- NEW
 
 // constants NOT from JSON, control items
 let current_answer;
@@ -31,7 +32,8 @@ let quiz_box;
 let true_false_box;
 let quiz_buttons;
 let continue_btn;
-let h3Hint; //<---- NEW
+let h3Hint;
+let code_box_display; //<-- NEW
 //items to hide on start of quiz ----
 let image1_display;
 let start_button;
@@ -116,21 +118,38 @@ function retrieve_JSON(i) {
             //console.log("Quiz_question=")
             var fetchedBoxType = questions.box_type_j;
             box_type = fetchedBoxType;
+            var fetchedCodeBox = questions.code_box_j;
+            code_box = fetchedCodeBox;
             if (box_type == "multiple") {
-                setQuizBoxType(true);
-                let options = json_answer;
-                //console.log("options = ", options);
-                answer_a.innerHTML = options.a;
-                answer_b.innerHTML = options.b;
-                answer_c.innerHTML = options.c;
-                answer_d.innerHTML = options.d;
+                if (code_box == 'none'){
+                  setQuizBoxType(true, false);
+                  let options = json_answer;
+                  //console.log("options = ", options);
+                  answer_a.innerHTML = options.a;
+                  answer_b.innerHTML = options.b;
+                  answer_c.innerHTML = options.c;
+                  answer_d.innerHTML = options.d;
+                }
+                else {
+                  setQuizBoxType(true, true);
+                  let options = json_answer;
+                  code_box_display.innerHTML = code_box;
+                  console.log(options);
+                  answer_a.innerHTML = options.a;
+                  answer_b.innerHTML = options.b;
+                  answer_c.innerHTML = options.c;
+                  answer_d.innerHTML = options.d;
+
+                }
             }
-            else {
-                setQuizBoxType(false);
+            else  {
+                setQuizBoxType(false, false);
                 let options = json_answer;
+                console.log(options);
                 answer_T.innerHTML = options.T;
                 answer_F.innerHTML = options.F;
             }
+
 
 
 
@@ -174,7 +193,8 @@ function setDOMconstants() {
     answer_F = document.getElementById("False_line");
     quiz_buttons = document.getElementById("quiz_buttons");
     continue_btn = document.getElementById("continue_btn");
-    h3Hint = document.getElementById("give_hint");  // <--- NEW
+    h3Hint = document.getElementById("give_hint");
+    code_box_display = document.getElementById("code_box");
     // hiding and showing elements on page:
 
     hide_element(start_button);
@@ -217,14 +237,28 @@ function displayHint() {
 }
 
 
-function setQuizBoxType(multiple) {
-    if (multiple == true) {
+function setQuizBoxType(multiple, code_inside) {
+    if (multiple == true && code_inside == false) {
+      // Multiple choice, no code box
+        console.log("multiple choice, no code block");
         quiz_box.style.display = 'inline-block';
         true_false_box.style.display = 'none';
+        code_box_display.style.display = 'none';
     }
-    else {
+    if (multiple == false) {
+      // True or False question
+        console.log("True or False box");
+        code_box_display.style.display = 'none';
         quiz_box.style.display = 'none';
         true_false_box.style.display = 'inline-block';
+    }
+  if (multiple && code_inside){
+      // multiple choice with code box
+      console.log("else clause, multiple with code block")
+      code_box_display.style.display = 'block';
+      quiz_box.style.display = 'inline-block';
+      true_false_box.style.display = 'none';
+
     }
 };
 /*

@@ -93,18 +93,20 @@ a:hover {
     margin-right: 12.5vw;
     background-image: url('../images/dark-blue-keyboard-by-Marta-Pexels.jpg');
 }
- /*  this button is not in use
-button {
-    border-radius: 10%;
-    background-color: inherit;
-    border: solid 2px ;
-    font-size: large;
+/* code box colors for 'technical'
+ * #492F5B -- dark purple -- background
+ * #9AFC02 -- neon green -- text
+ * #C802FC -- neon purple -- border
+ */
+.code_box {
+  display: none;
+  white-space: pre-wrap;
+  background: #492F5B;
+  color: #9AFC02
+  border: solid 2px #C802FC;
+  font-family:monospace;
 }
 
-    button:hover {
-        background-color: #E4E7F2;
-    }
-  */
 
 .hidden_continue_btn {
   align-items: center;
@@ -231,6 +233,23 @@ ul, li {
     color: #424249;
     font-size: 2em;
 }
+
+/* code box colors for 'technical'
+ * #492F5B -- dark purple -- background
+ * #9AFC02 -- neon green -- text
+ * #C802FC -- neon purple -- border
+ */
+ .dark-theme {
+   display: none;
+   white-space: pre-wrap;
+   background: #492F5B;
+   color: #9AFC02;
+   border: solid 2px #C802FC;
+   font-family: monospace;
+   font-size: 2em;
+   padding-left: 5vw;
+ }
+
 
 .quiz_buttons {
   display: none;

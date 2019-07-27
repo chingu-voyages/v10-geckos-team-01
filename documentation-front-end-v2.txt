@@ -23,6 +23,7 @@ So far, a question's data is set up in this way:
   "correct_j": "c",
   "box_type_j": "multiple",
   "hint_j": "Do or do not, there is no try. -- Master Yoda",
+  "code_box_j": "some code(here)" --or "none",
   "answers_j": {
     "a": "True",
     "b": "False",
@@ -31,6 +32,8 @@ So far, a question's data is set up in this way:
   }
 
   A question can have one of two box_type_j's. "multiple" for multiple choice, and "TorF" for true or false.
+  Multiple choice now has the option of a code_box_j,  setQuizBoxType has been changed to check for the
+  booleans that will determine if a code_box should be displayed.  The text is added via the retrieve_JSON.
   Because the JavaScript file has declared variables of similar names as the items in the object, the
   " _j " was added to keep the JavaScript from having two identifiers with the same names.
 
@@ -55,7 +58,7 @@ So far, a question's data is set up in this way:
                in multiple choice:  a,b,c,d
                in true or false: True and False selections
                below the quiz_box the buttons for options to 'skip', 'previous', and 'hint'.
-               Hints were added 7-23-19               
+               Hints were added 7-23-19
                the continue_btn which is active on a correct answer so that the user may move on to the next question.
         loadCurrentQuestion(current_index)--
             This function uses the current_index (a declared variable set in setDOMconstants to 0) to control which question set is retrieved from jSON
@@ -80,11 +83,10 @@ So far, a question's data is set up in this way:
   This function will hide the continue_btn, the results, and the hint.  It then call loadCurrentQuestion(current_index).
   No checks are made to see if the items being hidden already have a display: none;
 
-  setQuizBoxType(multiple) --
-  This function uses the argument multiple, which is a boolean set in retrieve_JSON.  If more question types are added, this
-  will have to be changed to a case argument and if/else to check for which kind of box to render.
-  There are two displays controlled here,  the quiz_box which is for multiple choice, and the true_false_box which is for
-  true or false questions.
+  setQuizBoxType(multiple, code_inside) --
+  This function uses the argument multiple and code_inside, which are booleans set in retrieve_JSON.
+  There are three displays controlled here,  the quiz_box which is for multiple choice, and the true_false_box which is for
+  true or false questions.  The third is the multiple choice, with an added display of the code_box in html.
 
   displayHint, hide_element, show_element, load_quiz_buttons, show_continue_btn--
   These functions change the display of elements to hide, style.display = 'none';  or show the element according to design needs.
@@ -104,7 +106,8 @@ So far, a question's data is set up in this way:
   This function uses 'fetch' to grab our json_obj.json.  Inside the json file our object has an array for each quiz template.
   an if/else checks the localStorage for the variable that will tell json_obj which array to assign to the dict variable.
   from the dict, we grab the question in the list by index i.  (i = current_index atm).
-  The elements for the quiz_box are then assigned by what object is retrieved from the array.
+  if code_box_j = 'none',  the html code box will not be displayed.  Currently code box's are only available for multiple choice.
+  The elements for the quiz_box/true_false_box are then assigned by what object is retrieved from the array.
   object:
     (( first question from the basic quiz.))
     {
@@ -112,6 +115,7 @@ So far, a question's data is set up in this way:
       "correct_j": "c",
       "box_type_j": "multiple",
       "hint_j": "Do or do not, there is no try. --Master Yoda.",
+      "code_box_j": "some code here(to be written to HTML)" --or 'none' for no code
       "answers_j": {
         "a": "True",
         "b": "False",

@@ -80,17 +80,6 @@ body {
     background-repeat:no-repeat;
 }
 
-button {
-    border-radius: 10%;
-    background-color: #F7F7F9;
-    border: solid 2px #9B7346;
-    font-size: large;
-}
-
-    button:hover {
-        background-color: #E4E7F2;
-    }
-
 .title-head {
     text-align: center;
     background: #424249;
@@ -235,4 +224,42 @@ ul, li {
     margin-right: 25%;
     color: #89380A;
     font-size: 2em;
+}
+
+/* code box colors for 'technical'
+ * #492F5B -- dark purple -- background
+ * #9AFC02 -- neon green -- text
+ * #C802FC -- neon purple -- border
+ */
+ .dark-theme {
+   display: none;
+   white-space: pre-wrap;
+   background: #492F5B;
+   color: #9AFC02;
+   border: solid 2px #C802FC;
+   font-family: monospace;
+   font-size: 2em;
+   padding-left: 5vw;
+ }
+
+
+.quiz_buttons {
+  display: none;
+  flex-direction: row;
+  height: 12.5vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+
+}
+
+.quiz_buttons button {
+  width: 20vw;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  background: inherit;
+  border: 1px solid #054DF9;
+  box-shadow: 2px 2px 5px grey;
+  margin-right: 2vw;
 }
