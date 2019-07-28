@@ -227,3 +227,15 @@ img:hover {
   position: static;
   font-size: 1.5em;
 }
+
+.loggedin-container {
+  background: #424249;
+  position: absolute;
+  color: white;
+  font-size: 1em;
+  right: 5vw;
+  padding: 2px;
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+}
