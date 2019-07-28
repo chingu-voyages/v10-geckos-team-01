@@ -145,7 +145,7 @@
     "question_j": "Why are the quotation marks so important to coding languages? (code: Python)",
     "correct_j": "a",
     "box_type_j": "multiple",
-    "code_box_j": " x = 'Peanut Butter'\ndef check(x)\n    if x == 'Peanut Butter':\n        Warning = 'This contains peanuts'\n       print(Warning)",
+    "code_box_j": "x = 'Peanut Butter'\ndef check(x):\n    x = x.lower()\n    if 'peanut' in x:\n       Warning = 'This contains peanuts'\n       print(Warning)",
     "hint_j": "If typo's were bugs, I must have killed a million by now.",
     "answers_j": {
       "a": "Quotes make recognizing strings and characters in code easier for the computer and the coder.",
