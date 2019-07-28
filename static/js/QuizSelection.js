@@ -4,7 +4,19 @@
 // and json data determines the quiz questions.
 // json data is selected in the javascript by the variable 'WhichQuiz'
 const base_html = 'basicTerminology.html';
-
+let userlogged;
+let loggedelement;
+function check_log_status(){
+  let logged = window.localStorage.getItem('login');
+  if (logged == 'true') {
+    let element = document.getElementById('loggedOptions');
+    element.style.display = 'inline-block';
+  }
+  else {
+    let element = document.getElementById('loggedOptions');
+    element.style.display = 'none';
+  }
+}
 
 function load_one_html() {
     localStorage.setItem('cess_file', 'static/css/quiz.css');
@@ -37,5 +49,6 @@ window.onload = function() {
     let three_drop_link = document.getElementById("quizThree-dropdown");
     three_link.addEventListener('click', load_three_html);
     three_drop_link.addEventListener('click', load_three_html);
+    check_log_status();
 
 };

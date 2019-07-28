@@ -12,6 +12,7 @@ auth.onAuthStateChanged( user => {
     loggedInContainer.style.display = "flex"
     createAccount.style.display = "none"
     console.log('user is signed in')
+    window.localStorage.setItem('login', 'true')
     // for admins
     /*
     user.getIdTokenResult().then(idTokenResult => {
@@ -35,6 +36,7 @@ auth.onAuthStateChanged( user => {
     createAccount.style.display = ""
     logout.style.display = "none"
     // do something like hide elements if user is logged out
+    window.localStorage.setItem('login', 'false')
   }
 })
 
