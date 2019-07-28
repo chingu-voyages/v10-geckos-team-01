@@ -4,8 +4,8 @@
 // and json data determines the quiz questions.
 // json data is selected in the javascript by the variable 'WhichQuiz'
 const base_html = 'basicTerminology.html';
-let userlogged;
-let loggedelement;
+
+
 function check_log_status(){
   let logged = window.localStorage.getItem('login');
   if (logged == 'true') {
@@ -15,6 +15,7 @@ function check_log_status(){
   else {
     let element = document.getElementById('loggedOptions');
     element.style.display = 'none';
+    console.log("login is not true");
   }
 }
 

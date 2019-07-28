@@ -13,6 +13,7 @@ auth.onAuthStateChanged( user => {
     createAccount.style.display = "none"
     console.log('user is signed in')
     window.localStorage.setItem('login', 'true')
+    console.log(window.localStorage.getItem('login'));
     // for admins
     /*
     user.getIdTokenResult().then(idTokenResult => {
