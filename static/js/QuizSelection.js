@@ -6,18 +6,6 @@
 const base_html = 'basicTerminology.html';
 
 
-function check_log_status(){
-  let logged = window.localStorage.getItem('login');
-  if (logged == 'true') {
-    let element = document.getElementById('loggedOptions');
-    element.style.display = 'inline-block';
-  }
-  else {
-    let element = document.getElementById('loggedOptions');
-    element.style.display = 'none';
-    console.log("login is not true");
-  }
-}
 
 function load_one_html() {
     localStorage.setItem('cess_file', 'static/css/quiz.css');
@@ -49,7 +37,6 @@ window.onload = function() {
     let three_link = document.getElementById("quizThree");
     let three_drop_link = document.getElementById("quizThree-dropdown");
     three_link.addEventListener('click', load_three_html);
-    three_drop_link.addEventListener('click', load_three_html);
-    check_log_status();
+    three_drop_link.addEventListener('click', load_three_html);  
 
 };
