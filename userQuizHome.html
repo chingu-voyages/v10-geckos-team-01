@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Quiz</title>
+    <script src="https://kit.fontawesome.com/b570a31fd0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/quiz.css" />
+    <link rel="stylesheet" href="static/css/userQuizHome.css" />
+</head>
+<body>
+  <div style="background: #424249; height: 7vh; margin: 0; padding: 2px;">
+    <button class="nav-button"><a href="index.html"><i class="fas fa-home"></i></a></button>
+  </div>
+  <div class="title-head">
+    <h2>Your Custom Quiz Menu</h2>
+  </div>
+  <div class="menu-container">
+    <a href="addQuestions.html">Add a Question</a>
+    <a>Edit Your Questions</a>
+    <a>Take a Quiz</a>
+  </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-functions.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#config-web-app -->
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyBnSrtsjCgqOwFSIX9CPaJR1RkYUjjOuRo",
+    authDomain: "voyage10-geckos01-quizapp.firebaseapp.com",
+    databaseURL: "https://voyage10-geckos01-quizapp.firebaseio.com",
+    projectId: "voyage10-geckos01-quizapp",
+    // storageBucket: "",
+    // messagingSenderId: "251031078443",
+    appId: "1:251031078443:web:e6d99c1e8e0489df"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    //make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const functions = firebase.functions();
+    </script>
+    <script type="text/javascript" src="static/js/viewUserQuestions.js"></script>
+  </body>
+</html>

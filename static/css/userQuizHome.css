@@ -1,0 +1,8 @@
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 13vh;
+  border: 1px solid black;
+  justify-content: space-between;
+}
