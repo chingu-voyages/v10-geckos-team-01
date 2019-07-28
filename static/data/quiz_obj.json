@@ -140,6 +140,19 @@
       "T": "True, an empty string is stored basically as a string of length 0.",
       "F": "False, three inch strings for: Tying up very small parcels, attatching notes to pigeons' legs, uh, destroying household pests..."
     }
+  },
+  {
+    "question_j": "Why are the quotation marks so important to coding languages? (code: Python)",
+    "correct_j": "a",
+    "box_type_j": "multiple",
+    "code_box_j": " x = 'Peanut Butter'\ndef check(x)\n    if x == 'Peanut Butter':\n        Warning = 'This contains peanuts'\n       print(Warning)",
+    "hint_j": "If typo's were bugs, I must have killed a million by now.",
+    "answers_j": {
+      "a": "Quotes make recognizing strings and characters in code easier for the computer and the coder.",
+      "b": "I'm so sorry to anyone who can't eat a reeses peanut butter cup.",
+      "c": "If you're ever a ghost you have my full permission to posess me to eat a peanut butter cup.",
+      "d": "Why are there always empty Reese's packages by my bed when I wake up?"
+    }
   }
   ],
   "quizthree": [
@@ -191,6 +204,20 @@
         "b": "Defends against the Dementor's sadness.",
         "c": "if chocolate exists, is true, and is not 0/null/none, then perform eat on chocolate.",
         "d": "42"
+
+      }
+    },
+    {
+      "question_j": "What decade was the world wide web technology being produced by Tim Berners-Lee?",
+      "correct_j": "b",
+      "box_type_j": "multiple",
+      "code_box_j": "none",
+      "hint_j": "Decade of:  The Goonies, E.T., Gremlins, Aliens, The Princess Bride....",
+      "answers_j": {
+        "a": "1880s",
+        "b": "1980s",
+        "c": "1990s",
+        "d": "Where we're going, we don't need roads."
 
       }
     }
