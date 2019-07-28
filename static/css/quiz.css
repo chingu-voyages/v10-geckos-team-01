@@ -71,7 +71,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     margin: 0;
-    padding: 5vw;
+    padding: 10vw;
     width: 100vw;
     color: cornflowerblue;
     font-size: 1em;
@@ -203,7 +203,6 @@ ul, li {
     border: none;
     font-size: 2em;
     color: cornflowerblue;
-    padding: 5%;
 }
 
 .which_question {
