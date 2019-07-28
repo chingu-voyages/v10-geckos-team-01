@@ -1,0 +1,46 @@
+
+.questions-container {
+  display: none;
+  border: 1px solid gray;
+  padding: 1em;
+  /* display:grid; */
+  grid-template-rows: auto;
+}
+
+.topics-container {
+  border: 1px solid blue;
+  padding: 1em;
+  display:grid;
+  grid-template-rows: auto;
+}
+
+.form-container {
+  display: none;
+  background-color: pink;
+  width: 100%;
+}
+
+.input-field {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  width: 100%;
+}
+
+.question-item {
+  display: grid;
+  grid-template-columns: 85% 7.5% 7.5%;
+}
+.answer-choices-container {
+  display: none;
+}
+
+
+
+.answer-choices-container input {
+  display: block;
+}
+
+
+.goBack {
+  display: none;
+}
