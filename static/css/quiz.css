@@ -271,3 +271,28 @@ ul, li {
   box-shadow: 2px 2px 5px grey;
   margin-right: 2vw;
 }
+
+/* MH Additional Styles */
+
+.top-nav {
+  display: flex;
+  border: 1px solid purple;
+  background: #424249;
+  height: 7vh;
+  margin: 0;
+  padding: 2px;"
+}
+
+.right-subnav{
+  justify-self: end;
+  margin-left: auto;
+  color: #E4E7F2;
+  display: flex;
+}
+.user-message-container {
+  margin-right: 4vw;
+}
+
+.logout {
+  display: none;
+}
