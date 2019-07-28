@@ -83,6 +83,9 @@ So far, a question's data is set up in this way:
   This function will hide the continue_btn, the results, and the hint.  It then call loadCurrentQuestion(current_index).
   No checks are made to see if the items being hidden already have a display: none;
 
+  end_quiz() --
+  Hides all elements relating to the quiz portion, and shows items of the Congratulations display.
+
   setQuizBoxType(multiple, code_inside) --
   This function uses the argument multiple and code_inside, which are booleans set in retrieve_JSON.
   There are three displays controlled here,  the quiz_box which is for multiple choice, and the true_false_box which is for

@@ -264,11 +264,25 @@ function setQuizBoxType(multiple, code_inside) {
 /*
  *   end JSON  functions.
 */
+function end_quiz(){
+  hide_element(quiz_box);
+  hide_element(true_false_box);
+  hide_element(results);
+  hide_element(which_question);
+  hide_element(Quiz_question);
+  hide_element(quiz_buttons);
+  hide_element(continue_btn);
+  hide_element(h3Hint);
+  show_element(congrats);
+  show_element(image2_display);
+}
+
 
 function reset_question(){
   hide_element(results);
   hide_element(continue_btn);
   hide_element(h3Hint);
+  hide_element(code_box_display);
   loadCurrentQuestion(current_index);
 }
 
@@ -290,16 +304,7 @@ function check_answer(answer) {
         }
         else {
             //end quiz
-            hide_element(quiz_box);
-            hide_element(true_false_box);
-            hide_element(results);
-            hide_element(which_question);
-            hide_element(Quiz_question);
-            hide_element(quiz_buttons);
-            hide_element(continue_btn);
-            hide_element(h3Hint);
-            show_element(congrats);
-            show_element(image2_display);
+            end_quiz(); //<-- NEW 7-28-19 1:44am
         }
     }
     else {
