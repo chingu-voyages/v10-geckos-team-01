@@ -171,7 +171,7 @@ ul, li {
     margin-right: 10px;
     margin-top: 10%;
 }
-
+/* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
     border: none;
     display: inline-block;
@@ -184,7 +184,7 @@ ul, li {
     border: none;
     font-size: 2em;
     color:   #1c1952;
-    padding: 10px;
+    padding: 5%;
 }
 
 .which_question {
