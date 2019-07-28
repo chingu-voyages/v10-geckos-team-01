@@ -3,6 +3,19 @@ const greeting = document.querySelector('.welcome-message')
 const createAccount = document.querySelector('.drop-down-button-right')
 const loggedInContainer = document.querySelector('.loggedin-container')
 
+
+function check_log_status(){
+  let logged = window.localStorage.getItem('login');
+  if (logged == 'true') {
+    let element = document.getElementById('loggedOptions');
+    element.style.display = 'inline-block';
+  }
+  else {
+    let element = document.getElementById('loggedOptions');
+    element.style.display = 'none';
+    console.log("login is not true");
+  }
+}
 // check for state changes in auth
 // at moment, will only console log when user signs out
 auth.onAuthStateChanged( user => {
@@ -14,6 +27,7 @@ auth.onAuthStateChanged( user => {
     console.log('user is signed in')
     window.localStorage.setItem('login', 'true')
     console.log(window.localStorage.getItem('login'));
+    check_log_status()
     // for admins
     /*
     user.getIdTokenResult().then(idTokenResult => {
@@ -38,6 +52,7 @@ auth.onAuthStateChanged( user => {
     logout.style.display = "none"
     // do something like hide elements if user is logged out
     window.localStorage.setItem('login', 'false')
+    check_log_status();
   }
 })
 
