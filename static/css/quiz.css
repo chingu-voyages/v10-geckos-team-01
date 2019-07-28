@@ -63,6 +63,7 @@ a:hover {
     height: 7vh;
 }
 
+/* home of:  the question, which question, hint (code_box is outside this) */
 .head-box {
     background-color: whitesmoke;
     display: inline-block;
@@ -70,7 +71,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     margin: 0;
-    padding-right: 5vw;
+    padding: 5vw;
     width: 100vw;
     color: cornflowerblue;
     font-size: 1em;
