@@ -29,24 +29,24 @@
       </div>
       <div class="input-field">
         <label for="quesion-type">Question Type</label>
-          <select name="choices" id="question-type"/>
+        <div class="qType"></div>
+          <!-- <select name="choices" id="question-type"/>
             <option selected disabled hidden style='display: none' value=''>--choose a type--</option>
             <option value="multiple">Multiple Choice</option>
             <option value="TorF">True or False</option>
-          </select>
+          </select> -->
       </div>
       <div class="input-field">
         <label for="question">Question Text</label>
         <input type="text" id="question" required />
       </div>
-
+      <label class="answer-choice-label">Answer Choices</label>
       <div class="answer-choices-container">
         <!-- ANSWER CHOICES RENDERED HERE BY JS -->
-        <label>Answer Choices</label>
-        <input type="text" id="choice1" reqired/>
-        <input type="text" id="choice2" reqired/>
-        <input type="text" id="choice3" reqired/>
-        <input type="text" id="choice4" reqired/>
+          <input type="text" id="choice1" reqired/>
+          <input type="text" id="choice2" reqired/>
+          <input type="text" id="choice3" reqired/>
+          <input type="text" id="choice4" reqired/>
       </div>
       <div class="correct-answer-container input-field">
         <label for="correct-answer">Correct Answer</label>

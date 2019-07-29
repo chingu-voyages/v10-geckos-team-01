@@ -44,3 +44,13 @@
 .goBack {
   display: none;
 }
+
+.answer-choices-container {
+  flex-direction: column;
+  align-items: flex-end;
+  width: 70vw;
+}
+
+.answer-choices-container input {
+  width: 35vw;
+}
