@@ -102,6 +102,17 @@
         "c": "add description to code directly in the code without interfering",
         "d": "join together multiple arrays into one"
     }
+  },
+  {
+    "question_j": "The zero, in binary is a -low volatage signal, while the one is high-volatage (5 volts).",
+    "correct_j": "True",
+    "box_type_j": "TorF",
+    "code_box_j": "none",
+    "hint_j": "Electricity has no voltage if a circuit is off, and voltage if a circuit is on.",
+    "answers_j": {
+      "T": "True, just like an on/off signal,  this is why 0 is commonly a representation of False/null/None.",
+      "F": "False, Zero is a hero."
+    }
   }
 ],
   "quiztwo": [
@@ -219,6 +230,21 @@
         "c": "1990s",
         "d": "Where we're going, we don't need roads."
 
+      }
+    }
+  ],
+  "quizFour" : [
+    {
+      "question_j": "What is RAM?",
+      "correct_j": "a",
+      "box_type_j": "multiple",
+      "code_box_j": "none",
+      "hint_j": "This type of memory needs power to store data. It is temporary.",
+      "answers_j": {
+        "a": "Random Access Memory. With this, you can work on your word document, but if you turn off your computer without 'saving', the work is lost.",
+        "b": "Dodge?",
+        "c": "Readily Avaliable Microprocesses,  Kind of...  Don't pick this one.",
+        "d": "Where permenant data is stored in the Motherboard. --not this one either."
       }
     }
   ]
