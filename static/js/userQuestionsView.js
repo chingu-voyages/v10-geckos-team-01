@@ -67,8 +67,8 @@ const getQuestions = (topic) => {
     questions.forEach( d => {
       let div = `
         <div class="question-item" id="${d.ref.id.trim()}">${d.data().questionText}
-          <div class="edit">Edit</div>
-          <div class="delete">Delete</div>
+          <a class="edit">Edit</a>
+          <a class="delete">Delete</a>
         </div>
       `
       html += div
@@ -98,7 +98,7 @@ const addEditHandlers = () => {
       console.log(updateButton)
       let category = document.querySelector('#question-category')
       let qText = document.querySelector('#question')
-
+      let qType = document.querySelector('.qType')
       let correct = document.querySelector('#correct')
       db.collection('users').doc(auth.currentUser.uid).collection('questions').doc(qId)
       .get()
@@ -111,6 +111,7 @@ const addEditHandlers = () => {
         console.log('is the qType multiple ?' , doc.data().qType == 'multiple')
         if(doc.data().qType == 'multiple') {
           setFormMC()
+          qType.textContent = "Multiple"
           let choice1 = document.querySelector('#choice1')
           let choice2 = document.querySelector('#choice2')
           let choice3 = document.querySelector('#choice3')
@@ -123,6 +124,8 @@ const addEditHandlers = () => {
           [choice1, choice2, choice3, choice4].forEach( input => {
             input.value = ""
           })
+          qType.textContent = "True or False"
+          document.querySelector('.answer-choice-label').style.display = "none"
           document.querySelector('.answer-choices-container').style.display = "none"
         }
       })
@@ -187,14 +190,14 @@ const editHandler = () => {
 
 const setFormMC = () => {
   //if the question is MC, add the MC form inputs
-  let html = `<label>Answer Choices</label>
+  let html = `
         <input type="text" id="choice1" reqired/>
         <input type="text" id="choice2" reqired/>
         <input type="text" id="choice3" reqired/>
         <input type="text" id="choice4" reqired/>
         `
   let answerContainer = document.querySelector('.answer-choices-container')
-  answerContainer.style.display = "block"
+  answerContainer.style.display = "flex"
   answerContainer.innerHTML = html
 }
 

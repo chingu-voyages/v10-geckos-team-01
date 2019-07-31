@@ -2,7 +2,11 @@
 .menu-container {
   display: flex;
   flex-direction: column;
-  height: 13vh;
+  height: auto;
   border: 1px solid black;
   justify-content: space-between;
+}
+
+.topic-container{
+  display: none;
 }

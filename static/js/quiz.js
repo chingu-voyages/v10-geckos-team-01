@@ -42,15 +42,69 @@ let instructions;
 let image2_display;
 let congrats;
 
+let takeUserQuiz // boolean
 
+// get user questinos from local Storage
+function getUserQuestions(i) {
+  if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
+    takeUserQuiz = true
+    console.log('we have a user quiz!')
+    dict = JSON.parse(localStorage.getItem('userQuizObj'))
+  }
+  questions = dict[i];
+  var fetchedQuestion = questions.questionText;
+  json_question = fetchedQuestion;
+  var fetchedCorrect = questions.answer // note diff key name
+  correct = fetchedCorrect;
+  var fetchedAnswer = questions.choices // note diff key name
+  json_answer = fetchedAnswer;
+  var fetchedHint = "to be added later" // need to add to firestore
+  hint = fetchedHint;   //<------- NEW
+  var ques_num = i + 1;
+  var message = "Question number:  " + " " + ques_num;
+  which_question.innerHTML = message;
+  which_question.style.display = 'inline';
+  Quiz_question.innerHTML = json_question;
+  //console.log("Quiz_question=")
+  var fetchedBoxType = questions.qType;
+  box_type = fetchedBoxType;
+  var fetchedCodeBox = "none";
+  code_box = fetchedCodeBox;
+    if (box_type == "multiple") {
+        if (code_box == 'none'){
+          setQuizBoxType(true, false);
+          let options = json_answer;
+          // question chioces represented by Array in Firestore
+          answer_a.innerHTML = options[0];
+          answer_b.innerHTML = options[1];
+          answer_c.innerHTML = options[2];
+          answer_d.innerHTML = options[3];
+        }
+
+        else {
+          setQuizBoxType(true, true);
+          let options = json_answer;
+          code_box_display.innerHTML = code_box;
+          console.log(options);
+          answer_a.innerHTML = options[0];
+          answer_b.innerHTML = options[1];
+          answer_c.innerHTML = options[2];
+          answer_d.innerHTML = options[3];
+
+        }
+    }
+    else  {
+        setQuizBoxType(false, false);
+        let options = json_answer;
+        console.log(options);
+        answer_T.innerHTML = options[0];
+        answer_F.innerHTML = options[1];
+    }
+};
 
 
 //removed all old functions.  Json holds our data now.
-
-
 function retrieve_JSON(i) {
-
-
     return fetch('static/data/quiz_obj.json')
         .then(response => {
             console.log("getting json response...")
@@ -99,6 +153,7 @@ function retrieve_JSON(i) {
             if(which_quiz == 'three'){
               dict = data.quizthree;
             }
+
             questions = dict[i];
             console.log("array length:");
             console.log(dict.length);
@@ -210,7 +265,12 @@ function setDOMconstants() {
 
 
 function loadCurrentQuestion(i) {
-    retrieve_JSON(i);
+  // if user has their own questions loaded, get those
+  if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
+      getUserQuestions(i)
+  } else {
+    retrieve_JSON(i)
+  }
 };
 
 function hide_element(element) {
@@ -317,8 +377,13 @@ function check_answer(answer) {
 
 
 function set_current_answer() {
+  if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
+    current_answer = this.nextElementSibling.textContent
+    console.log(current_answer)
+  } else {
     current_answer = this.id;
-    check_answer(current_answer);
+  }
+  check_answer(current_answer);
 };
 
 function presentOption() {
