@@ -58,7 +58,7 @@ const linkHandler = (e) => {
       })
       data = JSON.stringify(jsonObj)
       localStorage.setItem('userQuizObj', data)
-
+      window.location = 'basicTerminology.html'
   	 })
      .catch( error => console.log(error.message) )
 
