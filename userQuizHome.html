@@ -20,7 +20,10 @@
   <div class="menu-container">
     <a href="addQuestions.html">Add a Question</a>
     <a href="userQuestionsView.html">Edit Your Questions</a>
-    <a>Take a Quiz</a>
+    <a id="take-quiz">Take a Quiz</a>
+    <div class="topic-container">
+
+    </div>
   </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
@@ -48,6 +51,6 @@
     const db = firebase.firestore();
     const functions = firebase.functions();
     </script>
-    <script type="text/javascript" src="static/js/viewUserQuestions.js"></script>
-  </body>
+    <script type="text/javascript" src="static/js/userQuizHome.js"></script>
+</body>
 </html>
