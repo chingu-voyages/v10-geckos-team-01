@@ -49,7 +49,7 @@ function getUserQuestions(i) {
   if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
     takeUserQuiz = true
     console.log('we have a user quiz!')
-    dict = JSON.parse(localStorage.getItem('userQuizObj'))
+    dict = JSON.parse(window.localStorage.getItem('userQuizObj'))
   }
   questions = dict[i];
   var fetchedQuestion = questions.questionText;
