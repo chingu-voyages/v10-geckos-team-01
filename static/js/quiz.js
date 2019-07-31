@@ -46,8 +46,9 @@ let takeUserQuiz // boolean
 
 // get user questinos from local Storage
 function getUserQuestions(i) {
-  if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
+  if(JSON.parse(localStorage.getItem('userQuizObj'))) {
     takeUserQuiz = true
+
     console.log('we have a user quiz!')
     dict = JSON.parse(localStorage.getItem('userQuizObj'))
   }
@@ -266,7 +267,7 @@ function setDOMconstants() {
 
 function loadCurrentQuestion(i) {
   // if user has their own questions loaded, get those
-  if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
+  if(JSON.parse(localStorage.getItem('userQuizObj'))) {
       getUserQuestions(i)
   } else {
     retrieve_JSON(i)
@@ -333,6 +334,7 @@ function end_quiz(){
   hide_element(quiz_buttons);
   hide_element(continue_btn);
   hide_element(h3Hint);
+  hide_element(code_box_display);
   show_element(congrats);
   show_element(image2_display);
 }
@@ -376,7 +378,7 @@ function check_answer(answer) {
 
 
 function set_current_answer() {
-  if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
+  if(JSON.parse(localStorage.getItem('userQuizObj'))) {
     current_answer = this.nextElementSibling.textContent
     console.log(current_answer)
   } else {
