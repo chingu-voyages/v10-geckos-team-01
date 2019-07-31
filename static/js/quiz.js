@@ -273,6 +273,7 @@ function end_quiz(){
   hide_element(quiz_buttons);
   hide_element(continue_btn);
   hide_element(h3Hint);
+  hide_element(code_box_display);
   show_element(congrats);
   show_element(image2_display);
 }
