@@ -105,8 +105,7 @@ function getUserQuestions(i) {
 
 //removed all old functions.  Json holds our data now.
 function retrieve_JSON(i) {
-  // static/data/quiz_obj.json  static/data/quiz_obj.json
-    return fetch('https://github.com/chingu-voyages/v10-geckos-team-01/blob/master/static/data/quiz_obj.json')
+    return fetch('static/data/quiz_obj.json')
         .then(response => {
             console.log("getting json response...")
             return response.json()
