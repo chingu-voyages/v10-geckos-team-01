@@ -46,13 +46,13 @@ let takeUserQuiz // boolean
 
 // get user questinos from local Storage
 function getUserQuestions(i) {
-  let local_quiz = window.localStorage.getItem('userQuizobj');
+  let local_quiz = localStorage.getItem('userQuizobj');
   console.log(local_quiz)
-  if(JSON.parse(window.localStorage.getItem('userQuizObj')).length >= 1) {
+  if(JSON.parse(localStorage.getItem('userQuizObj')).length >= 1) {
     takeUserQuiz = true
 
     console.log('we have a user quiz!')
-    dict = JSON.parse(window.localStorage.getItem('userQuizObj'))
+    dict = JSON.parse(localStorage.getItem('userQuizObj'))
   }
   questions = dict[i];
   var fetchedQuestion = questions.questionText;
