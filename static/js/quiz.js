@@ -48,6 +48,7 @@ let takeUserQuiz // boolean
 function getUserQuestions(i) {
   if(JSON.parse(localStorage.getItem('userQuizObj'))) {
     takeUserQuiz = true
+
     console.log('we have a user quiz!')
     dict = JSON.parse(window.localStorage.getItem('userQuizObj'))
   }

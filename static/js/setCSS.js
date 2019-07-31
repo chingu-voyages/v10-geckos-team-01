@@ -2,7 +2,7 @@
 // set a css for the basic html template of quiz
 function set_css() {
     try {
-        let newcss = localStorage.getItem('cess_file');
+        let newcss = window.localStorage.getItem('cess_file');
         var head = document.getElementsByTagName('head')[0];
         var link = document.createElement('link');
         link.rel = 'stylesheet';
