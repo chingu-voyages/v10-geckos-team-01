@@ -27,6 +27,15 @@ i {
 }
 
 
+#give_hint {
+  background-color:  inherit;
+  font-family: inherit;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+}
 .line {
     margin: 0;
     padding: 0;

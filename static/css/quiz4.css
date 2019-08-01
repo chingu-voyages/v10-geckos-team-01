@@ -197,6 +197,15 @@ i {
     display: none;
 }
 
+#give_hint {
+  background-color:  #142873;
+  font-family: inherit;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
 .results {
     color: #F0F6F5;
     text-align: center;
@@ -209,7 +218,7 @@ i {
 .true_false {
     display: none;
     background-color: rgba(29, 36, 99, 0.9);
-    border: 5px solid #B70514;
+    border: 5px solid blue;
     width: 95vw;
     margin-right: 10px;
     margin-top: 10%;
@@ -278,7 +287,7 @@ i {
 
 .continue_btn {
   display: none;
-  background: inherit;
+  background: #150a1d;
   margin: 0 auto;
   border: 1px solid #054DF9;
   box-shadow: 2px 2px 5px grey;
@@ -308,6 +317,7 @@ i {
     margin-left: 25%;
     margin-right: 25%;
     color: #E5E7F1;
+    background-color: #150a1d;
     font-size: 2em;
     font-family: inherit;
 }
