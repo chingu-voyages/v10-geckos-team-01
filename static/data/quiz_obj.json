@@ -279,7 +279,7 @@
   },
   {
     "question_j": "What does the x equal at the last line of this code?(Python)",
-    "correct_j": "a",
+    "correct_j": "d",
     "box_type_j": "multiple",
     "code_box_j": "class Dog(object):\n    def __init__(self):\n        self.name = 'Fred'\nx=Dog()",
     "hint_j": "A Python object is like a Tupperware.  It is labled, and holds all it's components inside.",
