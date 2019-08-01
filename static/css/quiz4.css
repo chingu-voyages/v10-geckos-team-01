@@ -198,6 +198,10 @@ i {
 }
 
 #give_hint {
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+  width: 75vw;
+  font-size: 1.7em;
   background-color:  #142873;
   font-family: inherit;
   text-align: center;
@@ -294,6 +298,7 @@ i {
   width: 33vw;
   font-size: 2em;
   font-family: inherit;
+  color: #E5E7F1;
 }
 
 
