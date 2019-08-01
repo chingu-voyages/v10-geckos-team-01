@@ -167,6 +167,30 @@
       "c": "If you're ever a ghost you have my full permission to posess me to eat a peanut butter cup.",
       "d": "Why are there always empty Reese's packages by my bed when I wake up?"
      }
+   },
+   {
+     "question_j": "An integer can be stored in a string, and you CAN perform math on it.",
+     "correct_j": "False",
+     "box_type": "TorF",
+     "code_box": "none",
+     "hint_j": "string and integer are two very different things in computer processing.",
+     "answers_j": {
+       "T": "True, one plus two equals five yes?",
+       "F": "False, math can be performed on many integer types, but a string is not one of those."
+     }
+   },
+   {
+     "question_j": "Character encoding can do many things, What will the returned string (x) be in this code?(Python)",
+     "correct_j": "c",
+     "box_type_j": "multiple",
+     "code_box_j": "def encode_it(a_string):\n    #reverse the string\n    new = a_string[::-1]\n    return new\nx = encode_it('password')",
+     "hint_j": " What the [::-1] does is make a new string starting from the last item, stepping through (right to left) to the first.",
+     "answers_j": {
+       "a": "Dubstep",
+       "b": "Drow fra Bisina.",
+       "c": "drowssap",
+       "d": "#seeItatTheSeaShore"
+     }
    }
   ],
   "quizthree": [
