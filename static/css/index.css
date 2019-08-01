@@ -215,7 +215,9 @@ img:hover {
   background-repeat: no-repeat;
 }
 
-a[tip]:hover:after {
+a.tip:hover {
+  display: block;
+  z-index: auto;
   font-size: 2em;
   padding: 5px;
 }
