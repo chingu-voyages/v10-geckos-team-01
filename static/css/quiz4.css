@@ -35,12 +35,27 @@ main {
   color: #E5E7F1;
 }
 
+
+ul, li {
+    border: none;
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 5vw;
+    color: #E5E7F1;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+i {
+  color: white;
+}
+
 .line {
     margin: 0;
     padding: 0;
     width: 92vw;
     margin-left: 10px;
-    border: 2px groove  #f74aa3;
+    border: 2px groove #150a1d;
 }
 
 .link-box {
@@ -64,9 +79,6 @@ main {
   content: "Data, the DRIVE behind the drive.";
 }
 
-i {
-  color: white;
-}
 
 .image_displays {
   display: none;
@@ -162,13 +174,6 @@ i {
     justify-content: space-around;
 }
 
-ul, li {
-    border: none;
-    list-style-type: none;
-    display: inline-block;
-    padding-left: 5vw;
-    color: red;
-}
 
 .Instructions {
     display: inline-block;
