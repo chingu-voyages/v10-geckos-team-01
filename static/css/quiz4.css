@@ -203,20 +203,22 @@ ul, li {
 
 .true_false {
     display: none;
-    background-color:  rgba(29, 36, 99, 0.9);
-    border: 5px solid  #B70514;
-    width: 95vw;
-    margin-right: 10px;
-    margin-top: 10%;
-}
-
-.quiz_box {
-    display: none;
-    background-color:  rgba(29, 36, 99, 0.9);
+    background-color: rgba(29, 36, 99, 0.9);
     border: 5px solid #B70514;
     width: 95vw;
     margin-right: 10px;
     margin-top: 10%;
+    color: #E5E7F1;
+}
+
+.quiz_box {
+    display: none;
+    background-color: rgba(29, 36, 99, 0.9);
+    border: 5px solid #B70514;
+    width: 95vw;
+    margin-right: 10px;
+    margin-top: 10%;
+    color: #E5E7F1;
 }
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
@@ -302,8 +304,9 @@ ul, li {
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
-    color: #4a106f;
+    color: #E5E7F1;
     font-size: 2em;
+    font-family: inherit;
 }
 
 .quiz_buttons {
@@ -326,4 +329,5 @@ ul, li {
   box-shadow: 2px 2px 5px grey;
   margin-right: 2vw;
   font-family: inherit;
+  color: white;
 }
