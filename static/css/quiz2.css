@@ -13,6 +13,19 @@ body {
     background-color: #EEDFC9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+i {
+  color: white;
+}
+
+#give_hint {
+  background-color: inherit;
+  font-family: inherit;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
 
 .line {
     margin: 0;

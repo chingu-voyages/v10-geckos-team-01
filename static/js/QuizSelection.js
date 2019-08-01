@@ -24,6 +24,12 @@ function load_three_html() {
     window.location = base_html;
 
 }
+function load_four_html(){
+  localStorage.setItem('cess_file', 'static/css/quiz4.css')
+  localStorage.setItem('WhichQuiz', 'four');
+  window.location = base_html;
+
+}
 
 window.onload = function() {
     let one_link = document.getElementById("quizOne");
@@ -37,6 +43,10 @@ window.onload = function() {
     let three_link = document.getElementById("quizThree");
     let three_drop_link = document.getElementById("quizThree-dropdown");
     three_link.addEventListener('click', load_three_html);
-    three_drop_link.addEventListener('click', load_three_html);  
+    three_drop_link.addEventListener('click', load_three_html);
+    let four_link = document.getElementById("quizFour");
+    let four_drop_link = document.getElementById("quizFour-dropdown");
+    four_link.addEventListener('click', load_four_html);
+    four_drop_link.addEventListener('click', load_four_html);
 
 };

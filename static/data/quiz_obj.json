@@ -76,6 +76,7 @@
       "T": "True, some methods are simple recipes, some are highly complex data manipulation.",
       "F": "False, Logically if she weighs the same as a duck, she's made of wood!"
     }
+
   },
   {
     "question_j": "How would you describe a recursive function?",
@@ -89,6 +90,7 @@
       "c": "a function that calls itself until a base case is met",
       "d": "a function that loops all day everyday"
     }
+
   },
     {
       "question_j": "Regular expressions help us do what?",
@@ -102,6 +104,7 @@
         "c": "add description to code directly in the code without interfering",
         "d": "join together multiple arrays into one"
     }
+
   },
   {
     "question_j": "The zero, in binary is a -low volatage signal, while the one is high-volatage (5 volts).",
@@ -113,6 +116,7 @@
       "T": "True, just like an on/off signal,  this is why 0 is commonly a representation of False/null/None.",
       "F": "False, Zero is a hero."
     }
+
   }
 ],
   "quiztwo": [
@@ -139,8 +143,7 @@
         "T": "While the exact data structure may be different on a given machine, it is an array type structure.",
         "F": "If a string is stored as an array, how come my spell check always wants to correct it to -duck-?"
       }
-    }
-  ,
+    },
   {
     "question_j": "You can store characters, numbers, symbols in a string and a string can even be empty.",
     "correct_j": "True",
@@ -150,9 +153,9 @@
     "answers_j": {
       "T": "True, an empty string is stored basically as a string of length 0.",
       "F": "False, three inch strings for: Tying up very small parcels, attatching notes to pigeons' legs, uh, destroying household pests..."
-    }
-  },
-  {
+     }
+   },
+ {
     "question_j": "Why are the quotation marks so important to coding languages? (code: Python)",
     "correct_j": "a",
     "box_type_j": "multiple",
@@ -163,8 +166,32 @@
       "b": "I'm so sorry to anyone who can't eat a reeses peanut butter cup.",
       "c": "If you're ever a ghost you have my full permission to posess me to eat a peanut butter cup.",
       "d": "Why are there always empty Reese's packages by my bed when I wake up?"
-    }
-  }
+     }
+   },
+   {
+     "question_j": "An integer can be stored in a string, and you CAN perform math on it.",
+     "correct_j": "False",
+     "box_type": "TorF",
+     "code_box": "none",
+     "hint_j": "string and integer are two very different things in computer processing.",
+     "answers_j": {
+       "T": "True, one plus two equals five yes?",
+       "F": "False, math can be performed on many integer types, but a string is not one of those."
+     }
+   },
+   {
+     "question_j": "Character encoding can do many things, What will the returned string (x) be in this code?(Python)",
+     "correct_j": "c",
+     "box_type_j": "multiple",
+     "code_box_j": "def encode_it(a_string):\n    #reverse the string\n    new = a_string[::-1]\n    return new\nx = encode_it('password')",
+     "hint_j": " What the [::-1] does is make a new string starting from the last item, stepping through (right to left) to the first.",
+     "answers_j": {
+       "a": "Dubstep",
+       "b": "Drow fra Bisina.",
+       "c": "drowssap",
+       "d": "#seeItatTheSeaShore"
+     }
+   }
   ],
   "quizthree": [
     {
@@ -180,7 +207,7 @@
         "d": "The list/array has 10 items in it, so I try to loop through index 1 - 10."
       }
     },
-    {
+  {
       "question_j": "A low level computer language simplified definition:",
       "correct_j": "a",
       "box_type_j": "multiple",
@@ -193,7 +220,7 @@
         "d": "Within the code written by the user are many hidden processes the computer must translate without the coder's knowledge."
       }
     },
-    {
+  {
       "question_j": "An if statement checks whether a given variable of some type, is existent, True, of some specified value.",
       "correct_j": "True",
       "box_type_j": "TorF",
@@ -204,7 +231,7 @@
         "F": "False, An if statement only qualifies wether an argument is plausible and deniable."
       }
     },
-    {
+  {
       "question_j": "What do you think this code (JavaScript) does?",
       "correct_j": "c",
       "box_type_j": "multiple",
@@ -218,7 +245,7 @@
 
       }
     },
-    {
+  {
       "question_j": "What decade was the world wide web technology being produced by Tim Berners-Lee?",
       "correct_j": "b",
       "box_type_j": "multiple",
@@ -233,7 +260,7 @@
       }
     }
   ],
-  "quizFour" : [
+  "quizfour" : [
     {
       "question_j": "What is RAM?",
       "correct_j": "a",
@@ -245,7 +272,47 @@
         "b": "Dodge?",
         "c": "Readily Avaliable Microprocesses,  Kind of...  Don't pick this one.",
         "d": "Where permenant data is stored in the Motherboard. --not this one either."
-      }
+
+     }
+   },
+  {
+      "question_j": "What is a linked list?",
+      "correct_j": "c",
+      "box_type_j": "multiple",
+      "code_box_j": "none",
+      "hint_j": "It's almost literal, data is linked.",
+      "answers_j": {
+        "a": "The grocery list, but you can't get to the next item you need until the first one is in the cart.",
+        "b": "Start -->  middle ---> End",
+        "c": "Pieces of data that are joined by their reference(pointer) to the next or previous piece of data. (Sometimes both.)",
+        "d": "Sounds like something for a tech interview."
+
     }
-  ]
+  },
+  {
+    "question_j": "A Queue is First in - First out, while a Stack is Last-in - First-out",
+    "correct_j": "True",
+    "box_type_j": "TorF",
+    "code_box_j": "none",
+    "hint_j": "Standing in line at the bank, is a Queue. Going through a pile of books, by grabbing the top one is a stack.",
+    "answers_j": {
+      "T": "True, Sometimes keeping data in these kinds of structures is for the specific order involved in either one.",
+      "F": "False, I can't think of any way to joke about Queue's and Stacks."
+
+    }
+  },
+  {
+    "question_j": "What does the x equal at the last line of this code?(Python)",
+    "correct_j": "d",
+    "box_type_j": "multiple",
+    "code_box_j": "class Dog(object):\n    def __init__(self):\n        self.name = 'Fred'\nx=Dog()",
+    "hint_j": "A Python object is like a Tupperware.  It is labled, and holds all it's components inside.",
+    "answers_j": {
+      "a": "x is 5?",
+      "b": "x is not defined.",
+      "c": "x is a cat",
+      "d": "x is a Dog object that has the name Fred."
+     }
+   }
+ ]
 }

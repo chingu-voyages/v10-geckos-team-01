@@ -22,8 +22,20 @@ img{
   background-size: cover;
   background-repeat:no-repeat;
 }
+i {
+  color: white;
+}
 
 
+#give_hint {
+  background-color:  inherit;
+  font-family: inherit;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+}
 .line {
     margin: 0;
     padding: 0;
@@ -71,7 +83,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     margin: 0;
-    padding: 10vw;
+    padding: 10px;
     width: 100vw;
     color: cornflowerblue;
     font-size: 1em;

@@ -38,9 +38,11 @@ let code_box_display; //<-- NEW
 let image1_display;
 let start_button;
 let instructions;
+
 //items to display at end of quiz ----
 let image2_display;
 let congrats;
+
 
 let takeUserQuiz // boolean
 
@@ -158,6 +160,9 @@ function retrieve_JSON(i) {
             if(which_quiz == 'three'){
               dict = data.quizthree;
             }
+            if(which_quiz == 'four'){
+              dict = data.quizfour;
+            }
 
             questions = dict[i];
             console.log("array length:");
@@ -268,6 +273,25 @@ function setDOMconstants() {
 
 };
 
+function add_alt_to_images() {
+
+  if(which_quiz == 'one'){
+    image1_display.setAttribute("alt", "Close up image of a keyboard with light up blue keys in the dark");
+    image2_display.setAttribute("alt", "Cheering after a difficult hike.")
+  }
+  if(which_quiz == 'two'){
+    image1_display.setAttribute("alt", "Books spiraling down and inward, most pages open, some covers showing.");
+    image2_display.setAttribute("alt", "A book open in display of its butterfly-ing pages.")
+  }
+  if(which_quiz == 'three'){
+    image1_display.setAttribute("alt", "An older device used for displaying dates/times mechanically.");
+    image2_display.setAttribute("alt", "People celebrating after a long journey.");
+  }
+  if(which_quiz == 'four'){
+    image1_display.setAttribute("alt", "Data, the drive behind the drive.");
+    image2_display.setAttribute("alt", "A PowerShell prompt saying congratulations!")
+  }
+}
 
 function loadCurrentQuestion(i) {
   // if user has their own questions loaded, get those

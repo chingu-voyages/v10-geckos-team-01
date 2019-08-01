@@ -58,7 +58,7 @@ img{
   left: 0;
   padding: 2px;
   font-size: 2em;
-  width: 25vw;
+  width: 45vw;
 }
 
 .drop-down-button:hover .drop-down-links{ display: block; }
@@ -213,6 +213,11 @@ img:hover {
   border: solid 8px cornflowerblue;
   background: cover;
   background-repeat: no-repeat;
+}
+
+a.title {
+  font-size: 2em;
+  padding: 5px;
 }
 
 .link-in a{
