@@ -214,11 +214,11 @@ ul, li {
 .quiz_box {
     display: none;
     background-color: rgba(29, 36, 99, 0.9);
-    border: 5px solid #B70514;
+    border: 5px solid blue;
     width: 95vw;
     margin-right: 10px;
     margin-top: 10%;
-    color: #E5E7F1;
+    color: white;
 }
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
@@ -270,6 +270,7 @@ ul, li {
   justify-content: center;
   width: 99vw;
 }
+
 .continue_btn {
   display: none;
   background: inherit;
@@ -281,9 +282,6 @@ ul, li {
   font-family: inherit;
 }
 
-.if_no_image {
-  display: none;
-}
 
 .end_quiz {
     display: none;
@@ -324,7 +322,7 @@ ul, li {
   height: 100%;
   text-align: center;
   justify-content: center;
-  background: inherit;
+  background: rgba(29, 36, 99, 0.8);
   border: 1px solid #054DF9;
   box-shadow: 2px 2px 5px grey;
   margin-right: 2vw;
