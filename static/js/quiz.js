@@ -157,7 +157,7 @@ function retrieve_JSON(i) {
               dict = data.quizthree;
             }
             if(which_quiz) == 'four'){
-              dict= data.quizfour;
+              dict = data.quizfour;
             }
 
             questions = dict[i];
