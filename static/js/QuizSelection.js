@@ -44,5 +44,9 @@ window.onload = function() {
     let three_drop_link = document.getElementById("quizThree-dropdown");
     three_link.addEventListener('click', load_three_html);
     three_drop_link.addEventListener('click', load_three_html);
+    let four_link = document.getElementById("quizFour");
+    let four_drop_link = document.getElementById("quizFour-dropdown");
+    four_link.addEventListener('click', load_four_html);
+    four_drop_link.addEventListener('click', load_four_html);
 
 };
