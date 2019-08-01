@@ -13,6 +13,9 @@ body {
     background-color: #EEDFC9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+i {
+  color: white;
+}
 
 .line {
     margin: 0;

@@ -85,7 +85,7 @@ i {
 }
 
 .head-box {
-    background-color: whitesmoke;
+    background-color: rgba(29, 36, 99, 0.9);
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -93,8 +93,10 @@ i {
     margin: 0;
     padding-right: 5vw;
     width: 100vw;
-    color: cornflowerblue;
+    color: white;
+    font-family: inherit;
     font-size: 1em;
+    text-shadow: 2px 2px 2px black;
 }
 
 .start {
@@ -206,7 +208,7 @@ ul, li {
 
 .quiz_box {
     display: none;
-    background-color:  inherit;
+    background-color:  rgba(29, 36, 99, 0.9);
     border: 5px solid #B70514;
     width: 95vw;
     margin-right: 10px;
@@ -225,7 +227,7 @@ ul, li {
     display: inline;
     border: none;
     font-size: 2em;
-    color: #E5E7F1;
+    color: #F0F6F5;
     padding: 5%;
     text-shadow: 2px 2px 2px black;
 }
@@ -250,7 +252,7 @@ ul, li {
   height: 100%;
   text-align: center;
   justify-content: center;
-  background: inherit;
+  background: rgba(29, 36, 99, 0.8);
   border: 1px solid #E5E7F1;
   box-shadow: 2px 2px 5px grey;
   margin-right: 2vw;
