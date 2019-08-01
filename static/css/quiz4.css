@@ -30,6 +30,10 @@ body {
     font-family: 'VT323', monospace;
     color: #E5E7F1;
 }
+main {
+  font-family: 'VT323', monospace;
+  color: #E5E7F1;
+}
 
 .line {
     margin: 0;
@@ -199,7 +203,7 @@ ul, li {
 
 .true_false {
     display: none;
-    background-color:  inherit;
+    background-color:  rgba(29, 36, 99, 0.9);
     border: 5px solid  #B70514;
     width: 95vw;
     margin-right: 10px;
@@ -227,7 +231,7 @@ ul, li {
     display: inline;
     border: none;
     font-size: 2em;
-    color: #F0F6F5;
+    color: white;
     padding: 5%;
     text-shadow: 2px 2px 2px black;
 }
