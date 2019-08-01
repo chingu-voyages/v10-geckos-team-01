@@ -28,6 +28,8 @@ auth.onAuthStateChanged( user => {
     window.localStorage.setItem('login', 'true')
     console.log(window.localStorage.getItem('login'));
     check_log_status()
+    // clear user quiz assuming user leaves the quiz page
+    clearUserQuizState()
     // for admins
     /*
     user.getIdTokenResult().then(idTokenResult => {
@@ -64,3 +66,7 @@ logout.addEventListener('click', (e) => {
         console.log('Sign Out Event: user has signed out!')
       })
   })
+
+const clearUserQuizState = () => {
+  localStorage.removeItem('userQuizObj')
+}

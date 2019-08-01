@@ -59,6 +59,7 @@ const linkHandler = (e) => {
       data = JSON.stringify(jsonObj)
       localStorage.setItem('userQuizObj', data)
       localStorage.setItem('cess_file', 'static/css/quiz.css')
+
       location = 'basicTerminology.html'
   	 })
      .catch( error => console.log(error.message) )
