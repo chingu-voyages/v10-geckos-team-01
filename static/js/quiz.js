@@ -46,6 +46,7 @@ let takeUserQuiz // boolean
 
 // get user questinos from local Storage
 function getUserQuestions(i) {
+
   if(JSON.parse(localStorage.getItem('userQuizObj'))) {
     takeUserQuiz = true
 
@@ -106,9 +107,12 @@ function getUserQuestions(i) {
 
 //removed all old functions.  Json holds our data now.
 function retrieve_JSON(i) {
-    return fetch('static/data/quiz_obj.json')
+  // json bin  https://api.jsonbin.io/b/5d422060e6d0051e2a737a17
+  // github (depoloyment only) static/data/quiz_obj.json
+    return fetch('/static/data/quiz_obj.json')
         .then(response => {
             console.log("getting json response...")
+            console.log(response.json())
             return response.json()
         })
         .then(data => {
@@ -470,3 +474,9 @@ function start_quiz() {
 
 // load it up using a start button to set all the values.
 // that way all elements are loaded before we modify them.
+
+//MH create listener so local storage knows when to remove user quiz from local Storage
+// after visiting user quiz and picking quiz to take, user will be directed
+// to basicTerminology page, set a local storage item to be true for user quiz
+// in progress and then keep true if we go to basicTerminology page
+// once we leave that page, the user quiz object should clear

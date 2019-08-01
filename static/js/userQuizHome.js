@@ -58,13 +58,9 @@ const linkHandler = (e) => {
       })
       data = JSON.stringify(jsonObj)
       localStorage.setItem('userQuizObj', data)
-<<<<<<< HEAD
-      localStorage.setItem('cess_file', 'static/css/quiz2.css')
-      window.location = 'basicTerminology.html'
-=======
       localStorage.setItem('cess_file', 'static/css/quiz.css')
+
       location = 'basicTerminology.html'
->>>>>>> b20b90b11e69fdbbac7cb7d293c1ed82d77a7908
   	 })
      .catch( error => console.log(error.message) )
 
