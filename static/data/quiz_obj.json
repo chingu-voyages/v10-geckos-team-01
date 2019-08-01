@@ -246,6 +246,29 @@
         "c": "Readily Avaliable Microprocesses,  Kind of...  Don't pick this one.",
         "d": "Where permenant data is stored in the Motherboard. --not this one either."
       }
+    },
+    {
+      "question_j": "What is a linked list?",
+      "correct_j": "c",
+      "box_type_j": "multiple",
+      "code_box_j": "none",
+      "hint_j": "It's almost literal, data is linked.",
+      "answers_j": {
+        "a": "The grocery list, but you can't get to the next item you need until the first one is in the cart.",
+        "b": "Start -->  middle ---> End",
+        "c": "Pieces of data that are joined by their reference(pointer) to the next or previous piece of data. (Sometimes both.)",
+        "d": "Sounds like something for a tech interview."
     }
+  },
+  {
+    "question_j": "A Queue is First in - First out, while a Stack is Last-in - First-out",
+    "correct_j": "True",
+    "box_type_j": "TorF",
+    "code_box_j": "none",
+    "hint_j": "Standing in line at the bank, is a Queue. Going through a pile of books, by grabbing the top one is a stack.",
+    "answers_j": {
+      "T": "True, Sometimes keeping data in these kinds of structures is for the specific order involved in either one.",
+      "F": "False, I can't think of any way to joke about Queue's and Stacks."
+  }
   ]
 }
