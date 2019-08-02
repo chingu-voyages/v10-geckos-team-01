@@ -6,15 +6,25 @@ Structure:
 
 Two html pages are present at this time.
 The index.html and the basicTerminology.html
-*to-do -- remove all excess files used in earlier version.
+
 The index html links to the basicTerminology html that holds a template for quizes.
 This template takes form through the css file, 'cess_file' that is loaded from the index html link(s).
-The css file is not stored in localStorage, but a variable is that is checked by the 'setCSS.js' file
+The css file is not stored in localStorage, but the file name is. This iss checked by the 'setCSS.js' file
 on load of the basicTerminology(quiz page).html.
+--set_css()
+  In a try block, an html link element is created, and according to which quiz is selected, the css file
+  file name is loaded as the stylesheet for the html. catch will record in console.log if the file is not
+  successfully retrieved.
 The json data is also determined by a variable set in the 'QuizSelection.js'.   The QuizSelection.js is
 a short JavaScript file in the index.  It assigns the variable for which quiz css to use('cess_file'),
 and a varaible that is used in the quiz pages' js file, ('quiz.js') that determines which array
 from the json object to grab and use in assigning questions.
+--load_one_html(), load_two_html(), load_three_html(), load_four_html():
+  these will set the variables in localStorage retrieved by the quiz.js for which json object to grab
+  and which css file to load for the link that has been clicked.
+--window.onload function():
+  sets the addEventListener to each empty link <a> so that one of the above four loads is selected on click,
+  corresponding css file, and json object are loaded as variables in the localStorage in those functions.
 There is one json file in use, and the object holds an array with objects inside it to set up each question.
 So far, a question's data is set up in this way:
 (( first question from the basic quiz.))
