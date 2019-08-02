@@ -241,14 +241,15 @@ ul, li {
 /* code box colors for 'strings and things'
  * this is called: dark-theme across all css for the site
  * #483D8B -- dark blue -- background
- * #FFFF00 -- neon yellow -- text
+ * #FFFF00 -- neon yellow -- text <--- moved to white
  * #00FFFF -- neon blue -- border
  */
  .dark-theme {
    display: none;
    white-space: pre-wrap;
-   background: #483D8B;
-   color: #FFFF00;
+   background: blue;
+   color: white;
+   text-shadow: 2px 2px 2px #483D8B;
    border: solid 2px #00FFFF;
    font-family: monospace;
    font-size: 2em;
