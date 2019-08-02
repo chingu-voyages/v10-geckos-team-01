@@ -111,7 +111,7 @@ function getUserQuestions(i) {
 function retrieve_JSON(i) {
   // json bin  https://api.jsonbin.io/b/5d422060e6d0051e2a737a17
   // github (depoloyment only) static/data/quiz_obj.json
-    return fetch('/static/data/quiz_obj.json')
+    return fetch('static/data/quiz_obj.json')
         .then(response => {
             console.log("getting json response...")
             return response.json()
