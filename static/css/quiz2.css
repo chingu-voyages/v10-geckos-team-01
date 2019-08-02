@@ -17,6 +17,13 @@ i {
   color: white;
 }
 
+ul, li {
+    border: none;
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 5vw;
+}
+
 #give_hint {
   background-color: inherit;
   font-family: inherit;
@@ -106,14 +113,6 @@ i {
     text-align: center;
     justify-content: space-around;
 }
-
-ul, li {
-    border: none;
-    list-style-type: none;
-    display: inline-block;
-    padding-left: 5vw;
-}
-
 
 .about_quiz:before {
   content: "Strings are not just ordinary things. \a Click Start Quiz to begin.";
@@ -239,17 +238,18 @@ ul, li {
     font-size: 2em;
 }
 
-/* code box colors for 'technical'
- * #492F5B -- dark purple -- background
- * #9AFC02 -- neon green -- text
- * #C802FC -- neon purple -- border
+/* code box colors for 'strings and things'
+ * this is called: dark-theme across all css for the site
+ * #483D8B -- dark blue -- background
+ * #FFFF00 -- neon yellow -- text
+ * #00FFFF -- neon blue -- border
  */
  .dark-theme {
    display: none;
    white-space: pre-wrap;
-   background: #492F5B;
-   color: #9AFC02;
-   border: solid 2px #C802FC;
+   background: #483D8B;
+   color: #FFFF00;
+   border: solid 2px #00FFFF;
    font-family: monospace;
    font-size: 2em;
    padding-left: 5vw;
