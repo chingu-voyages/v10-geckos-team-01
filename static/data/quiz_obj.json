@@ -196,7 +196,7 @@
      "question_j": "Which of these strings will print without error?(Python)",
      "correct_j": "a",
      "box_type_j": "multiple",
-     "code_box_j": "One_String = 'this is a single quote.'\n Two_String = \"this is a double quote.\"\nThree_String = \"this is a mixed 'quotes'.\" \nFour_String = 'this is also a mixed \"quotes\".' \nFive_String = 'this string needs an \"escape quote.' \nSix_String = \" so does \"this\" one.\"\"",
+     "code_box_j": "One_String = 'this is a single quote.'\nTwo_String = \"this is a double quote.\"\nThree_String = \"this is a mixed 'quotes'.\" \nFour_String = 'this is also a mixed \"quotes\".' \nFive_String = 'this string needs an \"\\ escape quote.' \nSix_String = \" so does \"\\this\"\\ one.\"",
      "hint_j": "These all printed in a python print statement. There are no trick questions. Only hints to point you at the right answers.",
      "answers_j": {
        "a": "All of them.",
