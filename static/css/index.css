@@ -170,11 +170,11 @@ button {
     background: #424249;
     color: #E4E7F2;
     margin: 0;
-    padding: 3vh 0 0 0;
+    padding: 0;
 }
 .title-head h1{
   margin: 0;
-  padding: 0;
+  padding-top: 3vh;
   border-bottom: 2px groove blue;
 }
 
