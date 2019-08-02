@@ -27,6 +27,12 @@ img{
   background-repeat: no-repeat;
 }
 
+.center-justify p{
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
+
 p {
     text-align: center;
     justify-content: space-around;
