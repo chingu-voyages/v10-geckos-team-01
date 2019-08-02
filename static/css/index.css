@@ -27,13 +27,6 @@ img{
   background-repeat: no-repeat;
 }
 
-p {
-    
-    font-size: .8em;
-    color: darkblue;
-    text-shadow: 2px 2px 2px white;
-}
-
 .center-justify p{
   text-align: center;
   justify-content: space-around;
