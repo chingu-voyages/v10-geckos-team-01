@@ -28,9 +28,9 @@ img{
 }
 
 p {
-    text-align: center;
+    text-align: left;
     justify-content: space-around;
-    font-size: 1em;
+    font-size: .8em;
     color: darkblue;
     text-shadow: 2px 2px 2px white;
 }
