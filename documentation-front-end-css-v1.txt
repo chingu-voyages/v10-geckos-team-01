@@ -1,0 +1,162 @@
+~~  css file elements ~~
+All items are shared across the four quiz types.  They all use the same
+html, but style and design is determined by the css.
+Some may not be in this particular order.
+
+
+title:before {
+  The title for each quiz
+}
+body {
+  background images, color, and fonts as well as any other needed inherited traits.
+}
+img{
+  sizing, placement of images
+}
+i {
+  color for the home icon
+}
+
+ul, li {
+  styling for the multiple choice, or True False choices (answers)
+}
+
+#give_hint {
+  styling for the hint display(hidden/none) given by the click of 'hint' button.
+}
+.line {
+  just a div with the bottom border shown to create a line on page
+}
+a:hover {
+  hovering effects of links
+}
+.link-box {
+  Not used in any current quiz
+}
+
+
+.nav-bar {
+    top nav bar design
+}
+
+.nav-button {
+  top nav bar button design.
+}
+
+/* home of:  the question, which question, hint (code_box is outside this) */
+.head-box {
+    styling for items in the top div:
+    contains: question, which_question, results
+}
+
+.start {
+  styling for the 'start quiz' start button
+}
+
+.basic_term {
+  image information for the first image shown before the 'start quiz' start button is clicked.
+}
+/* information for the code_box display
+ */
+.code_box {
+  deleted.  Not used in html
+}
+
+
+.hidden_continue_btn {
+  this div is hidden unless the question is answered correctly
+}
+.continue_btn {
+  button in the hidden_continue_btn div styling
+}
+
+.title-head {
+  Not used in the current quiz css(s)
+}
+
+.center-justify p {
+ Not used in the current quiz css(s)
+}
+
+
+.Instructions {
+    styling for quiz information <div> given before the start button is clicked and quiz begins
+}
+
+.about_quiz:before {
+  <p> tag that has the text for the instructions
+}
+
+#load_image {
+  Not used currently in any css
+}
+
+.results {
+  A display of none on this div which holds text to appear upon answering a question
+  It's contents are written by the quiz.js file depending on correct or incorrect answers
+}
+
+.true_false {
+    This is display of none unless the json object dictates it is a TorF question.
+    This is styling for that div
+}
+
+.quiz_box {
+  display of none unless json object dicatates, this is the basic
+  multiple choice a, b, c, d
+}
+
+.question_s {
+  the multiple choice answers styling
+}
+
+.question {
+  the actual quiz question.
+}
+
+.which_question {
+  this is text written from the quiz.js file, telling user which
+  question index they are at.
+}
+
+.end_quiz {
+    With a display of none, unless last question is successfully answered.
+    last question can not be skipped.
+    styling for the end of quiz items.
+}
+
+.hidden_congrats {
+  With a display of none, unless last question is successfully answered.
+  last question can not be skipped.
+  text
+
+}
+
+
+.quiz_buttons {
+  the styling for the div that holds the quiz buttons:
+  previous, skip, and hint.
+
+}
+
+.quiz_buttons button {
+  styling for the buttons which allow going to the previous question,
+  skipping question, and getting the hint displayed.
+}
+
+/* MH Additional Styles */
+  styles for MH's user quiz/questions
+.top-nav {
+  
+}
+
+.right-subnav{
+
+}
+.user-message-container {
+
+}
+
+.logout {
+
+}
