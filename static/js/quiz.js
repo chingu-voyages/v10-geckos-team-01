@@ -114,7 +114,6 @@ function retrieve_JSON(i) {
     return fetch('/static/data/quiz_obj.json')
         .then(response => {
             console.log("getting json response...")
-            console.log(response.json())
             return response.json()
         })
         .then(data => {
