@@ -27,18 +27,18 @@ img{
   background-repeat: no-repeat;
 }
 
-.center-justify p{
-  text-align: center;
-  justify-content: space-around;
-  font-size: 1.2em;
-}
-
 p {
     text-align: center;
     justify-content: space-around;
     font-size: 1.5em;
     color: darkblue;
     text-shadow: 2px 2px 2px white;
+}
+
+.center-justify p{
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1em;
 }
 
 li {
