@@ -27,7 +27,7 @@ img{
   background-repeat: no-repeat;
 }
 
-.center-justify p{
+.center-justify {
   text-align: center;
   justify-content: space-around;
   font-size: 1.5em;
