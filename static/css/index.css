@@ -27,10 +27,19 @@ img{
   background-repeat: no-repeat;
 }
 
-ul, li {
+p {
+    text-align: center;
+    justify-content: space-around;
+    font-size: 1.5em;
+    color: darkblue;
+    text-shadow: 2px 2px 2px white;
+}
+
+li {
   border: none;
   list-style-type: none;
   display: inline-block;
+  width: 100vw;
   padding-left: 5vw;
   color: darkblue;
   text-shadow: 2px 2px 2px white;
@@ -171,7 +180,7 @@ button {
   border-bottom: 2px groove blue;
 }
 
-.center-justify p {
+p {
     text-align: center;
     justify-content: space-around;
     font-size: 1.5em;
