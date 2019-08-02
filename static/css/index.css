@@ -170,7 +170,7 @@ button {
     background: #424249;
     color: #E4E7F2;
     margin: 0;
-    padding: 0;
+    padding: 3vh 0 0 0;
 }
 .title-head h1{
   margin: 0;
@@ -178,14 +178,6 @@ button {
   border-bottom: 2px groove blue;
 }
 
-p {
-    text-align: center;
-    justify-content: space-around;
-    font-size: 1.5em;
-    color: darkblue;
-    text-shadow: 2px 2px 2px white;
-
-}
 
 .Instructions {
     display: inline-block;
