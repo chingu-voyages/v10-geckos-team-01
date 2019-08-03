@@ -22,6 +22,7 @@
   </div>
   <div class="form-container">
     <form class="update-form">
+      <div class="edit-form-title">Edit Your Question</div>
       <div class="question-id" id="" style="display:hidden"></div>
       <div class="input-field">
         <label for="question-category">Question Category</label>
@@ -40,21 +41,24 @@
         <label for="question">Question Text</label>
         <input type="text" id="question" required />
       </div>
-      <label class="answer-choice-label">Answer Choices</label>
-      <div class="answer-choices-container">
-        <!-- ANSWER CHOICES RENDERED HERE BY JS -->
+      <div class="input-field">
+        <label class="answer-choice-label">Answer Choices</label>
+        <div class="answer-choices-container">
           <input type="text" id="choice1" reqired/>
           <input type="text" id="choice2" reqired/>
           <input type="text" id="choice3" reqired/>
           <input type="text" id="choice4" reqired/>
+        </div>
       </div>
       <div class="correct-answer-container input-field">
         <label for="correct-answer">Correct Answer</label>
         <input type="text" id="correct" required/>
         <!-- CORRECT ANSWER CHOICES RENDERED HERE BY JS -->
       </div>
-      <button class="update-button" id="">Update Question</button>
-      <button class="cancel">Cancel</button>
+      <div class="button-container">
+        <button class="update-button" id="">Update Question</button>
+        <button class="cancel">Cancel</button>
+      </div>
     </form>
   </div>
   <div class="nav-container">

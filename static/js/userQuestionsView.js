@@ -207,7 +207,7 @@ const updateHandler = () => {
 const editHandler = () => {
   // make form visible when clicking edit button
   let formContainer = document.querySelector('.form-container')
-  formContainer.style.display = "inline-block"
+  formContainer.style.display = "flex"
 
   let cancel = document.querySelector('.cancel')
   cancel.addEventListener('click', (e) => {

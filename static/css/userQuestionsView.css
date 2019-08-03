@@ -14,16 +14,33 @@
   grid-template-rows: auto;
 }
 
+.update-form {
+  display: flex;
+  flex-direction: column;
+}
 .form-container {
   display: none;
+  justify-content: center;
   background-color: pink;
   width: 100%;
 }
 
+.edit-form-title {
+  margin-top: 2vh;
+  align-self: center;
+}
+
+input {
+  width: 40vw;
+  height: 3vh;
+  margin-top: 0.5vh;
+  border-radius: 4px;
+}
 .input-field {
   display: grid;
-  grid-template-columns: 35% 50%;
-  width: 100%;
+  grid-template-columns: 20% 50%;
+  width: 80%;
+  align-self: center;
 }
 
 .question-item {
@@ -34,12 +51,24 @@
   display: none;
 }
 
-
-
 .answer-choices-container input {
   display: block;
 }
 
+.button-container {
+  align-self: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  width: 35%;
+  height: 3.5vh;
+  border-radius: 4px;
+}
 
 .goBack {
   display: none;
@@ -47,13 +76,10 @@
 
 .answer-choices-container {
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 70vw;
 }
 
-.answer-choices-container input {
-  width: 35vw;
-}
 
 .delete-confirmation {
   display: none;
