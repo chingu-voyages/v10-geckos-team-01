@@ -27,8 +27,7 @@ createForm.addEventListener('submit', (e) => {
     questionText: createForm['question'].value,
     choices: qChoices,
     qTopic: category,
-    answer: qAnswer.value,
-    uid: auth.currentUser.uid
+    answer: qAnswer.value
   }
   console.log(data)
   db.collection('users').doc(auth.currentUser.uid).collection('questions')
