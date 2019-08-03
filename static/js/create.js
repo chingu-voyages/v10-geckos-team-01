@@ -8,10 +8,10 @@ createForm.addEventListener('submit', (e) => {
   if(document.querySelector('.multiple-container')){
     let multipleQuestionChoices = document.querySelector('.multiple-container')
     qChoices = [
-      createForm['choice1'].value,
-      createForm['choice2'].value,
-      createForm['choice3'].value,
-      createForm['choice4'].value
+      createForm['A'].value,
+      createForm['B'].value,
+      createForm['C'].value,
+      createForm['D'].value
     ]
   } else {
     let tfQuestionChoices = document.querySelector('.tf-choices')
@@ -23,7 +23,7 @@ createForm.addEventListener('submit', (e) => {
     questionText: createForm['question'].value,
     choices: qChoices,
     qTopic: category,
-    answer: createForm['answer'].value
+    answer: document.querySelector(`.${createForm['answer'].value}`).value
   }
   console.log(data)
   db.collection('users').doc(auth.currentUser.uid).collection('questions')
@@ -57,20 +57,20 @@ const multipleInputs =  `
   <h5>Enter answer choices</h5>
   <div class="multiple-container"</div>
     <div class="input-field">
-      <label for="choice">Choice 1</label>
-      <input type="text" id="choice1" required />
+      <label for="choice">Choice A</label>
+      <input type="text" class="A" id="A" required />
     </div>
     <div class="input-field">
-      <label for="choice">Choice 2</label>
-      <input type="text" id="choice2" required />
+      <label for="choice">Choice B</label>
+      <input type="text" class="B" id="B" required />
     </div>
     <div class="input-field">
-      <label for="choice">Choice 3</label>
-      <input type="text" id="choice3" required />
+      <label for="choice">Choice C</label>
+      <input type="text" class="C" id="C" required />
     </div>
     <div class="input-field">
-      <label for="choice">Choice 4</label>
-      <input type="text" id="choice4" required />
+      <label for="choice">Choice D</label>
+      <input type="text" class="D" id="D" required />
     </div>
   `
 
@@ -86,10 +86,10 @@ const multipleAnswers = `
   <h5>The correct answer is<h5>
   <div class="select-field">
     <select name="correct-choice" id="answer"/>
-      <option value="choice1">Answer 1</option>
-      <option value="choice2">Answer 2</option>
-      <option value="choice3">Answer 3</option>
-      <option value="choice4">Answer 4</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
     </select>
   </div>
   `
