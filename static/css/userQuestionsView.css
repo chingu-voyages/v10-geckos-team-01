@@ -54,3 +54,11 @@
 .answer-choices-container input {
   width: 35vw;
 }
+
+.delete-confirmation {
+  display: none;
+}
+
+.current-topic {
+  display: none;
+}

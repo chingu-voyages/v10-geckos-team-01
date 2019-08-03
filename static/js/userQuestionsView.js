@@ -68,13 +68,21 @@ const getQuestions = (topic) => {
       let div = `
         <div class="question-item" id="${d.ref.id.trim()}">${d.data().questionText}
           <a class="edit">Edit</a>
-          <a class="delete">Delete</a>
+          <div class="delete-container">
+            <div class="delete-confirmation">
+              <div>Are you sure you want to delete this question?</div>
+              <a class="delete-yes">Yes</a>
+              <a class="delete-no">No</a>
+            </div>
+            <a class="delete-link">Delete</a>
+          </div>
         </div>
       `
       html += div
     })
     questionsGrid.innerHTML = html
     addEditHandlers()
+    addDeleteHandlers()
     //set form id and set update button with handler
 
   }, err => {
@@ -132,6 +140,35 @@ const addEditHandlers = () => {
     })
   })
 }
+
+const addDeleteHandlers = () => {
+  let deleteLinks = document.querySelectorAll('.delete-link')
+  deleteLinks.forEach( link => {
+      let questionParent = link.parentElement.parentElement
+      let qID = questionParent.id
+      link.id = qID
+      console.log(link)
+      link.addEventListener('click', (e) => {
+        console.log(e.target)
+        let deleteContainer = e.target.parentElement.children[0]
+        let confirm = deleteContainer.querySelector('.delete-yes')
+        let cancel = deleteContainer.querySelector('.delete-no')
+        deleteContainer.style.display = "block"
+
+        let path = db.collection('users').doc(auth.currentUser.uid).collection('questions').doc(qID)
+        confirm.addEventListener('click', () => {
+          console.log('we are going to delete this question!')
+          path.delete().then( () => {
+            console.log('we deleted the question')
+          }).catch( (err) => console.log(err.message) )
+        })
+
+        cancel.addEventListener('click', (e) => {
+          deleteContainer.style.display = "none"
+        })
+      })
+    })
+  }
 
 
 // update the question in Firestore
@@ -202,9 +239,6 @@ const setFormMC = () => {
 }
 
 
-const populateForm = () => {
-
-}
 
 document.querySelector('.goBack').addEventListener('click', (e) => {
     document.querySelector('.questions-container').style.display = "none"
