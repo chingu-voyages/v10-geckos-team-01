@@ -213,7 +213,8 @@ const editHandler = () => {
   cancel.addEventListener('click', (e) => {
     e.preventDefault()
     console.log('clicking cancel button')
-    e.currentTarget.parentElement.reset()
+    //reset the form
+    e.currentTarget.parentElement.parentElement.reset()
     formContainer.style.display = "none"
   })
   let updateForm = document.querySelector('.update-form')
@@ -222,6 +223,8 @@ const editHandler = () => {
     console.log('we added a listener to the update button')
     e.preventDefault()
     updateHandler()
+    e.target.reset()
+    formContainer.style.display = "none"
   })
 }
 
