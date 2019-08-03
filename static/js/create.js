@@ -5,6 +5,7 @@ createForm.addEventListener('submit', (e) => {
   e.preventDefault()
   let category = document.querySelector('#question-category').value
   let qChoices
+  let qAnswer
   if(document.querySelector('.multiple-container')){
     let multipleQuestionChoices = document.querySelector('.multiple-container')
     qChoices = [
@@ -13,9 +14,12 @@ createForm.addEventListener('submit', (e) => {
       createForm['C'].value,
       createForm['D'].value
     ]
+
+    qAnswer = document.querySelector(`.${createForm['answer'].value}`)
   } else {
     let tfQuestionChoices = document.querySelector('.tf-choices')
     qChoices = ["True", "False"]
+    qAnswer = createForm['answer']
   }
   //DATA WE ARE POSTING AS INTO NEW QUESTION
   let data = {
@@ -23,7 +27,8 @@ createForm.addEventListener('submit', (e) => {
     questionText: createForm['question'].value,
     choices: qChoices,
     qTopic: category,
-    answer: document.querySelector(`.${createForm['answer'].value}`).value
+    answer: qAnswer.value,
+    uid: auth.currentUser.uid
   }
   console.log(data)
   db.collection('users').doc(auth.currentUser.uid).collection('questions')
