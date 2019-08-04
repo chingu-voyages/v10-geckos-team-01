@@ -75,7 +75,7 @@ li {
   left: 0;
   padding: 2px;
   font-size: 2em;
-  width: 22vw;
+  width: 40vw;
 }
 
 .drop-down-button:hover .drop-down-links{ display: block; }
