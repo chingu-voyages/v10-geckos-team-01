@@ -41,6 +41,9 @@ form {
   padding: 1em;
   /* display:grid; */
   grid-template-rows: auto;
+  background: white;
+  color: black;
+  text-shadow: 2px 2px 2px blue;
 }
 
 .topics-container {
