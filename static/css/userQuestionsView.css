@@ -6,19 +6,23 @@
   *home background = rgb(229, 226, 233)
   *home headers color = rgba(123, 104, 238, 0.5)
 */
-body {
-  background: rgb(90, 99, 126);
-}
+
 main {
-  background:rgb(229, 226, 233);
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  text-shadow: 1px 2px 3px black;
-  font-size: 2em;
-  align-items: center;
-  align-content: center;
-  padding-top: 5vh;
+  background: linear-gradient(45deg, #768BF9, #FCFBF8);
+  font-family: 'Concert One', cursive;
+  height: 100vh;
 }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+i {
+  color: white;
+}
+
 
 .questions-container {
   display: none;
@@ -123,5 +127,110 @@ input {
 }
 
 .current-topic {
+  display: none;
+}
+
+
+main {
+  background: linear-gradient(45deg, #768BF9, #FCFBF8);
+  font-family: 'Concert One', cursive;
+  height: 100vh;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+i {
+  color: white;
+}
+
+#user_quiz {
+  width: 90vw;
+  text-align: center;
+  align-content: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-weight: lighter;
+  font-size: 2em;
+  background: inherit;
+}
+
+
+.user_links {
+  font-family: inherit;
+  font-size: 2em;
+  color: #142873;
+  text-shadow: 2px 2px 1px whitesmoke;
+  background: inherit;
+  text-align: center;
+  margin: 0;
+  width: 90vw;
+}
+
+.user_links:hover {
+    color: white;
+    text-shadow: 2px 2px 2px #142873;
+}
+
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  border: 1px solid black;
+  background: rgba(229, 226, 233, 0.4);
+  padding: 2vw;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.title-head_user {
+    text-align: center;
+    background: #424249;
+    border-bottom: 2px groove blue;
+    color: #E4E7F2;
+    height: 10vh;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.topic-container{
+  display: none;
+}
+
+
+/* MH Additional Styles */
+
+.top-nav {
+  display: flex;
+  border: 1px solid purple;
+  background: #424249;
+  height: 7vh;
+  margin: 0;
+  padding: 2px;
+}
+
+.right-subnav{
+  justify-self: end;
+  margin-left: auto;
+  color: #E4E7F2;
+  display: flex;
+}
+
+.user-message-container {
+  width: 75vw;
+  height: 75vh;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+  margin-top: 12.5vh;
+  margin-bottom: 12.5vh;
+}
+
+.logout {
   display: none;
 }
