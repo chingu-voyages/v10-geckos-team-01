@@ -6,6 +6,7 @@
 main {
   background: linear-gradient(45deg, #768BF9, #190770);
   font-family: 'Concert One', cursive;
+  height: 100vh;
 }
 
 .menu-container {
