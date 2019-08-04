@@ -110,6 +110,7 @@ input {
   width: 35%;
   height: 3.5vh;
   border-radius: 4px;
+  font-size: 0.5em;
 }
 
 .goBack {
