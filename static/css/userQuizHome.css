@@ -17,6 +17,7 @@ i {
 #user_quiz {
   width: 100vw;
   text-align: center;
+  align-content: center;
   color: white;
   text-shadow: 2px 2px 2px black;
   font-weight: lighter;
