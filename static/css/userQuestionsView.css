@@ -6,8 +6,11 @@
   *home background = rgb(229, 226, 233)
   *home headers color = rgba(123, 104, 238, 0.5)
 */
-main {
+body {
   background: rgb(90, 99, 126);
+}
+main {
+  background:rgb(229, 226, 233);
   font-family: 'Orbitron', sans-serif;
   color: white;
   text-shadow: 1px 2px 3px black;
