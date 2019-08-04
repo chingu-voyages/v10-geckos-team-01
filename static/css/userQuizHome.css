@@ -1,10 +1,10 @@
 /*  colors
   * dark grey/blue = 90, 99, 126
-  * deep blue = #1B0377
-  * light blue = #4482F7
+  * deep blue = #190770
+  * light blue = #768BF9
 */
 main {
-  background: linear-gradient(45deg, #4482F7, #1B0377);
+  background: linear-gradient(45deg, #768BF9, #190770);
 }
 
 .menu-container {
