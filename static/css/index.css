@@ -238,14 +238,13 @@ a.title {
 
 .link-in {
   border: none;
-  width: 100vw;
-  padding-left: 2vw;
-  padding-top: 2vh;
+  width: auto;
+  padding: 2vh;
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
   background: rgba(123, 104, 238, 0.5);
-  position: static;
+  position: absolute;
   font-size: 1.5em;
 }
 
