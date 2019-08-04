@@ -311,6 +311,8 @@ a:hover {
   color: #142873;
   text-shadow: 2px 2px 3px black;
   background-color: rgba(252, 254, 250, 0.8);
+  text-align: center;
+  padding: 5vw;
 }
 
 .user_links:hover {
