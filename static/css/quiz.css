@@ -17,13 +17,13 @@ body {
 }
 
 #user_quiz {
-  width: 50vw;
+  width: 100vw;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 2px black;
   font-weight: lighter;
   font-size: 2em;
-  background: rgba(153, 172, 186, 0.5);
+  background: inherit;
 }
 
 
@@ -324,6 +324,7 @@ a:hover {
   background: rgba(252, 254, 250, 0.4);
   text-align: center;
   padding: 2vw;
+  width: 50vw;
 }
 
 .user_links:hover {
