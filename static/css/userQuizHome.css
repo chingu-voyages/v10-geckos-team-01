@@ -75,6 +75,10 @@ i {
 
 .topic-container{
   display: none;
+  font-size: 2em;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
 }
 
 
@@ -109,9 +113,8 @@ i {
   display: none;
 }
 
-.topic-link::before{
+.topic-link {
   font-size: 2em;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
+  color: black;
+  text-shadow: 1px 1px 0px #768BF9;
 }
