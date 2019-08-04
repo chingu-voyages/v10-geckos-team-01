@@ -109,9 +109,8 @@ i {
   display: none;
 }
 
-.topic-link {
-  font-size: 1em;
-  align-items: center;
+.topic-link::before{
+  font-size: 2em;
   align-content: center;
   text-align: center;
   justify-content: center;
