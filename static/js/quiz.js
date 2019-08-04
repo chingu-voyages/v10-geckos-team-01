@@ -3,7 +3,7 @@ let testing_something; // for 'set_a_constant'() test
 // local Storage item WhichQuiz  will tell us which json to use.
 let which_quiz;
 //window location:  Used in detecting if User Quiz is in play.
-let which_html = window.location;
+let which_html = window.location.href;
 console.log(which_html)
 //  Quiz elements to be written to DOM
 
