@@ -7,7 +7,7 @@
 */
 main {
   background: linear-gradient(45deg, #768BF9, #FCFBF8);
-  font-family: 'Concert One', cursive;
+  font-family: 'Orbitron', sans-serif;
   height: 100vh;
 }
 
@@ -76,9 +76,11 @@ i {
 .topic-container{
   display: none;
   font-size: 2em;
-  align-content: center;
   text-align: center;
   justify-content: center;
+  padding: 2vw;
+  border-radius: 20px;
+  border: solid groove cornflowerblue;
 }
 
 
@@ -114,7 +116,7 @@ i {
 }
 
 .topic-link {
-  font-size: 2em;
+  font-size: 1em;
   color: black;
   text-shadow: 1px 1px 0px #768BF9;
 }
