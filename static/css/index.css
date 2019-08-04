@@ -248,6 +248,26 @@ a.title {
   font-size: 1.5em;
 }
 
+.link-in-myo {
+  border: none;
+  width: auto;
+  padding: auto;
+  margin: auto;
+  padding: 2vh;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  background: rgba(123, 104, 238, 0.5);
+  position: relative;
+  font-size: 1.5em;  
+}
+
+.link-in-myo a{
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5em;
+}
+
 .loggedin-container {
   background: inherit;
   position: absolute;
