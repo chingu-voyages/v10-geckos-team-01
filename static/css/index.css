@@ -239,13 +239,12 @@ a.title {
 .link-in {
   border: none;
   width: auto;
-  padding: 2vh;
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
   background: rgba(123, 104, 238, 0.5);
   position: absolute;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .link-in-myo {
