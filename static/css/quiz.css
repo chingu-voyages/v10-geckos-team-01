@@ -323,8 +323,11 @@ a:hover {
   text-shadow: 2px 2px 3px white;
   background: rgba(252, 254, 250, 0.4);
   text-align: center;
-  padding: 2vw;
-  width: 50vw;
+  padding-top: 2vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 5vh;
+  width: 100vw;
 }
 
 .user_links:hover {
