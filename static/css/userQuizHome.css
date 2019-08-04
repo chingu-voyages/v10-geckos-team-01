@@ -57,7 +57,7 @@ i {
   height: auto;
   border: 1px solid black;
   background: rgba(229, 226, 233, 0.4);
-  padding: 2vw;
+  margin: 2vw;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -78,7 +78,6 @@ i {
   font-size: 2em;
   text-align: center;
   justify-content: center;
-  padding: 2vw;
   border-radius: 20px;
   border: solid groove cornflowerblue;
 }
