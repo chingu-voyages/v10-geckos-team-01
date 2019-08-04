@@ -10,6 +10,36 @@ main {
   font-family: 'Concert One', cursive;
   height: 100vh;
 }
+i {
+  color: white;
+}
+#user_quiz {
+  width: 100vw;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-weight: lighter;
+  font-size: 2em;
+  background: inherit;
+}
+
+
+.user_links {
+  font-family: inherit;
+  font-size: 2em;
+  color: #142873;
+  text-shadow: 2px 2px 3px white;
+  background: rgba(252, 254, 250, 0.4);
+  text-align: center;
+  padding: 2vw;
+  width: 100vw;
+}
+
+.user_links:hover {
+    color: white;
+    text-shadow: 2px 2px 2px #142873;
+}
+
 
 .menu-container {
   display: flex;
