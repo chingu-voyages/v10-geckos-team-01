@@ -58,6 +58,9 @@ function getUserQuestions(i) {
     console.log('we have a user quiz!')
     dict = JSON.parse(localStorage.getItem('userQuizObj'))
   }
+  else {
+    console.log("error, userQuizObj failed to parse")
+  }
   questions = dict[i];
   var fetchedQuestion = questions.questionText;
   json_question = fetchedQuestion;
@@ -421,6 +424,8 @@ function set_current_answer() {
 function presentOption() {
   let selection = this.id;
   let min = current_index;
+  console.log("dict.length => ");
+  console.log(dict.length);
   let max = dict.length;
   console.log(selection);
   if(selection == 'previous' && min > 0){
