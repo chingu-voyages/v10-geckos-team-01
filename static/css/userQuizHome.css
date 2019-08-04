@@ -19,12 +19,13 @@ main {
 }
 
 
-.title-head {
+.title-head_user {
     text-align: center;
     background: #424249;
     border-bottom: 2px groove blue;
     color: #E4E7F2;
     height: 10vh;
+    top: 0;
     margin: 0;
     padding: 0;
 }
