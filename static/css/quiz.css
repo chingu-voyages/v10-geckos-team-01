@@ -312,7 +312,12 @@ a:hover {
   font-size: 2em;
   color: #142873;
   text-shadow: 2px 2px 1px black;
-  background-color: rgba(202, 204, 204, 0.8);
+  background-color: rgba(252, 254, 250, 0.8);
+}
+
+.user_links:hover {
+    background-color: rgba(202, 204, 204, 0.8);
+
 }
 
 .logout {
