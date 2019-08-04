@@ -246,7 +246,7 @@ a.title {
 }
 
 .loggedin-container {
-  background: #424249;
+  background: inherit;
   position: absolute;
   color: white;
   font-size: 1em;
