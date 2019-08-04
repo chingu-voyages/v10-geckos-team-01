@@ -30,9 +30,9 @@ i {
   font-size: 2em;
   color: #142873;
   text-shadow: 2px 2px 3px white;
-  background: rgba(252, 254, 250, 0.4);
+  background: inherit;
   text-align: center;
-  margin: 5vw;
+  margin: 0;
   width: 90vw;
 }
 
