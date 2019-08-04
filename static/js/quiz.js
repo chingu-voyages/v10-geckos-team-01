@@ -435,7 +435,7 @@ function presentOption() {
     hide_element(h3Hint);
     var current_href = window.location.href;
     if(current_href == 'https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html'){
-      getUserQuestions(i)
+      getUserQuestions(current_index);
     }
     else {
       retrieve_JSON(current_index);
@@ -448,7 +448,7 @@ function presentOption() {
     hide_element(h3Hint);
     var current_href = window.location.href;
     if(current_href == 'https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html'){
-      getUserQuestions(i)
+      getUserQuestions(current_index);
     }
     else {
       retrieve_JSON(current_index);
