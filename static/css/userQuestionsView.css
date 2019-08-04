@@ -22,6 +22,18 @@ i {
   color: white;
 }
 
+form {
+  width: 75vw;
+  margin-top: auto;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+  padding: 2vw;
+  font-family: inherit;
+  font-size: 1.5em;
+  background: linear-gradient(45deg, #768BF9, #FCFBF8);
+  border-radius: 20px;
+  border: solid 2px #FCFBF8;
+}
 
 .questions-container {
   display: none;
