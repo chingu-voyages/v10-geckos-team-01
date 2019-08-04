@@ -4,7 +4,7 @@ let testing_something; // for 'set_a_constant'() test
 let which_quiz;
 //window location:  Used in detecting if User Quiz is in play.
 let which_html = window.location.href;
-console.log(which_html)
+//console.log(which_html)//for user quiz location.href = https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html
 //  Quiz elements to be written to DOM
 
 var questions;  // used for length of JSON array
@@ -297,7 +297,8 @@ function add_alt_to_images() {
 
 function loadCurrentQuestion(i) {
   // if user has their own questions loaded, get those
-  if(JSON.parse(localStorage.getItem('userQuizObj'))) {
+  var current_href = window.location.href;
+  if(JSON.parse(localStorage.getItem('userQuizObj')) && current_href == 'https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html') {
       getUserQuestions(i)
   } else {
     retrieve_JSON(i)
