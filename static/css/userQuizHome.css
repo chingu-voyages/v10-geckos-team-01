@@ -4,7 +4,7 @@
   * light blue = #4482F7
 */
 main {
-  background-color: linear-gradient(45deg, #4482F7, #1B0377);
+  background: linear-gradient(45deg, #4482F7, #1B0377);
 }
 
 .menu-container {
