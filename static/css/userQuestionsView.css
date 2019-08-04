@@ -60,9 +60,10 @@ i {
 
 input {
   width: 40vw;
-  height: 3vh;
+  height: 5vh;
   margin-top: 0.5vh;
   border-radius: 4px;
+  padding-left: 2vw;
 }
 .input-field {
   display: grid;
