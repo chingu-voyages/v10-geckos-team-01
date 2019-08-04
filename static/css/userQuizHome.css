@@ -108,3 +108,11 @@ i {
 .logout {
   display: none;
 }
+
+.topic-link {
+  font-size: 1em;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
