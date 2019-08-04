@@ -293,7 +293,26 @@ a:hover {
   display: flex;
 }
 .user-message-container {
-  margin-right: 4vw;
+  width: 75vw;
+  height: 75vh;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+  margin-top: 12.5vh;
+  margin-bottom: 12.5vh;
+}
+/* user links in userQuizHome.html
+ * dark blue = #142873;
+ * grey = (202, 204, 204);
+*/
+.user_links {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: inherit;
+  font-size: 2em;
+  color: #142873;
+  text-shadow: 2px 2px 1px black;
+  background-color: rgba(202, 204, 204, 0.8);
 }
 
 .logout {
