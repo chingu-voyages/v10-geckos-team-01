@@ -4,7 +4,19 @@
   flex-direction: column;
   height: auto;
   border: 1px solid black;
-  justify-content: space-between;
+  align-items: center;
+  margin-top: 25vh;
+}
+
+
+.title-head {
+    text-align: center;
+    background: #424249;
+    border-bottom: 2px groove blue;
+    color: #E4E7F2;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
 }
 
 .topic-container{

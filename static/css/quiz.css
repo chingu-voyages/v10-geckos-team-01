@@ -305,13 +305,10 @@ a:hover {
  * grey = (202, 204, 204);
 */
 .user_links {
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   font-family: inherit;
   font-size: 2em;
   color: #142873;
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 2px 2px 3px black;
   background-color: rgba(252, 254, 250, 0.8);
 }
 
