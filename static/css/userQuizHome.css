@@ -14,7 +14,7 @@ main {
   height: auto;
   border: 1px solid black;
   padding: 10vw;
-  background-color: rgb(90, 99, 126);
+  background-color: rgba(90, 99, 126, 0.8);
 }
 
 
