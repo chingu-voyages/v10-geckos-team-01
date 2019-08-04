@@ -2,9 +2,11 @@
   * dark grey/blue = 90, 99, 126
   * deep blue = #190770
   * light blue = #768BF9
+  *home background = rgb(229, 226, 233)
+  *home headers color = rgba(123, 104, 238, 0.5)
 */
 main {
-  background: linear-gradient(45deg, #768BF9, #190770);
+  background: linear-gradient(45deg, #768BF9, #FCFBF8);
   font-family: 'Concert One', cursive;
   height: 100vh;
 }
@@ -15,8 +17,9 @@ main {
   justify-content: center;
   height: auto;
   border: 1px solid black;
-  background: linear-gradient(45deg, #190770, #768BF9);
+  background: rgba(123, 104, 238, 0.5);
   padding: 2vw;
+  font-family: 'Orbitron', sans-serif;
 }
 
 
