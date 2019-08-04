@@ -7,7 +7,7 @@
   *home headers color = rgba(123, 104, 238, 0.5)
 */
 main {
-  background: linear(90deg, #ECEBEF, #59595A);
+  background: rgb(90, 99, 126);
   font-family: 'Orbitron', sans-serif;
   color: white;
   text-shadow: 1px 2px 3px black;
