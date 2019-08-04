@@ -309,15 +309,15 @@ a:hover {
   font-family: inherit;
   font-size: 2em;
   color: #142873;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px white;
   background-color: rgba(252, 254, 250, 0.8);
   text-align: center;
-  padding: 5vw;
+  padding: 2vw;
 }
 
 .user_links:hover {
-    background-color: rgba(202, 204, 204, 0.8);
-
+    color: white;
+    text-shadow: 2px 2px 2px #142873;
 }
 
 .logout {
