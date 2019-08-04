@@ -60,7 +60,7 @@ const linkHandler = (e) => {
       localStorage.setItem('userQuizObj', data)
       localStorage.setItem('cess_file', 'static/css/quiz.css')
 
-      location = 'basicTerminology.html'
+      location = 'basicClone.html'
   	 })
      .catch( error => console.log(error.message) )
 
