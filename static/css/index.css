@@ -278,3 +278,35 @@ a.title {
   justify-content: space-between;
   align-items: flex-end;
 }
+
+
+/* MH Additional Styles */
+
+.top-nav {
+  display: flex;
+  border: 1px solid purple;
+  background: #424249;
+  height: 7vh;
+  margin: 0;
+  padding: 2px;"
+}
+
+.right-subnav{
+  justify-self: end;
+  margin-left: auto;
+  color: #E4E7F2;
+  display: flex;
+}
+
+.user-message-container {
+  width: 75vw;
+  height: 75vh;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+  margin-top: 12.5vh;
+  margin-bottom: 12.5vh;
+}
+
+.logout {
+  display: none;
+}
