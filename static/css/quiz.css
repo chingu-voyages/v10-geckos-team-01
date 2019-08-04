@@ -23,6 +23,7 @@ body {
   text-shadow: 2px 2px 2px black;
   font-weight: lighter;
   font-size: 2em;
+  background: rgba(153, 172, 186, 0.5);  
 }
 
 
