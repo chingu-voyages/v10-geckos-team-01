@@ -110,6 +110,14 @@ li {
     border: 2px groove #E6EAF7;
 }
 
+.short-line {
+  margin: auto;
+  padding: 0;
+  width: 50vw;
+  border: 2px groove #E6EAF7;
+
+}
+
 a:hover {
   color: purple;
   font-weight: bolder;
