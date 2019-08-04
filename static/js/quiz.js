@@ -433,14 +433,26 @@ function presentOption() {
     hide_element(continue_btn);
     hide_element(results);
     hide_element(h3Hint);
-    retrieve_JSON(current_index);
+    var current_href = window.location.href;
+    if(current_href == 'https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html'){
+      getUserQuestions(i)
+    }
+    else {
+      retrieve_JSON(current_index);
+    }
   }
   if(selection == 'skip' && current_index + 1 < max){
     current_index += 1;
     hide_element(continue_btn);
     hide_element(results);
     hide_element(h3Hint);
-    retrieve_JSON(current_index);
+    var current_href = window.location.href;
+    if(current_href == 'https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html'){
+      getUserQuestions(i)
+    }
+    else {
+      retrieve_JSON(current_index);
+    }
   }
   // need to add hints in json for the 'hint' button
   // this selection('hint') will do nothing until I add the if()
