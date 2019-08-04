@@ -14,7 +14,8 @@ main {
   justify-content: center;
   height: auto;
   border: 1px solid black;
-  background-color: rgba(90, 99, 126, 0.8);
+  background-color: rgba(90, 99, 126, 0.5);
+  padding: 2vw;
 }
 
 
