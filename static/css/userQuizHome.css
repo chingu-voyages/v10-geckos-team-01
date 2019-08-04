@@ -32,8 +32,8 @@ i {
   text-shadow: 2px 2px 3px white;
   background: rgba(252, 254, 250, 0.4);
   text-align: center;
-  padding: 2vw;
-  width: 100vw;
+  margin: 5vw;
+  width: 90vw;
 }
 
 .user_links:hover {
@@ -48,7 +48,7 @@ i {
   justify-content: center;
   height: auto;
   border: 1px solid black;
-  background: rgba(123, 104, 238, 0.5);
+  background: rgba(123, 104, 208, 0.5);
   padding: 2vw;
   font-family: 'Orbitron', sans-serif;
 }
@@ -78,7 +78,7 @@ i {
   background: #424249;
   height: 7vh;
   margin: 0;
-  padding: 2px;"
+  padding: 2px;
 }
 
 .right-subnav{
