@@ -16,7 +16,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#user_quiz h2, h3 {
+#user_quiz h2 {
+  width: 100vw;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2em;
+}
+#user_quiz h3 {
+  width: 100vw;
+  text-align: center;
   color: white;
   text-shadow: 2px 2px 2px black;
 }
