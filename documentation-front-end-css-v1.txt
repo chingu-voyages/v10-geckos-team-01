@@ -147,7 +147,7 @@ a:hover {
 /* MH Additional Styles */
   styles for MH's user quiz/questions
 .top-nav {
-  
+
 }
 
 .right-subnav{
@@ -158,5 +158,11 @@ a:hover {
 }
 
 .logout {
+  display for if a user logs out.
 
+}
+
+
+.loggedin-container {
+  flex container for displaying if a user is logged in.
 }

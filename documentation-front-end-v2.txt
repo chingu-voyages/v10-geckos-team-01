@@ -1,6 +1,6 @@
 Documentation for Chingu V10 Geckos team 1
 ::Nellie Tobey
-Front-End
+Front-End JavaScript
 
 Structure:
 
@@ -72,16 +72,22 @@ So far, a question's data is set up in this way:
                the continue_btn which is active on a correct answer so that the user may move on to the next question.
         loadCurrentQuestion(current_index)--
             This function uses the current_index (a declared variable set in setDOMconstants to 0) to control which question set is retrieved from jSON
-            it uses the function retrieve_JSON(i)
+            it uses the function retrieve_JSON(i) |&| getUserQuestions(i)
 
   presentOption() --
   This function decides if the previous or skip button are clicked through the 'this.id'. It uses if() to check if
   moving the current_index up by one, or down by one is within the bounds of the dict array that is retrieved from jSON
   Items that should be hidden on changing the question are hidden.  No check is made to see if they already have a display: none;
+  -new- built in logic operator to check if user is in the basicClone.html and using
+  the user created object for question/page build.  It reroutes to the getUserQuestions(i) if location is basicClone.html,
+  and if not,  uses the json_obj.json to render questions/page instead.
 
   set_current_answer() --
   This function uses this.id to send the currently clicked answer, (a,b,c,d or True, False) to the functions
   check_answer(current_answer)
+  -new- built in logic operator to check if user is in the basicClone.html and using
+  the user created object for question/page build.  It reroutes to the getUserQuestions(i) if location is basicClone.html,
+  and if not,  uses the json_obj.json to render questions/page instead.
 
   check_answer(current_answer) --
   This function uses the current_answer argument and a series of if/else clauses to check if the answer the
@@ -109,6 +115,11 @@ So far, a question's data is set up in this way:
   loadCurrentQuestion(i) --
   Uses i,  the current_index = i, is passed in for all uses so far, this calls the retrieve_JSON(i) function which
   grabs the code block / object that holds the data to render to the html.
+  -new- built in logic operator to check if user is in the basicClone.html and using
+  the user created object for question/page build.  It reroutes to the getUserQuestions(i) if location is basicClone.html,
+  and if not,  uses the json_obj.json to render questions/page instead.
+
+  add_alt_to_images()-- Not in use yet.  This will add alt's to the images for the starting point of the quiz, and end point.
 
   setDOMconstants() --
   Assigns the necessary element's to their JavaScript variable that has been declared at the beginning of the file.
@@ -135,3 +146,9 @@ So far, a question's data is set up in this way:
         "c": "A value of True or False, but never both.",
         "d": "Something you add to soup."
       }
+
+  getUserQuestions(i) --
+    This is just like the retrieve_JSON(i), but is used for the Make your own quiz part of the site.
+    It get's it's json object from the localStorage, and parses.  This object is used in the same way the
+    retrieve_JSON does,  hint, and codebox are not in use in the MYO(make your own) yet.  Backend handles the firebase
+    login, and making/saving MYO to storage.

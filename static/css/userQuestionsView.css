@@ -133,22 +133,6 @@ input {
 }
 
 
-main {
-  background: linear-gradient(45deg, #768BF9, #FCFBF8);
-  font-family: 'Concert One', cursive;
-  height: 100vh;
-}
-
-h3 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-i {
-  color: white;
-}
-
 #user_quiz {
   width: 90vw;
   text-align: center;

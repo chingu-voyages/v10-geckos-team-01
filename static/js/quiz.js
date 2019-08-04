@@ -414,7 +414,7 @@ function check_answer(answer) {
 function set_current_answer() {
   if(JSON.parse(localStorage.getItem('userQuizObj'))) {
     current_answer = this.nextElementSibling.textContent
-    console.log(current_answer)
+    //console.log(current_answer)
   } else {
     current_answer = this.id;
   }
