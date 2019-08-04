@@ -1,4 +1,6 @@
-
+/*  colors
+  * dark grey/blue = 90, 99, 126
+*/
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,7 @@
   height: auto;
   border: 1px solid black;
   padding: 10vw;
+  background-color: rgb(90, 99, 126);
 }
 
 
