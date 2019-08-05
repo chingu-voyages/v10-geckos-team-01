@@ -24,17 +24,6 @@ i {
   color: white;
 }
 
-#create-form form{
-  font-size: 2em;
-  color: black;
-  text-shadow: 2px 2px 2px white;
-  border: groove 2px darkgrey;
-  border-radius: 15px;
-  background: linear-gradient(90deg, #D1CAD2, #5B5A69);
-  padding: 10%;
-}
-
-
 form {
   width: 75vw;
   margin-top: auto;
