@@ -93,6 +93,14 @@ li {
 
   }
 
+/* END MEDIA MODS */
+
+.login-button button {
+  width: 50vw;
+  font-size: 2em;
+  border-radius: 15px;
+}
+
 .drop-down-menu {
   display: inline-block;
   left: 0;
