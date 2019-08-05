@@ -63,6 +63,12 @@ ul, li {
         color: cornflowerblue;
         padding: 5%;
     }
+    .question_s {
+        border: none;
+        display: inline-block;
+        font-size: small;
+        color: black;
+    }
 
     .results {
         color: #424249;

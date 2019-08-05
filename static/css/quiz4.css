@@ -45,10 +45,10 @@ ul, li {
     text-shadow: 2px 2px 2px black;
 }
 
-
 i {
   color: white;
 }
+
 @media all and (max-width: 799px) and (min-width: 320px) {
 
 
@@ -93,6 +93,13 @@ i {
        color: white;
        padding: 5%;
        text-shadow: 2px 2px 2px black;
+   }
+   .question_s {
+       border: none;
+       display: inline-block;
+       font-size: small;
+       color: white;
+       text-shadow: 2px 2px 2px #150a1d;
    }
 
    #give_hint {

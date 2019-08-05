@@ -62,6 +62,13 @@ ul, li {
         color:   #1c1952;
         padding: 5%;
     }
+    .question_s {
+        border: none;
+        display: inline-block;
+        font-size: small;
+        color: black;
+    }
+
     .continue_btn {
       display: none;
       background: inherit;
