@@ -73,7 +73,7 @@ i {
      color: #9AFC02;
      border: solid 2px #C802FC;
      font-family: monospace;
-     font-size: 0.5em;
+     font-size: 12px;
      padding-left: 5vw;
    }
 
@@ -97,7 +97,7 @@ i {
    .question_s {
        border: none;
        display: inline-block;
-       font-size: small;
+       font-size: 12px;
        color: white;
        text-shadow: 2px 2px 2px #150a1d;
    }

@@ -44,7 +44,7 @@ ul, li {
       color: #9AFC02;
       border: solid 2px #C802FC;
       font-family: monospace;
-      font-size: 0.5em;
+      font-size: 12px;
       padding-left: 5vw;
     }
 
@@ -62,11 +62,15 @@ ul, li {
         color:   #1c1952;
         padding: 5%;
     }
+
     .question_s {
         border: none;
         display: inline-block;
-        font-size: small;
+        font-size: 12px;
         color: black;
+    }
+    h2 {
+      font-size: 12px;
     }
 
     .continue_btn {

@@ -63,10 +63,11 @@ ul, li {
         color: cornflowerblue;
         padding: 5%;
     }
+
     .question_s {
         border: none;
         display: inline-block;
-        font-size: small;
+        font-size: 12px;
         color: black;
     }
 

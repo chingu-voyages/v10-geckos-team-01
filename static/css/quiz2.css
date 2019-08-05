@@ -54,7 +54,7 @@ ul, li {
     .question_s {
         border: none;
         display: inline-block;
-        font-size: small;
+        font-size: 12px;
         color: black;
     }
 
@@ -83,7 +83,7 @@ ul, li {
       text-shadow: 2px 2px 2px #483D8B;
       border: solid 2px #00FFFF;
       font-family: monospace;
-      font-size: 0.5em;
+      font-size: 12px;
       padding-left: 5vw;
     }
 
