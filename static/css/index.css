@@ -64,8 +64,10 @@ li {
 
     .loggedin-container {
       display: none;
+      color: blue;
     }
     .logout {
+      color: purple;
       text-shadow: 2px 2px 2px black;
     }
 
@@ -330,8 +332,9 @@ a.title {
 .loggedin-container {
   background: inherit;
   position: absolute;
-  color: white;
-  font-size: 1em;
+  color: black;
+  text-shadow: 2px 2px 2px lightsteelblue;
+  font-size: 1.2em;
   right: 5vw;
   top: 0;
   display: flex;
@@ -370,4 +373,6 @@ a.title {
 
 .logout {
   display: none;
+  color: black;
+  text-shadow: 2px 2px 2px lightsteelblue;
 }
