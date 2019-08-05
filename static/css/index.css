@@ -48,6 +48,21 @@ li {
   font-size: 1em;
 }
 
+
+@media all and (max-width: 799px) and (min-width: 320px) {
+    body{
+        font-size: 12px;
+    }
+    .welcome-message {
+      display: none;
+    }
+
+    .loggedin-container {
+      display: none;
+    }
+
+  }
+
 .drop-down-menu {
   display: inline-block;
   left: 0;
