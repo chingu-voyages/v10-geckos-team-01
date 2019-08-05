@@ -3,6 +3,8 @@
   * dark grey/blue = 90, 99, 126
   * deep blue = #190770
   * light blue = #768BF9
+  * dark grey = #5B5A69
+  * light pink = #D1CAD2
   *home background = rgb(229, 226, 233)
   *home headers color = rgba(123, 104, 238, 0.5)
 */
@@ -44,7 +46,7 @@ input, label {
 
 @media all and (max-width: 599px) and (min-width: 320px) {
     body{
-        font-size: 12px;
+      font-size: 12px;
     }
     main{
       font-size: 1em;
@@ -78,13 +80,45 @@ input, label {
       flex-direction: column;
     }
 
-.add_questions_form {
-  text-shadow: 2px 2px 2px black;
-  font-size: 1em;
-  padding: 5%;
+    .add_questions_form {
+      text-shadow: 2px 2px 2px black;
+      font-size: 1em;
+      padding: 5%;
+    }
+
+    .form-container {
+      display: none;
+      justify-content: center;
+      align-content: center;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(229, 226, 233);
+      width: 100%;
+      text-shadow: 1px 1px 1px black;
+    }
+    #create-form {
+      font-size: 1em;
+      color: black;
+      text-shadow: 2px 3px 3px white;
+      border: groove 2px darkgrey;
+      border-radius: 15px;
+      background: linear-gradient(90deg, #D1CAD2, #5B5A69);
+      padding: 5%;
+    }
 }
 
+/* END MEDIA MODS */
+#create-form {
+  font-size: 2em;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+  border: groove 2px darkgrey;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #D1CAD2, #5B5A69);
+  padding: 10%;
 }
+
+
 .questions-container {
   display: none;
   border: 1px solid gray;
