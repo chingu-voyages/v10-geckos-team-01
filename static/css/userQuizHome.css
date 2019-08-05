@@ -31,6 +31,7 @@ form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  border: solid 1px black;
   border-radius: 20px;
   background: linear-gradient(45deg, #768BF9, #FCFBF8);
 
