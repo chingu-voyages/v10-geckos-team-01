@@ -90,6 +90,11 @@ ul, li {
       font-size: 12px;
     }
 
+
+    li {
+      font-size: 0.7em;
+    }
+
   }
   /* END MEDIA MODS */
 

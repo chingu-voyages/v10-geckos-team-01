@@ -80,6 +80,11 @@ i {
      font-size: 12px;
    }
 
+
+   li {
+     font-size: 0.7em;
+   }
+
    .results {
        color: #F0F6F5;
        text-align: center;
