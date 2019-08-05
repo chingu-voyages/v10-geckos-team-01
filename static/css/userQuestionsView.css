@@ -3,6 +3,8 @@
   * dark grey/blue = 90, 99, 126
   * deep blue = #190770
   * light blue = #768BF9
+  * dark grey = #5B5A69
+  * light pink = #D1CAD2
   *home background = rgb(229, 226, 233)
   *home headers color = rgba(123, 104, 238, 0.5)
 */
@@ -22,6 +24,83 @@ i {
   color: white;
 }
 
+form {
+  width: 75vw;
+  margin-top: auto;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+  padding: 2vw;
+  font-family: inherit;
+  font-size: 1em;
+  background: linear-gradient(45deg, #768BF9, #FCFBF8);
+  border-radius: 20px;
+  border: solid 2px #FCFBF8;
+  display: flex;
+  flex-direction: column;
+}
+
+input, label {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+      font-size: 12px;
+    }
+    main{
+      font-size: 1em;
+    }
+
+    .questions-container{
+      display: none;
+      border: 1px solid gray;
+      padding: 0.5em;
+      font-size: 0.6em;
+      /* display:grid; */
+      grid-template-rows: auto;
+      background: white;
+      color: black;
+    }
+
+    form {
+      width: 80vw;
+      margin-top: auto;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      padding: 2vw;
+      font-family: inherit;
+      font-size: 0.5em;
+      text-shadow: 2px 2px 2px black;
+      background: linear-gradient(45deg, #768BF9, #FCFBF8);
+      border-radius: 20px;
+      border: solid 2px #FCFBF8;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .add_questions_form {
+      text-shadow: 2px 2px 2px black;
+      font-size: 1em;
+      padding: 5%;
+    }
+
+    .form-container {
+      display: none;
+      justify-content: center;
+      align-content: center;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(229, 226, 233);
+      width: 100%;
+      text-shadow: 1px 1px 1px black;
+    }
+
+}
+
+/* END MEDIA MODS */
+
+
 
 .questions-container {
   display: none;
@@ -29,7 +108,11 @@ i {
   padding: 1em;
   /* display:grid; */
   grid-template-rows: auto;
+  background: white;
+  color: black;
+  text-shadow: 1px 1px 2px white;
 }
+
 
 .topics-container {
   border: 1px solid blue;
@@ -43,6 +126,7 @@ i {
   display: flex;
   flex-direction: column;
 }
+
 .form-container {
   /* display: none; */
   justify-content: center;
@@ -51,6 +135,7 @@ i {
   padding: 0;
   background-color: rgb(229, 226, 233);
   width: 100%;
+  text-shadow: 1px 1px 1px black;
 }
 
 .edit-form-title {
@@ -96,6 +181,7 @@ input {
   width: 35%;
   height: 3.5vh;
   border-radius: 4px;
+  font-size: 0.5em;
 }
 
 .goBack {
@@ -187,7 +273,9 @@ input {
   display: none;
 }
 
-
+.nav-container {
+  text-shadow: 1px 1px 2px black;
+}
 /* MH Additional Styles */
 
 .top-nav {

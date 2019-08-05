@@ -7,7 +7,7 @@
 */
 main {
   background: linear-gradient(45deg, #768BF9, #FCFBF8);
-  font-family: 'Concert One', cursive;
+  font-family: 'Orbitron', sans-serif;
   height: 100vh;
 }
 
@@ -21,7 +21,70 @@ i {
   color: white;
 }
 
+form {
+  width: 80vw;
+  height: 75vh;
+  padding: 10%;
+  color: black;
+  font-family: inherit;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: solid 1px black;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #768BF9, #FCFBF8);
+
+}
+
+input, label {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width: 799px) and (min-width: 320px) {
+    body{
+        font-size: 12px;
+    }
+    form {
+      width: 50vw;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      font-family: inherit;
+      font-size: 1em;
+      background: linear-gradient(45deg, #768BF9, #FCFBF8);
+      border-radius: 20px;
+      border: solid 2px #FCFBF8;
+    }
+    #user_quiz {
+      margin: 1vw;
+      width: 90vw;
+      text-align: center;
+      align-content: center;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      font-weight: lighter;
+      font-size: 1em;
+      background: inherit;
+    }
+
+    .user-message-container {
+      display: none;
+    }
+}
+
+.login-container {
+  display: flex;
+  flex-direction:column;
+}
+
 #user_quiz {
+  margin: 2vw;
   width: 90vw;
   text-align: center;
   align-content: center;
@@ -55,9 +118,10 @@ i {
   flex-direction: column;
   justify-content: center;
   height: auto;
+  width: 90vw;
   border: 1px solid black;
   background: rgba(229, 226, 233, 0.4);
-  padding: 2vw;
+  margin: 2vw;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -75,6 +139,11 @@ i {
 
 .topic-container{
   display: none;
+  font-size: 2em;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: solid groove cornflowerblue;
 }
 
 
@@ -111,8 +180,6 @@ i {
 
 .topic-link {
   font-size: 1em;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
+  color: black;
+  text-shadow: 1px 1px 0px #768BF9;
 }
