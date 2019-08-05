@@ -35,6 +35,8 @@ img{
   text-align: center;
   justify-content: space-around;
   font-size: 1.5em;
+  color: black;
+  text-shadow: 2px 2px 2px white;
 }
 
 li {
@@ -76,8 +78,7 @@ li {
     }
     .title-head h2{
       margin: 0;
-      padding-top: 3vh;
-      border-bottom: 2px groove blue;
+      padding-top: 5vh;
       font-size: 14px;
     }
 
@@ -97,7 +98,7 @@ li {
   left: 0;
   top: 0;
   background: #424249;
-  height: 7vh;
+  height: 8vh;
   padding: 2px;
 }
 
