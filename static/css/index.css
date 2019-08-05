@@ -156,6 +156,35 @@ li {
   background: darkgrey;
 }
 
+.drop-down-links-RIGHT {
+  display: none;
+  top: 8vh;
+  right: 0;
+  padding: 2px;
+  font-size: 1.1em;
+  width: 40vw;
+  justify-content: flex-end;
+}
+
+.drop-down-button:hover .drop-down-links-RIGHT{ display: block; }
+.drop-down-button-right:hover .drop-down-links-RIGHT{ display: block; }
+
+.drop-down-links-RIGHT a {
+  display: block;
+  color: whitesmoke;
+  padding: 2px;
+  width: 100%;
+}
+
+.drop-down-links-RIGHT button {
+  width: 100%;
+}
+
+.drop-down-links-RIGHT a:hover {
+  color: rgb(123, 104, 238);
+  background: darkgrey;
+}
+
 
 .line {
     margin: 0;
@@ -343,6 +372,10 @@ a.title {
   align-items: flex-end;
 }
 
+.welcome-message {
+  margin-right: 10px;
+}
+
 
 /* MH Additional Styles */
 
@@ -352,11 +385,11 @@ a.title {
   background: #424249;
   height: 7vh;
   margin: 0;
-  padding: 2px;"
+  padding: 2px;
 }
 
 .right-subnav{
-  justify-self: end;
+  justify-content: right;
   margin-left: auto;
   color: #E4E7F2;
   display: flex;
