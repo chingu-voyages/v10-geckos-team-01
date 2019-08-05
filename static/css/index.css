@@ -136,7 +136,8 @@ li {
   left: 0;
   padding: 2px;
   font-size: 1.1em;
-  width: 40vw;
+  width: 30vw;
+  background-color: lavender;
 }
 
 .drop-down-button:hover .drop-down-links{ display: block; }
@@ -144,7 +145,7 @@ li {
 
 .drop-down-links a {
   display: block;
-  color: whitesmoke;
+  color: steelblue;
   padding: 2px;
   width: 100%;
 }
@@ -161,11 +162,11 @@ li {
 .drop-down-links-RIGHT {
   display: none;
   top: 8vh;
-  margin-left: 60%;
   padding: 2px;
   font-size: 1.1em;
-  width: 40vw;
+  width: 30vw;
   text-align: right;
+  background-color: lavender;
 }
 
 .drop-down-button:hover .drop-down-links-RIGHT{ display: block; }
@@ -173,7 +174,7 @@ li {
 
 .drop-down-links-RIGHT a {
   display: block;
-  color: whitesmoke;
+  color: steelblue;
   padding: 2px;
   width: 100%;
 }
