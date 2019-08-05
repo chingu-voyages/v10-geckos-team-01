@@ -29,10 +29,17 @@ form {
   padding: 10%;
   font-family: inherit;
   font-size: 1em;
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(45deg, #768BF9, #FCFBF8);
   border-radius: 20px;
   border: solid 2px #FCFBF8;
+}
+
+input, label {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media all and (max-width: 799px) and (min-width: 320px) {
@@ -42,6 +49,8 @@ form {
     form {
       width: 90vw;
       height: 80vh;
+      display: flex;
+      flex-direction: column;
       margin-top: auto;
       margin-left: 10vw;
       margin-right: 10vw;
