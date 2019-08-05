@@ -48,7 +48,9 @@ li {
   font-size: 1em;
 }
 
-
+/* logged in, welcome message cover content if displayed on mobile.
+ * The Logout should be sufficiant for a modern user to know they are logged in.
+ */
 @media all and (max-width: 799px) and (min-width: 320px) {
     body{
         font-size: 12px;
