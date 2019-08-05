@@ -126,6 +126,8 @@ li {
   font-size: 1em;
   right: 5vw;
   padding: 2px;
+  text-align: right;
+  align-content: right;
 
 }
 .drop-down-links {
@@ -159,11 +161,11 @@ li {
 .drop-down-links-RIGHT {
   display: none;
   top: 8vh;
-  right: 0;
+  margin-left: 60%;
   padding: 2px;
   font-size: 1.1em;
   width: 40vw;
-  justify-content: flex-end;
+  text-align: right;
 }
 
 .drop-down-button:hover .drop-down-links-RIGHT{ display: block; }
