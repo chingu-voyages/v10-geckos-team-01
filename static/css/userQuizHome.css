@@ -22,13 +22,14 @@ i {
 }
 
 form {
+  width: 80vw;
+  height: 75vh;
   padding: 10%;
   font-family: inherit;
   font-size: 1em;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background: linear-gradient(45deg, #768BF9, #FCFBF8);
   border-radius: 20px;
 }
 
