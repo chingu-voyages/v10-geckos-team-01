@@ -84,10 +84,12 @@ ul, li {
       color: #9AFC02;
       border: solid 2px #C802FC;
       font-family: monospace;
-      font-size: 0.5em;
+      font-size: 12px;
       padding-left: 5vw;
     }
-
+    #code_box {
+      font-size: 12px;
+    }
     .continue_btn {
       display: none;
       background: inherit;

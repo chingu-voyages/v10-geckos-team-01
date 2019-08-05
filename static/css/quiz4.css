@@ -76,6 +76,9 @@ i {
      font-size: 12px;
      padding-left: 5vw;
    }
+   #code_box {
+     font-size: 12px;
+   }
 
    .results {
        color: #F0F6F5;
