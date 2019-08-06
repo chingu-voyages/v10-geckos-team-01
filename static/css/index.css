@@ -321,8 +321,7 @@ button {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 80vh;
-  text-align: left;
+  text-align: center;
 }
 
 /* removed from index.html */
@@ -358,7 +357,7 @@ a.title {
   flex-direction: column;
   flex-wrap: nowrap;
   border: none;
-  width: 100%;
+  width: 100vw;
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
@@ -396,8 +395,8 @@ a.title {
   color: black;
   text-shadow: 2px 2px 2px lightsteelblue;
   font-size: 1.2em;
-  right: 5vw;
   top: 0;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
