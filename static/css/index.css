@@ -398,8 +398,8 @@ a.title {
   display: inline-block;
   background: inherit;
   position: absolute;
-  color: black;
-  text-shadow: 2px 2px 2px lightsteelblue;
+  color: lightsteelblue;
+  text-shadow: 2px 2px 2px black;
   font-size: 1.2em;
   top: 0;
   height: 8vh;
