@@ -100,7 +100,15 @@ input, label {
 
 /* END MEDIA MODS */
 
-
+.head-message {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2em;
+}
 
 .questions-container {
   display: none;
