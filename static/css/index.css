@@ -42,6 +42,7 @@ header {
   background: #424249;
   color: #E4E7F2;
   border-bottom: 2px groove silver;
+  text-shadow: 1px 2px 2px black;
 }
 
 li {
@@ -82,6 +83,9 @@ img {
       margin: 0;
       padding: 0;
       font-size: 12px;
+    }
+    main {
+      font-size: 14px;
     }
 
     .welcome-message {
