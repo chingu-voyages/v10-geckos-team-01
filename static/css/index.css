@@ -354,6 +354,8 @@ a.title {
 }
 
 .link-in {
+  display: flex;
+  flex-direction: column;
   border: none;
   width: 100%;
   color: white;
@@ -363,6 +365,8 @@ a.title {
   position: absolute;
   font-size: 1em;
   box-shadow: 5px 10px grey;
+  align-items: center;
+  justify-content: center;
 }
 
 .link-in-myo {
