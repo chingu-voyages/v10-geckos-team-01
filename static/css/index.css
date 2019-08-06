@@ -14,6 +14,9 @@ title:before {
 }
 
 body {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     background-color: rgb(229, 226, 233);
     font-family: 'Orbitron', sans-serif;
     color: white;
@@ -31,12 +34,11 @@ img{
   background-repeat: no-repeat;
 }
 
-.center-justify {
+header {
   text-align: center;
-  justify-content: space-around;
-  font-size: 1.5em;
-  color: black;
-  text-shadow: 2px 2px 2px white;
+  background: #424249;
+  color: #E4E7F2;
+  border-bottom: 2px groove silver;
 }
 
 li {
@@ -48,6 +50,25 @@ li {
   color: darkblue;
   text-shadow: 2px 2px 2px white;
   font-size: 1em;
+}
+
+img {
+  width: 100vw;
+  background-size: cover;
+}
+
+.img-container {
+  width: 100vw;
+  margin: 2px;
+  background-size: cover;
+
+}
+.center-justify {
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1.5em;
+  color: black;
+  text-shadow: 2px 2px 2px white;
 }
 
 /* logged in, welcome message cover content if displayed on mobile.
@@ -299,11 +320,12 @@ button {
 .carosel {
   display: flex;
   flex-direction: column;
-  width: 75vw;
+  width: 100vw;
   height: 80vh;
   text-align: left;
 }
 
+/* removed from index.html */
 .link-img {
   width: 80vw;
   height: 100%;
