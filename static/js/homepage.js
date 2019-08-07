@@ -2,6 +2,7 @@
 const greeting = document.querySelector('.welcome-message')
 const createAccount = document.querySelector('.drop-down-button-right')
 const loggedInContainer = document.querySelector('.loggedin-container')
+const quizAvailable = document.querySelector('.link-in-myo')
 
 
 function check_log_status(){
@@ -51,6 +52,7 @@ auth.onAuthStateChanged( user => {
     greeting.textContent = "Guest"
     loggedInContainer.style.display = ""
     createAccount.style.display = ""
+    quizAvailable.style.display = "none"
     logout.style.display = "none"
     // do something like hide elements if user is logged out
     window.localStorage.setItem('login', 'false')
