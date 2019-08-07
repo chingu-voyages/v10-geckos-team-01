@@ -1,7 +1,7 @@
 
 const greeting = document.querySelector('.welcome-message')
-const createAccount = document.querySelector('.drop-down-button-right')
 const loggedInContainer = document.querySelector('.loggedin-container')
+const loginOptions = document.getElementById('log-drop')
 const quizAvailable = document.querySelector('.link-in-myo')
 
 
@@ -24,7 +24,7 @@ auth.onAuthStateChanged( user => {
     greeting.textContent = `Welcome back ${user.email}`
     logout.style.display = "inline-block"
     loggedInContainer.style.display = "flex"
-    createAccount.style.display = "none"
+    loginOptions.style.display = "none"
     console.log('user is signed in')
     window.localStorage.setItem('login', 'true')
     console.log(window.localStorage.getItem('login'));
@@ -51,7 +51,7 @@ auth.onAuthStateChanged( user => {
     console.log('Auth State: user currently logged out')
     greeting.textContent = "Guest"
     loggedInContainer.style.display = ""
-    createAccount.style.display = ""
+    loginOptions.style.display = "block"
     quizAvailable.style.display = "none"
     logout.style.display = "none"
     // do something like hide elements if user is logged out
@@ -72,5 +72,3 @@ logout.addEventListener('click', (e) => {
 const clearUserQuizState = () => {
   localStorage.removeItem('userQuizObj')
 }
-
-window.onload = check_log_status();
