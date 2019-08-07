@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <!-- <script type="text/javascript" src="static/js/QuizSelection.js"></script> -->
     <link rel="stylesheet" href="static/css/index.css" />
-    <link rel="stylesheet" href="static/css/userQuestionsView.css" />
+    <!-- <link rel="stylesheet" href="static/css/userQuestionsView.css" /> -->
+    <link rel="stylesheet" href="static/css/create.css" />
 </head>
 <body>
   <nav>
@@ -21,19 +22,21 @@
   </header>
   <main>
   <div class='success-message' style="display:none">New Question Created Successfully!</div>
+  <h3>  Create a New Question:</h3>
   <div class="form-container">
-    <h3>  Create a New Question:</h3>
       <form id="create-form" class="add_questions_form">
         <div class="input-field">
           <label for="question-category">Question Category</label>
           <input type="category" id="question-category" required />
         </div>
-        <label for="quesion-type">Question Type</label>
-          <select name="choices" id="question-type"/>
-            <option selected disabled hidden style='display: none' value=''>--choose a type--</option>
-            <option value="multiple">Multiple Choice</option>
-            <option value="TorF">True or False</option>
-          </select>
+        <div class="question-type-container">
+          <label for="quesion-type">Question Type</label>
+            <select name="choices" id="question-type"/>
+              <option selected disabled hidden style='display: none' value=''>--choose a type--</option>
+              <option value="multiple">Multiple Choice</option>
+              <option value="TorF">True or False</option>
+            </select>
+        </div>
         <div class="input-field">
           <label for="question">Question Text</label>
           <input type="text" id="question" required />

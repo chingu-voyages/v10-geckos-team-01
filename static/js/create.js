@@ -51,7 +51,7 @@ qType.addEventListener('change', (e) => {
     answersContainer.innerHTML = multipleInputs
     rightAnswerContainer.innerHTML = multipleAnswers
   }else if(e.currentTarget.value == 'TorF'){
-    answersContainer.innerHTML = trueFalseInputs
+    answersContainer.innerHTML = ""
     rightAnswerContainer.innerHTML = tfAnswers
   }
 })
@@ -78,16 +78,9 @@ const multipleInputs =  `
     </div>
   `
 
-const trueFalseInputs = `
-  <h5>The Answer Choices</h5>
-  <div class="tf-choices-container" id="tf-choices">
-    <div>True</div>
-    <div>False</div>
-  </div>
-  `
 
 const multipleAnswers = `
-  <h5>The correct answer is<h5>
+  <h5>The correct answer is</h5>
   <div class="select-field">
     <select name="correct-choice" id="answer"/>
       <option value="A">A</option>
