@@ -59,13 +59,14 @@ li {
   list-style-type: none;
   display: inline-block;
   width: 100vw;
-  padding-left: 5vw;
   color: whitesmoke;
   text-shadow: 2px 2px 2px darkblue;
   font-size: 1em;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   align-items: center;
   justify-content: center;
 }
