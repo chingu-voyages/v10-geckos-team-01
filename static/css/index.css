@@ -148,6 +148,9 @@ img:hover {
     main {
       font-size: 14px;
     }
+    header {
+      margin-top: 2em;
+    }
     .first_links nav {
       margin-top: 10px;
     }
@@ -174,14 +177,14 @@ img:hover {
       padding-top: 5vh;
       font-size: 14px;
     }
-  
+
     /* NEW NAV LINKS/LOGIN */
 
     /*LINKS*/
     .drop-down-button-first-links {
         display: flex;
         background: #424249;
-        position: relative;
+        position: static;
         color: white;
         font-size: 12px;
         border-right: solid 1px silver;
@@ -194,11 +197,12 @@ img:hover {
     .drop-down-links-flex-row a{
         font-size: 14px;
         padding: 5px;
+        margin-top: 20px;
     }
     /*LOGIN*/
     .drop-down-button {
         background: #424249;
-        position: relative;
+        position: static;
         color: white;
         font-size: 1em;
         width: 100vw;
@@ -206,8 +210,9 @@ img:hover {
     }
 
     .drop-down-links {
-        font-size: 1em;
+        font-size: 16px;
         width: 100vw;
+        margin-top: 20px;
     }
 
     .drop-down-links a{
@@ -230,6 +235,7 @@ img:hover {
 }
 
 
+/* OLD DROP_DOWN
 .drop-down-button {
   background: #424249;
   position: relative;
@@ -277,7 +283,7 @@ img:hover {
   color: rgb(123, 104, 238);
   background: darkgrey;
 }
-
+*/
 .line {
     margin: 0;
     padding: 0;
@@ -346,7 +352,7 @@ a:hover {
     color: white;
     font-size: 2em;
     width: 100vw;
-    position: fixed;
+    position: static;
 
 }
 
@@ -359,6 +365,7 @@ a:hover {
     width: 100vw;
     background-color: lavender;
     position: absolute;
+    margin-top: 30px;
 }
 .drop-down-links a {
         display: flex;
@@ -383,7 +390,7 @@ a:hover {
 .drop-down-button-first-links {
     display: flex;
     background: #424249;
-    position: relative;
+    position: static;
     color: white;
     font-size: 2em;
     border-right: solid 1px silver;
@@ -396,6 +403,7 @@ a:hover {
     padding: 0;
     font-size: 1em;
     width: 100vw;
+    margin-top: 30px;
     background-color: lavender;
     position: absolute;
 }
