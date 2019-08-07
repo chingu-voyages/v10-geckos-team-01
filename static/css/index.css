@@ -22,6 +22,7 @@ body {
     color: white;
     text-shadow: 1px 2px 3px lightsteelblue;
 }
+/*   OLD NAV
 nav {
   display: inline-block;
   margin-right: 10px;
@@ -35,11 +36,43 @@ nav {
 .first-links nav{
   padding: 10px;
 }
-/*on mobile, these links are really hard to click without padding,
- * but padding messes up the visual flow if not removed from inactive nav
- */
-.first-links:hover .login{"padding: 0;"}
-.login:hover .first-links{"padding: 0;"}
+
+.first-links:hover .login{padding: 0;}
+.login:hover .first-links{padding: 0;}
+@media all and (max-width: 800px) and (min-width: 320px) {
+.drop-down-button {
+  background: #424249;
+  position: relative;
+  color: white;
+  font-size: 1em;
+  margin-right: 10px;
+}
+.drop-down-links {
+  display: none;
+  left: 0;
+  font-size: 1.5em;
+  width: 50vw;
+  padding: 10px;
+  position: absolute;
+}
+}
+
+
+*/
+
+/* NEW NAV */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    width: 100vw;
+    background: #424249;
+    color: #E4E7F2;
+    margin: 0;
+
+}
 
 i {
   color: white;
@@ -76,6 +109,19 @@ img {
   background-size: cover;
 }
 
+img:hover {
+  border: solid 8px cornflowerblue;
+  background: cover;
+  background-repeat: no-repeat;
+}
+
+
+.link-in a{
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5em;
+}
+
 .img-container {
   width: 100vw;
   margin: 2px;
@@ -93,7 +139,7 @@ img {
 /* logged in, welcome message cover content if displayed on mobile.
  * The Logout should be sufficiant for a modern user to know they are logged in.
  */
-@media all and (max-width: 799px) and (min-width: 320px) {
+@media all and (max-width: 800px) and (min-width: 320px) {
     body{
       margin: 0;
       padding: 0;
@@ -102,9 +148,8 @@ img {
     main {
       font-size: 14px;
     }
-    nav {
+    .first_links nav {
       margin-top: 10px;
-      margin-right: 10px;
     }
     .welcome-message {
       display: none;
@@ -129,22 +174,52 @@ img {
       padding-top: 5vh;
       font-size: 14px;
     }
-    .drop-down-button {
-      background: #424249;
-      position: relative;
-      color: white;
-      font-size: 1em;
-      margin-right: 10px;
+  
+    /* NEW NAV LINKS/LOGIN */
+
+    /*LINKS*/
+    .drop-down-button-first-links {
+        display: flex;
+        background: #424249;
+        position: relative;
+        color: white;
+        font-size: 12px;
+        border-right: solid 1px silver;
     }
+
+    .drop-down-button-first-links:hover .drop-down-button {
+        display: none;
+        visibility:hidden;
+    }
+    .drop-down-links-flex-row a{
+        font-size: 14px;
+        padding: 5px;
+    }
+    /*LOGIN*/
+    .drop-down-button {
+        background: #424249;
+        position: relative;
+        color: white;
+        font-size: 1em;
+        width: 100vw;
+        border-right: 10px solid silver;
+    }
+
     .drop-down-links {
-      display: none;
-      left: 0;
-      font-size: 1.5em;
-      width: 50vw;
-      padding: 10px;
-      position: absolute;
+        font-size: 1em;
+        width: 100vw;
+    }
+
+    .drop-down-links a{
+        font-size: 1em;
+        width: 100vw;
+    }
+
+    .drop-down-button:hover .drop-down-button-first-links{
+        display: none;
     }
   }
+
 
 /* END MEDIA MODS */
 
@@ -261,6 +336,106 @@ a:hover {
     margin: 0 auto;
     width: 25vw;
 }
+/*    NEW NAV LINKS/LOGIN    */
+
+/*LOGIN*/
+
+.drop-down-button {
+    display: flex;
+    background: #424249;
+    color: white;
+    font-size: 2em;
+    width: 100vw;
+    position: fixed;
+
+}
+
+
+.drop-down-links {
+    display: none;
+    left: 0;
+    padding: 0;
+    font-size: 1.3em;
+    width: 100vw;
+    background-color: lavender;
+    position: absolute;
+}
+.drop-down-links a {
+        display: flex;
+        flex-direction: row;
+        color: steelblue;
+        width: 100%;
+    }
+
+.drop-down-links button {
+        width: 100%;
+    }
+
+.drop-down-links a:hover {
+        color: rgb(123, 104, 238);
+        background: darkgrey;
+    }
+
+
+
+/*LINKS*/
+
+.drop-down-button-first-links {
+    display: flex;
+    background: #424249;
+    position: relative;
+    color: white;
+    font-size: 2em;
+    border-right: solid 1px silver;
+}
+
+
+.drop-down-links-flex-row {
+    display: none;
+    left: 0;
+    padding: 0;
+    font-size: 1em;
+    width: 100vw;
+    background-color: lavender;
+    position: absolute;
+}
+
+    .drop-down-links-flex-row a {
+        display: flex;
+        flex-direction: row;
+        color: steelblue;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid antiquewhite;
+    }
+        .drop-down-links-flex-row a:hover {
+            color: rgb(123, 104, 238);
+            background: darkgrey;
+        }
+
+     .drop-down-links-flex-row button {
+            width: 100%;
+        }
+
+
+
+
+/*LOGIN*/
+.drop-down-button:hover .drop-down-links {
+    display: flex;
+}
+
+
+/*LINKS*/
+.drop-down-button-first-links:hover .drop-down-button {
+    display: none;
+    visibility: hidden;
+}
+.drop-down-button-first-links:hover .drop-down-links-flex-row {
+    display: flex;
+}
+
 
 
 button {
@@ -325,22 +500,6 @@ button {
   transition: transform .2s;
 }
 
-img:hover {
-  border: solid 8px cornflowerblue;
-  background: cover;
-  background-repeat: no-repeat;
-}
-
-a.title {
-  font-size: 2em;
-  padding: 5px;
-}
-
-.link-in a{
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  font-size: 1.5em;
-}
 
 .link-in {
   display: flex;
@@ -394,6 +553,10 @@ a.title {
 .welcome-message {
   margin-right: 10px;
 }
+
+/* LINKS */
+
+
 
 
 /* MH Additional Styles */
