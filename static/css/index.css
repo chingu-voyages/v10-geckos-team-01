@@ -114,11 +114,21 @@ img {
       font-size: 14px;
     }
 
+    .drop-down-button {
+      background: #424249;
+      position: relative;
+      color: white;
+      font-size: 1em;
+      margin-left: 5px;
+      padding-bottom: 10px;
+    }
+
     .drop-down-links {
       display: none;
       left: 0;
       font-size: 1.5em;
       width: 40vw;
+      padding-top: 10px;
       position: absolute;
     }
 
