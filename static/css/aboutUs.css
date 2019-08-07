@@ -53,6 +53,7 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+
 li {
   border: none;
   list-style-type: none;
@@ -81,6 +82,14 @@ h3 {
   text-shadow: 2px 2px 2px black;
   background: rgba(123, 104, 238, 0.5);
   font-size: 1.5em;
+}
+
+.info-block {
+  display: inline-block;
+  width: 100vw;
+  align-content: center;
+  text-align: center;
+  background-color: inherit;
 }
 
 .img-container {
@@ -335,6 +344,7 @@ a.title {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin-top: 10px;
   border: none;
   width: 100vw;
   color: white;
@@ -343,7 +353,6 @@ a.title {
   background: rgba(123, 104, 238, 0.5);
   position: relative;
   font-size: 1em;
-  box-shadow: 5px 10px grey;
   align-items: center;
   justify-content: center;
 
