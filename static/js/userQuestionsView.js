@@ -16,8 +16,6 @@ const getTopics = () => {
     .onSnapshot ( (snapshot) => {
       let questions = snapshot.docs
       //we now have an array of questions to work with
-      console.log('we are running getTopics')
-
       //append questions to the question container
       let html = '<h4>Your Topics</h4>'
       let topics = []
@@ -31,6 +29,9 @@ const getTopics = () => {
         `
         html += link
       })
+      if(topics.length == 0){
+        html = '<h5 class="no-topics-message">You Need to Add Some Questions First!</h5>'
+      }
       topicsContainer.innerHTML = html
 
       const topicEls = document.querySelectorAll('.topic-link')
