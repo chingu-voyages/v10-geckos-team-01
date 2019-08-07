@@ -87,6 +87,10 @@ img {
     main {
       font-size: 14px;
     }
+    nav {
+      margin-top: 10px;
+      margin-right: 10px;
+    }
 
     .welcome-message {
       display: none;
@@ -127,7 +131,7 @@ img {
       display: none;
       left: 0;
       font-size: 1.5em;
-      width: 40vw;
+      width: 50vw;
       padding-top: 10px;
       position: absolute;
     }
