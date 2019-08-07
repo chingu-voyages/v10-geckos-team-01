@@ -124,7 +124,6 @@ img {
       color: white;
       font-size: 1em;
       margin-left: 5px;
-      padding-bottom: 10px;
     }
 
     .drop-down-links {
@@ -385,7 +384,7 @@ a.title {
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
   background: rgba(123, 104, 238, 0.5);
-  position: relative;
+  position: static;
   font-size: 1em;
   box-shadow: 5px 10px grey;
   align-items: center;
