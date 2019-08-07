@@ -51,6 +51,7 @@ qType.addEventListener('change', (e) => {
     answersContainer.innerHTML = multipleInputs
     rightAnswerContainer.innerHTML = multipleAnswers
   }else if(e.currentTarget.value == 'TorF'){
+    answersContainer.innerHTML = ""
     rightAnswerContainer.innerHTML = tfAnswers
   }
 })
