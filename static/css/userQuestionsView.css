@@ -8,10 +8,6 @@
   *home background = rgb(229, 226, 233)
   *home headers color = rgba(123, 104, 238, 0.5)
 */
-body {
-  margin: 0;
-  padding: 0;
-}
 
 main {
   padding: 0;
@@ -26,6 +22,13 @@ h1, h2, h3 {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+
+.no-topics-message {
+    align-self: center;
+    font-size: 0.6em;
+    width: 60vw;
 }
 
 i {
