@@ -24,6 +24,7 @@ body {
 }
 nav {
   display: inline-block;
+  margin-right: 10px;
 }
 
 i {
@@ -145,23 +146,12 @@ img {
   border-radius: 15px;
 }
 
-/* Not in USE */
-.drop-down-menu {
-  display: flex;
-  flex-direction: row;
-  left: 0;
-  top: 0;
-  background: #424249;
-  height: 8vh;
-  padding: 2px;
-}
 
 .drop-down-button {
   background: #424249;
   position: relative;
   color: white;
   font-size: 1em;
-  margin-left: 5px;
 }
 
 .drop-down-button-right {
@@ -180,8 +170,8 @@ img {
   left: 0;
   padding: 0;
   margin-left: 5px;
-  font-size: 1.1em;
-  width: 30vw;
+  font-size: 1.5em;
+  width: 50vw;
   background-color: lavender;
   position: absolute;
 }
@@ -204,36 +194,6 @@ img {
   color: rgb(123, 104, 238);
   background: darkgrey;
 }
-
-.drop-down-links-RIGHT {
-  display: none;
-  top: 8vh;
-  padding: 2px;
-  font-size: 1.1em;
-  width: 30vw;
-  text-align: right;
-  background-color: lavender;
-}
-
-.drop-down-button:hover .drop-down-links-RIGHT{ display: block; }
-.drop-down-button-right:hover .drop-down-links-RIGHT{ display: block; }
-
-.drop-down-links-RIGHT a {
-  display: block;
-  color: steelblue;
-  padding: 2px;
-  width: 100%;
-}
-
-.drop-down-links-RIGHT button {
-  width: 100%;
-}
-
-.drop-down-links-RIGHT a:hover {
-  color: rgb(123, 104, 238);
-  background: darkgrey;
-}
-
 
 .line {
     margin: 0;
