@@ -106,11 +106,9 @@ img {
       margin-top: 10px;
       margin-right: 10px;
     }
-
     .welcome-message {
       display: none;
     }
-
     .loggedin-container {
       display: none;
       color: blue;
@@ -119,7 +117,6 @@ img {
       color: purple;
       text-shadow: 2px 2px 2px black;
     }
-
     .title-head {
         text-align: center;
         background: #424249;
@@ -132,7 +129,6 @@ img {
       padding-top: 5vh;
       font-size: 14px;
     }
-
     .drop-down-button {
       background: #424249;
       position: relative;
@@ -140,7 +136,6 @@ img {
       font-size: 1em;
       margin-right: 10px;
     }
-
     .drop-down-links {
       display: none;
       left: 0;
@@ -149,7 +144,6 @@ img {
       padding: 10px;
       position: absolute;
     }
-
   }
 
 /* END MEDIA MODS */
@@ -393,7 +387,6 @@ a.title {
   text-shadow: 2px 2px 2px black;
   font-size: 1.2em;
   top: 0;
-  height: 8vh;
   justify-content: space-between;
   right: 0;
 }
