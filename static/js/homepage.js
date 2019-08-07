@@ -72,3 +72,5 @@ logout.addEventListener('click', (e) => {
 const clearUserQuizState = () => {
   localStorage.removeItem('userQuizObj')
 }
+
+window.onload = check_log_status();
