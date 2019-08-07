@@ -14,6 +14,7 @@ function check_log_status(){
   else {
     let element = document.getElementById('loggedOptions');
     element.style.display = 'none';
+    document.getElementById('makeYourOwn').style.display = "none"
     console.log("login is not true");
   }
 }
