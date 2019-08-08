@@ -189,7 +189,8 @@ img:hover {
         color: white;
         font-size: 12px;
         border-right: solid 1px silver;
-        padding-right: 10vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
     }
 
     .drop-down-button-first-links:hover .drop-down-button {
@@ -208,6 +209,7 @@ img:hover {
         font-size: 1em;
         width: 100vw;
         border-right: 10px solid silver;
+        padding-left: 5vw;
     }
 
     .drop-down-links {
@@ -367,7 +369,7 @@ a:hover {
     width: 100vw;
     background-color: lavender;
     position: absolute;
-    margin-top: 10vh;
+
 }
 .drop-down-links a {
         display: flex;
@@ -399,6 +401,7 @@ a:hover {
     margin: 0;
     padding-right: 5vw;
     padding-left: 5vw;
+  
 }
 
 
