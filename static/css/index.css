@@ -71,6 +71,7 @@ nav {
     background: #424249;
     color: #E4E7F2;
     margin: 0;
+    padding-bottom: 5vh;
 
 }
 
@@ -188,6 +189,7 @@ img:hover {
         color: white;
         font-size: 12px;
         border-right: solid 1px silver;
+        padding-right: 10vw;
     }
 
     .drop-down-button-first-links:hover .drop-down-button {
@@ -197,7 +199,6 @@ img:hover {
     .drop-down-links-flex-row a{
         font-size: 14px;
         padding: 5px;
-        margin-top: 20px;
     }
     /*LOGIN*/
     .drop-down-button {
@@ -353,6 +354,7 @@ a:hover {
     font-size: 2em;
     width: 100vw;
     position: static;
+    padding-left: 5vw;
 
 }
 
@@ -365,7 +367,7 @@ a:hover {
     width: 100vw;
     background-color: lavender;
     position: absolute;
-    margin-top: 0;
+    margin-top: 10vh;
 }
 .drop-down-links a {
         display: flex;
@@ -394,6 +396,9 @@ a:hover {
     color: white;
     font-size: 2em;
     border-right: solid 1px silver;
+    margin: 0;
+    padding-right: 5vw;
+    padding-left: 5vw;
 }
 
 
@@ -403,7 +408,7 @@ a:hover {
     padding: 0;
     font-size: 1em;
     width: 100vw;
-    margin-top: 30px;
+    margin-top: 10vh;
     background-color: lavender;
     position: absolute;
 }
@@ -415,7 +420,7 @@ a:hover {
         width: 100%;
         text-align: center;
         justify-content: center;
-        border: 1px solid antiquewhite;
+        border: 1px solid ghostwhite;
     }
         .drop-down-links-flex-row a:hover {
             color: rgb(123, 104, 238);
