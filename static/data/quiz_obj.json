@@ -357,13 +357,13 @@
    "question_j": "This is a python dictionary example.  What do you think will print?",
    "correct_j": "c",
    "box_type_j": "multiple",
-   "code_box_j": "thingy",
+   "code_box_j": "myDog = {\n\t'dogsName': 'George',\n\t'state': 'Michigan',\n\t'county': 'Montcalm'\n}\nprint(myDog.get('state'))",
    "hint_j": "The key-value pair system means that if I look for the key: 'state' in myDog, I will get 'Michigan' as a return value. ",
    "answers_j": {
      "a": "Python loves dictionaries.",
-     "b": "He's currently chewing on a shoe.",
-     "c": "George lives in Montcalm, Michigan.",
-     "d": "I have python 2.7,  f-strings won't work."
+     "b": "George loves a good shoe to chew on.",
+     "c": "Michigan",
+     "d": "Dog house."
    }
  }
  ]
