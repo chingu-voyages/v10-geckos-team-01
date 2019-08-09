@@ -53,7 +53,7 @@
 
   },
   {
-    "question_j": "A files 'extenstion' is the type of file the computer reads it as.  A .txt file is also known as:",
+    "question_j": "A files 'extension' is the type of file the computer reads it as.  A .txt file is also known as:",
     "correct_j": "d",
     "box_type_j": "multiple",
     "code_box_j": "none",
@@ -116,8 +116,20 @@
       "T": "True, just like an on/off signal,  this is why 0 is commonly a representation of False/null/None.",
       "F": "False, Zero is a hero."
     }
-
+  },
+{
+  "question_j": "This is some JavaScript code. var means variable.  What is the variable catsName value?",
+  "correct_j": "a",
+  "box_type_j": "multiple",
+  "code_box_j": "var catsName = 'Sage';\nconsole.log(catsName);",
+  "hint_j": "She is a pretty kitty, decendant of the mountain beasts of yore.",
+  "answers_j": {
+    "a": "'Sage'",
+    "b": "Here's the bit I look up some crazy binary code for the characters in Sage.",
+    "c": "Or I could look up how many integers the memory would assign to that pointer.",
+    "d": "Anyone got some catnip?"
   }
+}
 ],
   "quiztwo": [
     {
