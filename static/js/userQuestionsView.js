@@ -17,7 +17,7 @@ const getTopics = () => {
       let questions = snapshot.docs
       //we now have an array of questions to work with
       //append questions to the question container
-      let html = '<h4>Your Topics</h4>'
+      let html = '<h4 class="topics-title">Your Topics</h4>'
       let topics = []
       questions.forEach ( d => {
         topics.push(d.data().qTopic)
@@ -150,7 +150,7 @@ const addDeleteHandlers = () => {
       link.id = qID
       console.log(link)
       link.addEventListener('click', (e) => {
-        console.log(e.target)
+        link.style.display = "none"
         let deleteContainer = e.target.parentElement.children[0]
         let confirm = deleteContainer.querySelector('.delete-yes')
         let cancel = deleteContainer.querySelector('.delete-no')
@@ -166,6 +166,7 @@ const addDeleteHandlers = () => {
 
         cancel.addEventListener('click', (e) => {
           deleteContainer.style.display = "none"
+          link.style.display = "block"
         })
       })
     })

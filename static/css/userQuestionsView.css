@@ -69,6 +69,8 @@ select {
     .questions-container{
       display: none;
       border: 1px solid gray;
+      width: 87vw;
+      margin: 0 auto;
       padding: 0.5em;
       font-size: 0.6em;
       /* display:grid; */
@@ -97,14 +99,28 @@ select {
     }
 
     .form-container {
+      display: flex;
       justify-content: center;
       align-content: center;
       font-size: .8em;
       margin: 0;
       padding: 0;
-      background-color: rgb(229, 226, 233);
+      background: linear-gradient(45deg, #768BF9, #FCFBF8);
       width: 100%;
       text-shadow: 1px 1px 1px black;
+    }
+
+    .update-form {
+      width: 95vw;
+    }
+
+    .qType {
+      align-self: center;
+      justify-self: center;
+    }
+
+    .input-field input {
+      margin-left: 10vw;
     }
 
 }
@@ -132,13 +148,17 @@ select {
   text-shadow: 1px 1px 2px white;
 }
 
-
+.topics-title {
+  margin: 0.5vh;
+}
 .topics-container {
   border: 1px solid blue;
   padding-left: 25vw;
   font-size: 2em;
   display:grid;
   grid-template-rows: auto;
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .update-form {
@@ -182,9 +202,15 @@ input {
 
 .question-item {
   display: grid;
-  grid-template-columns: 85% 7.5% 7.5%;
+  grid-template-columns: 80% 10% 10%;
 }
 
+.delete-confirmation {
+  font-size: 1.25rem;
+}
+.delete-confirmation a {
+  color: blue;
+}
 
 .answer-choices-container input {
   display: block;
@@ -297,6 +323,7 @@ input {
 
 .nav-container {
   text-shadow: 1px 1px 2px black;
+  padding: 1vh 0.5vw;
 }
 /* MH Additional Styles */
 
