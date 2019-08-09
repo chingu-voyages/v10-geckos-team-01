@@ -395,13 +395,13 @@ a:hover {
     background: #424249;
     position: static;
     color: white;
-    height: 5vh;
+    height: 10vh;
     font-size: 2em;
     border-right: solid 1px silver;
     margin: 0;
     padding-right: 5vw;
     padding-left: 5vw;
-    padding-bottom: 1vh;
+    padding-bottom: 5vh;
 
 }
 
@@ -412,7 +412,7 @@ a:hover {
     padding: 0;
     font-size: 1em;
     width: 100vw;
-    margin-top: 5vh;
+    margin-top: 12vh;
     background-color: lavender;
     position: absolute;
 }
