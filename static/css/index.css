@@ -74,6 +74,7 @@ nav {
     color: #E4E7F2;
     margin: 0;
     padding-top: 1vh;
+    text-overflow: hidden;
 }
 
 i {

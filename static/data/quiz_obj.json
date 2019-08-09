@@ -53,7 +53,7 @@
 
   },
   {
-    "question_j": "A files 'extenstion' is the type of file the computer reads it as.  A .txt file is also known as:",
+    "question_j": "A files 'extension' is the type of file the computer reads it as.  A .txt file is also known as:",
     "correct_j": "d",
     "box_type_j": "multiple",
     "code_box_j": "none",
@@ -116,8 +116,20 @@
       "T": "True, just like an on/off signal,  this is why 0 is commonly a representation of False/null/None.",
       "F": "False, Zero is a hero."
     }
-
+  },
+{
+  "question_j": "This is some JavaScript code. var means variable.  What is the variable catsName value?",
+  "correct_j": "a",
+  "box_type_j": "multiple",
+  "code_box_j": "var catsName = 'Sage';\nconsole.log(catsName);",
+  "hint_j": "She is a pretty kitty, decendant of the mountain beasts of yore.",
+  "answers_j": {
+    "a": "'Sage'",
+    "b": "Here's the bit I look up some crazy binary code for the characters in Sage.",
+    "c": "Or I could look up how many integers the memory would assign to that pointer.",
+    "d": "Anyone got some catnip?"
   }
+}
 ],
   "quiztwo": [
     {
@@ -271,7 +283,33 @@
         "d": "Where we're going, we don't need roads."
 
       }
-    }
+    },
+  {
+        "question_j": "Turing Complete is a term coined after the father of Computer Science.",
+        "correct_j": "True",
+        "box_type_j": "TorF",
+        "code_box_j": "none",
+        "hint_j": "He invented a machine called 'Enigma' that helped stop World War 2, how cool is that?",
+        "answers_j": {
+          "T": "True, his concepts of Algorithms and Computation are a driving force in CS to this day.",
+          "F": "..."
+
+        }
+      },
+    {
+          "question_j": "Why do we call the main circuit board of a computer the 'Motherboard'?",
+          "correct_j": "d",
+          "box_type_j": "multiple",
+          "code_box_j": "none",
+          "hint_j": "Like a mother, it is the main hub for distribution and 'where did I put that thing mom?'.",
+          "answers_j": {
+            "a": "They needed a different term than 'mainboard', mainboards were not extensible.",
+            "b": "Because daughterboards are extensions plugged into it to add more circuits/processing.",
+            "c": "It is the main ciruit board for processing signals.",
+            "d": "All of the above."
+
+          }
+        }
   ],
   "quizfour" : [
     {
@@ -326,6 +364,19 @@
       "c": "x is a cat",
       "d": "x is a Dog object that has the name Fred."
      }
+   },
+   {
+   "question_j": "This is a python dictionary example.  What do you think will print?",
+   "correct_j": "c",
+   "box_type_j": "multiple",
+   "code_box_j": "myDog = {\n\t'dogsName': 'George',\n\t'state': 'Michigan',\n\t'county': 'Montcalm'\n}\nprint(myDog.get('state'))",
+   "hint_j": "The key-value pair system means that if I look for the key: 'state' in myDog, I will get 'Michigan' as a return value. ",
+   "answers_j": {
+     "a": "Python loves dictionaries.",
+     "b": "George loves a good shoe to chew on.",
+     "c": "Michigan",
+     "d": "Dog house."
    }
+ }
  ]
 }
