@@ -80,14 +80,14 @@ ul, li {
     .dark-theme {
       display: none;
       white-space: pre-wrap;
-      background: #492F5B;
-      color: #9AFC02;
-      border: solid 2px #C802FC;
+      background: black;
+      color: white;
+      border: solid 2px blue;
       font-family: monospace;
       font-size: 12px;
       padding-left: 5vw;
     }
-    
+
     #code_box {
       font-size: 12px;
     }
@@ -311,16 +311,14 @@ a:hover {
 }
 
 /* code box colors for 'technical'
- * #492F5B -- dark purple -- background
- * #9AFC02 -- neon green -- text
- * #C802FC -- neon purple -- border
+ * simple color: black, white, blue
  */
  .dark-theme {
    display: none;
    white-space: pre-wrap;
-   background: #492F5B;
-   color: #9AFC02;
-   border: solid 2px #C802FC;
+   background: black;
+   color: white;
+   border: solid 2px blue;
    font-family: monospace;
    font-size: 2em;
    padding-left: 5vw;
