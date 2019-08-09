@@ -1,0 +1,22 @@
+
+#login-form {
+    padding: 2vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#login-email, #login-password,.login-button {
+  width: 40vw;
+  height: 5vh;
+  border-radius: 8px;
+  margin-bottom: 1vh;
+}
+
+#login-title {
+  margin: 2vh auto;
+  font-size: 1.5rem;
+
+}
