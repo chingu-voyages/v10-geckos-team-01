@@ -205,12 +205,11 @@ img:hover {
         color: white;
         font-size: 1em;
         width: 100vw;
-        border-right: 10px solid silver;
         padding-left: 5vw;
     }
 
     .drop-down-links {
-        font-size: 16px;
+        font-size: 1em;
         width: 100vw;
         margin-top: 0;
     }
