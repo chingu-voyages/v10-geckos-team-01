@@ -272,7 +272,7 @@
 
       }
     },
-    {
+  {
         "question_j": "Turing Complete is a term coined after the father of Computer Science.",
         "correct_j": "True",
         "box_type_j": "TorF",
@@ -284,7 +284,7 @@
 
         }
       },
-      {
+    {
           "question_j": "Why do we call the main circuit board of a computer the 'Motherboard'?",
           "correct_j": "d",
           "box_type_j": "multiple",
@@ -357,17 +357,7 @@
    "question_j": "This is a python dictionary example.  What do you think will print?",
    "correct_j": "c",
    "box_type_j": "multiple",
-   "code_box_j": "myDog = {
-    'dogsName': 'George',
-    'state': 'Michigan',
-    'county': 'Montcalm'
-    }
-
-def whereIs(dictionary):
-    name = dictionary.get('dogsName')
-    where = dictionary.get('state')
-    locality = dictionary.get('county')
-    print(f'{name} is in {locality} , {where}.')",
+   "code_box_j": "thingy",
    "hint_j": "The key-value pair system means that if I look for the key: 'state' in myDog, I will get 'Michigan' as a return value. ",
    "answers_j": {
      "a": "Python loves dictionaries.",
