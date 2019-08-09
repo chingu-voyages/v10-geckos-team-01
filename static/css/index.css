@@ -155,7 +155,7 @@ img:hover {
       margin-top: 0.1em;
     }
     .first_links nav {
-      margin-top: 10px;
+      margin-top: 5vh;
     }
     .welcome-message {
       display: none;
@@ -195,10 +195,6 @@ img:hover {
         padding-left: 5vw;
     }
 
-    .drop-down-button-first-links:hover .drop-down-button {
-        display: none;
-        visibility:hidden;
-    }
     .drop-down-links-flex-row a{
         font-size: 14px;
         padding: 5px;
@@ -399,11 +395,13 @@ a:hover {
     background: #424249;
     position: static;
     color: white;
+    height: 5vh;
     font-size: 2em;
     border-right: solid 1px silver;
     margin: 0;
     padding-right: 5vw;
     padding-left: 5vw;
+    padding-bottom: 1vh;
 
 }
 
