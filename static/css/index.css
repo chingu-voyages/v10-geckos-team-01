@@ -73,7 +73,6 @@ nav {
     background: #424249;
     color: #E4E7F2;
     margin: 0;
-    padding-bottom: 5vh;
     padding-top: 1vh;
 }
 
@@ -154,7 +153,7 @@ img:hover {
     header {
       margin-top: 0.1em;
     }
-    .first_links nav {
+    nav {
       margin-top: 5vh;
     }
     .welcome-message {
