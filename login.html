@@ -5,20 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Code Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b570a31fd0.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/index.css" />
     <link rel="stylesheet" href="static/css/userQuizHome.css" />
+    <link rel="stylesheet" href="static/css/login.css" />
 </head>
-  <body>
+  <body style="display: block;">
     <div class="top-nav" >
         <!-- hide the home button if home -->
         <button class="nav-button"><a href="index.html"><i class="fas fa-home"></i></a></button>
-        <div class="right-subnav">
-          <div class="user-message-container">
-            <div class="user-desc">Currently Signed in As:</div>
-            <div class="username">Guest</div>
-          </div>
           <div class="user-auth-container">
             <div class="auth-options">
               <div>Create Account</div>
@@ -28,9 +26,8 @@
           </div>
         </div>
     </div>
-
-
     <div class="login-container">
+      <div id="login-title">Log in</div>
       <form id="login-form">
         <div class="input-field">
           <input type="email" id="login-email" required />
@@ -40,7 +37,7 @@
           <input type="password" id="login-password" required />
           <label for="login-password">Your password</label>
         </div>
-        <button class"login-button">Login</button>
+        <button class="login-button">Login</button>
       </form>
     </div>
 
