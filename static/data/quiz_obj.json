@@ -430,6 +430,33 @@
      "c": "Michigan",
      "d": "Dog house."
    }
+ },
+ {
+ "question_j": "This is a python tuple (code box below).  You can get the item in the tuple starting at 0. Which cat's name will print?",
+ "correct_j": "d",
+ "box_type_j": "multiple",
+ "code_box_j": "\nMyCats = ('Sage', 'Matcha')\nprint(MyCats[0])",
+ "hint_j": "The [0] -square brackets- are indicating we want the item at position/index 0 in MyCats",
+ "answers_j": {
+   "a": "undefined",
+   "b": "NameError",
+   "c": "Matcha",
+   "d": "Sage"
  }
+},
+{
+
+"question_j": "An array is a data structure that uses keys or indexes, to place in memory a given value. Choose the answers that are true about arrays.",
+"correct_j": "d",
+"box_type_j": "multiple",
+"code_box_j": "none",
+"hint_j": "Wikipedia is an awesome resource.",
+"answers_j": {
+  "a": "John von Neumann wrote the first array-sorting program (merge sort) in 1945",
+  "b": "Instead of having pointers like a linked list, the array uses math to determine where an array item is in memory.",
+  "c": "The memory address of the first element of an array is called first address, foundation address, or base address.",
+  "d": "All of the above.  Thanks Wikipedia."
+}
+}
  ]
 }
