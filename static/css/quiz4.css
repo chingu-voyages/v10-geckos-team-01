@@ -48,10 +48,13 @@ ul {
 }
 
 li {
-    color: #E5E7F1;
-    text-shadow: 2px 2px 2px black;
-    width: 100vw;
-    border-bottom: solid 1px black;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  color: #E5E7F1;
+  font-size: 2em;
+  text-shadow: 2px 2px 2px black;
+  width: 100vw;
+  border-bottom: solid 1px black;
 }
 
 i {
@@ -91,7 +94,7 @@ i {
 
 
    li {
-     font-size: 0.7em;
+     font-size: 1em;
    }
 
    .results {
@@ -152,10 +155,12 @@ i {
        background-color: inherit;
        border: none;
        font-size: 1em;
-       margin-top: 10vh;
-       margin-bottom: 0vh;
+       margin: 0;
+       padding-top: 10vh;
+       padding-bottom: 10vh;
        width: 50vw;
        height: 25vh;
+       justify-content: center;
        font-family: inherit;
        color: white;
        text-shadow: 8px 3px 0 black;
@@ -235,7 +240,7 @@ i {
 
 .head-box {
     background-color: rgba(29, 36, 99, 0.9);
-    display: inline-block;
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -252,9 +257,9 @@ i {
     position: relative;
     background-color: inherit;
     border: none;
-    font-size: 2.2em;
-    margin-top: 25vh;
-    margin-bottom: 25vh;
+    font-size: 1.5em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     width: 50vw;
     height: 25vh;
     font-family: inherit;
@@ -310,7 +315,8 @@ i {
     margin-right: 12.5vw;
     color:  inherit;
     text-shadow: 5px 3px 2px black;
-    font-size: 2.5em;
+    font-size: 1.5em;
+    padding-bottom: 10vh;
     background-color: rgba(11, 11, 101, 0.7);
 }
 
@@ -352,8 +358,7 @@ i {
     display: none;
     background-color: rgba(29, 36, 99, 0.9);
     border: 5px solid blue;
-    width: 95vw;
-    margin-right: 10px;
+    width: 98vw;
     margin-top: 10%;
     color: #E5E7F1;
 }
@@ -375,10 +380,6 @@ i {
     text-shadow: 2px 2px 2px #150a1d;
 }
 
-.question_s button{
-  border-radius: 10px;
-  padding: 2px;
-}
 
 .question {
     display: inline;
@@ -437,12 +438,10 @@ i {
 
 .end_quiz {
     display: none;
-    width: 75vw;
+    width: 100vw;
     height: 75vh;
     padding: 5px;
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
-    background-size: contain;
+    background-size: cover;
     background-image: url("../images/congrats_Powershell.JPG");
     background-repeat: no-repeat;
 }

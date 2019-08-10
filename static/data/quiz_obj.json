@@ -219,7 +219,7 @@
      "question_j": "Why is it important for an html file to have this bit of code? (language varies.)",
      "correct_j": "b",
      "box_type_j": "multiple",
-     "code_box_j": "<html lang=\"en\">",
+     "code_box_j": "\n html lang=\"en\" \n",
      "hint_j": "It is said when people become used to their screen reader, they can go 300+ words per minute.",
      "answers_j": {
        "a": "So hackers know how to taunt you in French.",
