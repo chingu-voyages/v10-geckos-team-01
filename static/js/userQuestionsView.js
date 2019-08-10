@@ -248,6 +248,10 @@ const setFormMC = () => {
 document.querySelector('.goBack').addEventListener('click', (e) => {
     document.querySelector('.questions-container').style.display = "none"
     document.querySelector('.topics-container').style.display = "grid"
+    if(document.querySelector('.form-container') ) {
+      document.querySelector('.form-container').style.display = "none"
+    }
     getTopics()
+    doc
     e.currentTarget.style.display = "none"
   })

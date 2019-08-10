@@ -266,6 +266,8 @@ input {
 
 
 #user_quiz {
+  margin: 0 auto;
+  width: 100vw;
   width: 90vw;
   text-align: center;
   align-content: center;
