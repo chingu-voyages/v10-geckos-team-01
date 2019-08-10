@@ -146,9 +146,8 @@ ul, li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0;
-    padding-right: 5vw;
-    width: 100vw;
+    margin: 0;    
+    width: 95vw;
     color: cornflowerblue;
     font-size: 1em;
 }
