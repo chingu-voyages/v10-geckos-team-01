@@ -135,9 +135,44 @@ i {
      font-family: inherit;
      color: #E5E7F1;
    }
+   .start {
+       position: relative;
+       background-color: inherit;
+       border: none;
+       font-size: 1em;
+       margin-top: 10vh;
+       margin-bottom: 0vh;
+       width: 50vw;
+       height: 25vh;
+       font-family: inherit;
+       color: white;
+       text-shadow: 8px 3px 0 black;
+       border: 5px solid black;
+
+   }
+   /* not used in quiz 4 data structures */
+   .basic_term {
+     display: none;
+   }
+
+   .Instructions {
+       display: inline-block;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       width: 75vw;
+       margin-left: 12.5vw;
+       margin-right: 12.5vw;
+       color:  inherit;
+       text-shadow: 5px 3px 2px black;
+       font-size: 1.5em;
+       background-color: rgba(11, 11, 101, 0.7);
+   }
+
 
 
   }
+/* END MEDIA MODS */
 
 .line {
     margin: 0;
@@ -219,17 +254,9 @@ i {
     border: 5px solid black;
 
 }
-
+/* start image not used in quiz 4 data structures */
 .basic_term {
-    width: 75vw;
-    height: 25vh;
-    padding:  5px;
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
-    background-color: rgba(202, 204, 204, 0.8);
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    text-align: center;
+  display: none;
 }
 
 /* code box colors for 'technical'
@@ -399,7 +426,7 @@ i {
     padding: 5px;
     margin-left: 12.5vw;
     margin-right: 12.5vw;
-    background-size: cover;
+    background-size: contain;
     background-image: url("../images/congrats_Powershell.JPG");
     background-repeat: no-repeat;
 }
