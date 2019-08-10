@@ -76,7 +76,6 @@
       "T": "True, some methods are simple recipes, some are highly complex data manipulation.",
       "F": "False, Logically if she weighs the same as a duck, she's made of wood!"
     }
-
   },
   {
     "question_j": "How would you describe a recursive function?",
@@ -104,7 +103,6 @@
         "c": "add description to code directly in the code without interfering",
         "d": "join together multiple arrays into one"
     }
-
   },
   {
     "question_j": "The zero, in binary is a -low volatage signal, while the one is high-volatage (5 volts).",
@@ -215,6 +213,19 @@
        "b": "Six_String and Five_String",
        "c": "a",
        "d": "None of these are strings."
+     }
+   },
+   {
+     "question_j": "Why is it important for an html file to have this bit of code? (language varies.)",
+     "correct_j": "b",
+     "box_type_j": "multiple",
+     "code_box_j": "<html lang=\"en\">",
+     "hint_j": "It is said when people become used to their screen reader, they can go 300+ words per minute.",
+     "answers_j": {
+       "a": "So hackers know how to taunt you in French.",
+       "b": "Both c  and  d.  <--------",
+       "c": "This assists browsers and search engines in finding appropriate results.",
+       "d": "Screen readers use this as an indicator on which language to read the text on your page in."
      }
    }
   ],
