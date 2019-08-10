@@ -154,6 +154,30 @@ h3 {
     position: absolute;
 }
 
+    .drop-down-links-flex-row a {
+        display: flex;
+        flex-direction: row;
+        color: steelblue;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid ghostwhite;
+    }
+        .drop-down-links-flex-row a:hover {
+            color: rgb(123, 104, 238);
+            background: darkgrey;
+        }
+
+     .drop-down-links-flex-row button {
+            width: 100%;
+        }
+
+.drop-down-button-first-links:hover .drop-down-links-flex-row {
+    display: flex;
+}
+
+
+
 /* logged in, welcome message cover content if displayed on mobile.
  * The Logout should be sufficiant for a modern user to know they are logged in.
  */
