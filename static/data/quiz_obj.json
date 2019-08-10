@@ -320,6 +320,48 @@
             "d": "All of the above."
 
           }
+        },
+    {
+          "question_j": "Forms take user data and send it to a web server.  This is commonly called a POST request.  How does the data get delivered?",
+          "correct_j": "b",
+          "box_type_j": "multiple",
+          "code_box_j": "none",
+          "hint_j": "What would you request sun screen for?.",
+          "answers_j": {
+            "a": "The data gets transferred via third party JavaScript libraries",
+            "b": "The data is sent through an HTTP request and included in the request body aka payload.",
+            "c": "Mozilla runs the interweb.",
+            "d": "The data is saved to the header of a response."
+
+          }
+        },
+    {
+          "question_j": "Status codes summarize the outcome of an http request.  Which of the following is not true about them?",
+          "correct_j": "c",
+          "box_type_j": "multiple",
+          "code_box_j": "none",
+          "hint_j": "status codes have 3 digits",
+          "answers_j": {
+            "a": "They signal if an http request was processed successfully",
+            "b": "404 reveals the server did not locate a matching resource.",
+            "c": "908 tells us to keep waiting.",
+            "d": "5 prefixes a server error."
+
+          }
+        },
+    {
+          "question_j": "MIME types exist in the HTTP world.  Which of the following best describes MIME types?",
+          "correct_j": "b",
+          "box_type_j": "multiple",
+          "code_box_j": "none",
+          "hint_j": "",
+          "answers_j": {
+            "a": "They are event handlers within event handlers",
+            "b": "They are set in the Content-Type response header and tells the client how to parse an HTML response body.",
+            "c": "They are tags used to prevent screen readers from reading element contents out loud",
+            "d": "It prints your html code via the nearest printer."
+
+          }
         }
   ],
   "quizfour" : [
