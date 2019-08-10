@@ -30,6 +30,9 @@ ul, li {
     padding-left: 5vw;
     color:  #f5edeb;
 }
+i {
+  color: white;
+}
 
 @media all and (max-width: 799px) and (min-width: 320px) {
     body{
