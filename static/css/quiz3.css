@@ -146,7 +146,7 @@ i {
     justify-content: center;
     text-align: center;
     margin: 0;
-    padding-right: 5vw;
+    /* padding-right: 5vw; */
     width: 100vw;
     color: cornflowerblue;
     font-size: 1em;
@@ -245,7 +245,7 @@ i {
     border: 5px solid  #1c1952;
     width: 95vw;
     margin-right: 10px;
-    margin-top: 10%;
+    margin-top: 1.5vh;
 }
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
