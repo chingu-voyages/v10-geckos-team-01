@@ -50,7 +50,7 @@ ul, li {
         justify-content: center;
         text-align: center;
         margin: 0;
-        padding: 10px;
+        margin-right: 5vw;
         width: 100vw;
         color: cornflowerblue;
         font-size: .75em;
@@ -165,8 +165,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0;
-    padding: 10px;
     width: 100vw;
     color: cornflowerblue;
     font-size: 1em;
@@ -278,6 +276,7 @@ a:hover {
     display: inline;
     border: none;
     font-size: 2em;
+    margin-right: 5vw;
     color: cornflowerblue;
 }
 

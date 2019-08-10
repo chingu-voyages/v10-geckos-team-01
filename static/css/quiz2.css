@@ -244,7 +244,7 @@ ul, li {
     border: none;
     font-size: 2em;
     color: cornflowerblue;
-    padding: 5%;
+    margin-right: 5vw;
 }
 
 .which_question {
