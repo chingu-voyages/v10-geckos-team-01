@@ -20,9 +20,20 @@ body {
     color: white;
     text-shadow: 1px 2px 3px lightsteelblue;
 }
+
 nav {
-  display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    width: 100vw;
+    background: #424249;
+    color: #E4E7F2;
+    margin: 0;
+    padding-top: 1vh;
+    text-overflow: hidden;
 }
+
 
 i {
   color: white;
@@ -112,6 +123,35 @@ h3 {
   font-size: 1.5em;
   color: lightblue;
   text-shadow: 1px 1px 2px black;
+}
+
+
+.drop-down-button-first-links {
+    display: flex;
+    background: #424249;
+    position: static;
+    color: white;
+    height: 5vh;
+    font-size: 1em;
+    border-right: solid 1px silver;
+    margin: 0;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+
+}
+
+
+.drop-down-links-flex-row {
+    display: none;
+    left: 0;
+    padding: 0;
+    font-size: 2em;
+    height: 25vh;
+    width: 100vw;
+    margin-top: 9vh;
+    background-color: lavender;
+    position: absolute;
 }
 
 /* logged in, welcome message cover content if displayed on mobile.
