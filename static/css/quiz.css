@@ -82,10 +82,9 @@ ul, li {
       transition: 2s linear all;
       text-shadow: 1px 1px 1px blue;
       position: static;
-      width: 80vw;
       border: solid 1px blue;
       margin: 5vh 5vh 5vw 5vw;
-      padding-left: 15vw;
+      padding-left: 10vw;
       padding-right: 5vw;
       background-color: white;
     }
@@ -255,7 +254,7 @@ a:hover {
 .results {
     color: #424249;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     display: none;
     transition: 2s linear all;
     text-shadow: 1px 1px 1px blue;
@@ -263,7 +262,7 @@ a:hover {
     width: 80vw;
     border: solid 1px blue;
     margin: 5vh 5vh 5vw 5vw;
-    padding-left: 15vw;
+    padding-left: 10vw;
     padding-right: 5vw;
     background-color: white;
 }
