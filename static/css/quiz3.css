@@ -67,7 +67,7 @@ i {
     }
 
     .question {
-        display: inline;
+        display: flex;
         border: none;
         font-size: 0.75em;
         color:   #1c1952;
@@ -235,7 +235,7 @@ i {
     background-color:  #150a1d;
     border: 5px solid  #1c1952;
     width: 95vw;
-    margin-right: 10px;
+    padding-right: 5%;
     margin-top: 10%;
 }
 
@@ -256,7 +256,7 @@ i {
 }
 
 .question {
-    display: inline;
+    display: flex;
     border: none;
     font-size: 2em;
     color:   #1c1952;

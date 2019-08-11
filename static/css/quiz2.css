@@ -45,7 +45,7 @@ ul, li {
     }
 
     .question {
-        display: inline;
+        display: flex;
         border: none;
         font-size: 1.5em;
         color: cornflowerblue;
@@ -220,7 +220,7 @@ ul, li {
     background-color: #F7F7F9;
     border: 5px solid #054DF9;
     width: 95vw;
-    margin-right: 10px;
+    padding-right: 5%;
     margin-top: 10%;
 }
 
@@ -241,7 +241,7 @@ ul, li {
 }
 
 .question {
-    display: inline;
+    display: flex;
     border: none;
     font-size: 2em;
     color: cornflowerblue;
