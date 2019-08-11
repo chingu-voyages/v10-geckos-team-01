@@ -82,10 +82,8 @@ ul, li {
       transition: 2s linear all;
       text-shadow: 1px 1px 1px blue;
       position: static;
+      width: 95vw;
       border: solid 1px blue;
-      margin: 5vh 5vh 5vw 5vw;
-      padding-left: 10vw;
-      padding-right: 5vw;
       background-color: white;
     }
     .dark-theme {
@@ -259,11 +257,8 @@ a:hover {
     transition: 2s linear all;
     text-shadow: 1px 1px 1px blue;
     position: static;
-    width: 80vw;
+    width: 95vw;
     border: solid 1px blue;
-    margin: 5vh 5vh 5vw 5vw;
-    padding-left: 10vw;
-    padding-right: 5vw;
     background-color: white;
 }
 

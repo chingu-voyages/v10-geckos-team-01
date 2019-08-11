@@ -60,10 +60,16 @@ i {
     }
 
     .results {
-        color: #424249;
-        text-align: center;
-        font-size: 0.75em;
-        display: none;
+      color: #424249;
+      text-align: center;
+      font-size: 0.8em;
+      display: none;
+      transition: 2s linear all;
+      text-shadow: 1px 1px 1px blue;
+      position: static;
+      width: 95vw;
+      border: solid 1px blue;
+      background-color: white;
     }
 
     .question {
@@ -223,13 +229,19 @@ i {
 #load_image {
     display: none;
 }
-
 .results {
     color: #424249;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     display: none;
+    transition: 2s linear all;
+    text-shadow: 1px 1px 1px blue;
+    position: static;
+    width: 95vw;
+    border: solid 1px blue;
+    background-color: white;
 }
+
 
 .true_false {
     display: none;
