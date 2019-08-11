@@ -315,15 +315,17 @@ function hide_element(element) {
 
 // results are in two locations, must address each
 function show_element_results(element){
-  element.forEach(function(node){
+for(var i = 0; i< element.length; i++){
+    var node = element[i];
     node.style.display = 'inline-block';
-  })
+  }
 }
 
 function hide_element_results(element){
-  element.forEach(function(node){
-    node.style.display = 'none';
-  })
+  for(var i = 0; i< element.length; i++){
+      var node = element[i];
+      node.style.display = 'none';
+    }
 }
 
 function show_element(element) {
