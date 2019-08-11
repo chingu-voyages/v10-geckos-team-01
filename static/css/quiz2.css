@@ -222,8 +222,16 @@ ul, li {
     background-color: #F7F7F9;
     border: 5px solid #054DF9;
     width: 95vw;
-    padding-right: 5%;
     margin-top: 10%;
+}
+
+#True_line {
+  width: 80vw;
+  font-size: 1em;
+}
+#False_line {
+  width: 80vw;
+  font-size: 1em;
 }
 
 .quiz_box {
@@ -249,6 +257,8 @@ ul, li {
     width: 80vw;
     font-size: 2em;
     color: cornflowerblue;
+    padding: 0;
+    margin: auto;
 }
 
 .which_question {

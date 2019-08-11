@@ -71,7 +71,8 @@ i {
         border: none;
         font-size: 0.75em;
         color:   #1c1952;
-        margin-right: 5vw;
+        margin: auto;
+        padding: 0;
     }
 
     .question_s {
@@ -235,8 +236,15 @@ i {
     background-color:  #150a1d;
     border: 5px solid  #1c1952;
     width: 95vw;
-    padding-right: 5%;
     margin-top: 10%;
+}
+#True_line {
+  width: 80vw;
+  font-size: 1em;
+}
+#False_line {
+  width: 80vw;
+  font-size: 1em;
 }
 
 .quiz_box {
@@ -262,7 +270,8 @@ i {
     width: 80vw;
     font-size: 2em;
     color:   #1c1952;
-    padding: 5%;
+    margin: auto;
+    padding: 0;
 }
 
 .which_question {

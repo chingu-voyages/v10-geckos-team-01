@@ -62,7 +62,8 @@ ul, li {
         border: none;
         font-size: 1.5em;
         color: cornflowerblue;
-        padding: 5%;
+        margin: auto;
+        padding: 0;
     }
 
     .question_s {
@@ -254,9 +255,19 @@ a:hover {
     background-color: #F7F7F9;
     border: 5px solid #054DF9;
     width: 95vw;
-    padding-right: 5%;
     margin-top: 10%;
 }
+
+#True_line {
+  width: 80vw;
+  font-size: 1em;
+}
+#False_line {
+  width: 80vw;
+  font-size: 1em;
+}
+
+
 
 .quiz_box {
     display: none;
@@ -280,7 +291,8 @@ a:hover {
     border: none;
     width: 80vw;
     font-size: 2em;
-    margin-right: 5vw;
+    padding: 0;
+    margin: auto;
     color: cornflowerblue;
 }
 

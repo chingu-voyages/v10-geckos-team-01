@@ -113,7 +113,8 @@ i {
        width: 80vw;
        font-size: 2em;
        color: white;
-       padding: 5%;
+       padding: 0;
+       margin: auto;
        text-shadow: 2px 2px 2px black;
    }
    .question_s {
@@ -361,10 +362,18 @@ i {
     display: none;
     background-color: rgba(29, 36, 99, 0.9);
     border: 5px solid blue;
-    width: 98vw;
-    padding-right: 5%;
+    width: 95vw;
     margin-top: 10%;
     color: #E5E7F1;
+}
+
+#True_line {
+  width: 80vw;
+  font-size: 1em;
+}
+#False_line {
+  width: 80vw;
+  font-size: 1em;
 }
 
 .quiz_box {
@@ -392,8 +401,9 @@ i {
     border: none;
     width: 80vw;
     font-size: 2em;
+    padding: 0;
+    margin: auto;
     color: white;
-    margin-right: 5vw;
     text-shadow: 2px 2px 2px black;
 }
 
