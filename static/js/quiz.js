@@ -293,7 +293,7 @@ function add_alt_to_images() {
     image2_display.setAttribute("alt", "People celebrating after a long journey.");
   }
   if(which_quiz == 'four'){
-    image1_display.setAttribute("alt", "Data, the drive behind the drive.");
+    // quiz four image1 is a display none. it is not used for start screen.
     image2_display.setAttribute("alt", "A PowerShell prompt saying congratulations!")
   }
 }
@@ -509,7 +509,8 @@ function start_quiz() {
     // set our constants now that page is loaded:
     //updatePageWithNewElements()
     setDOMconstants();
-    addEventHandlersToButtons()
+    addEventHandlersToButtons();
+    add_alt_to_images();
     loadCurrentQuestion(current_index);
 
     //test *since button can only be clicked after screen load, these constants should exist (not null):

@@ -2,6 +2,8 @@
 All items are shared across the four quiz types.  They all use the same
 html, but style and design is determined by the css.
 Some may not be in this particular order.
+Many things have been altered-deleted and added. Appologies if I missed something.
+
 
 
 title:before {
@@ -21,6 +23,43 @@ ul, li {
   styling for the multiple choice, or True False choices (answers)
 }
 
+@media all and (max-width: 799px) and (min-width: 320px) {
+    body{
+      change font-size for smaller media
+    }
+    .head-box {
+      font-sizing change
+    }
+
+    .question {
+      font-sizing change
+    }
+
+    .question_s {
+        font-sizing change
+    }
+
+    .results {
+      font-sizing change
+    }
+    .dark-theme {
+      padding and font-sizing change
+    }
+
+    #code_box {
+      font-sizing change
+    }
+
+    li {
+    font-sizing change
+    }
+
+    .continue_btn {
+     sizing change
+    }
+
+  }
+  /* END MEDIA MODS */
 #give_hint {
   styling for the hint display(hidden/none) given by the click of 'hint' button.
 }
@@ -101,6 +140,14 @@ a:hover {
     This is styling for that div
 }
 
+
+#True_line {
+   font-sizing and sizing for text in the True False containers
+}
+#False_line {
+   font-sizing and sizing for text in the True False containers
+}
+
 .quiz_box {
   display of none unless json object dicatates, this is the basic
   multiple choice a, b, c, d
@@ -165,4 +212,80 @@ a:hover {
 
 .loggedin-container {
   flex container for displaying if a user is logged in.
+}
+
+/*    INDEX/HOME  navigation and link items */
+
+nav {
+  flex row for links in nav. Original drop-down was really hard to control unintended clicks
+  because of the small size capability's of a column drop down.
+}
+
+/*    NEW NAV LINKS/LOGIN    */
+
+/*LOGIN*/
+
+.drop-down-button {
+    flex and static, this drop-down is used for login/registration links
+
+}
+
+
+.drop-down-links {
+  display none until hover of drop-down-button
+
+}
+.drop-down-links a {
+      flex links in row.
+    }
+
+.drop-down-links button {
+      set width to 100
+    }
+
+.drop-down-links a:hover {
+      change hover color of links
+    }
+
+
+
+/*LINKS*/
+
+.drop-down-button-first-links {
+  separate class reason:
+  sizing is different because it has 5+ elements to display
+
+}
+
+
+.drop-down-links-flex-row {
+    display none until hover of drop-down-links-first-links
+}
+
+    .drop-down-links-flex-row a {
+      flex-row for links
+    }
+        .drop-down-links-flex-row a:hover {
+            color changes on hover
+        }
+
+     .drop-down-links-flex-row button {
+            set width: 100
+        }
+
+
+
+
+/*LOGIN*/
+.drop-down-button:hover .drop-down-links {
+    change from display none to display flex on hover
+}
+
+
+/*LINKS*/
+.drop-down-button-first-links:hover .drop-down-button {
+    this does not work as intended.
+}
+.drop-down-button-first-links:hover .drop-down-links-flex-row {
+    change display none to display flex on hover
 }
