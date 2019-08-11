@@ -58,6 +58,7 @@ ul, li {
 
     .question {
         display: flex;
+        width: 80vw;
         border: none;
         font-size: 1.5em;
         color: cornflowerblue;
@@ -66,6 +67,7 @@ ul, li {
 
     .question_s {
         border: none;
+        width: 80vw;
         display: inline-block;
         font-size: 1em;
         color: black;
@@ -267,6 +269,7 @@ a:hover {
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
     border: none;
+    width: 80vw;
     display: inline-block;
     font-size: 1.5em;
     color: black;
@@ -275,15 +278,13 @@ a:hover {
 .question {
     display: flex;
     border: none;
+    width: 80vw;
     font-size: 2em;
     margin-right: 5vw;
     color: cornflowerblue;
 }
 
-.question h2 {
-  padding: 10px;
-  margin: 10px;
-}
+
 .which_question {
     display: none;
     color: cornflowerblue;

@@ -250,6 +250,7 @@ i {
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
     border: none;
+    width: 80vw;
     display: inline-block;
     font-size: large;
     color: black;
@@ -258,6 +259,7 @@ i {
 .question {
     display: flex;
     border: none;
+    width: 80vw;
     font-size: 2em;
     color:   #1c1952;
     padding: 5%;

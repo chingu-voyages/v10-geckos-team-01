@@ -47,12 +47,14 @@ ul, li {
     .question {
         display: flex;
         border: none;
+        width: 80vw;
         font-size: 1.5em;
         color: cornflowerblue;
     }
 
     .question_s {
         border: none;
+        width: 80vw;
         display: inline-block;
         font-size: 1em;
         color: black;
@@ -235,6 +237,7 @@ ul, li {
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
     border: none;
+    width: 80vw;
     display: inline-block;
     font-size: 1.5em;
     color: black;
@@ -243,6 +246,7 @@ ul, li {
 .question {
     display: flex;
     border: none;
+    width: 80vw;
     font-size: 2em;
     color: cornflowerblue;
 }

@@ -104,10 +104,13 @@ i {
        font-family: inherit;
        text-shadow: 2px 2px 2px black;
    }
-
+/* Changing the width of the item that will have the text
+ * was the only way to get the text to obey it's confines.
+ */
    .question {
        display: flex;
        border: none;
+       width: 80vw;
        font-size: 2em;
        color: white;
        padding: 5%;
@@ -115,6 +118,7 @@ i {
    }
    .question_s {
        border: none;
+       width: 80vw;
        display: inline-block;
        font-size: 1em;
        color: white;
@@ -375,6 +379,7 @@ i {
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
     border: none;
+    width: 80vw;
     display: inline-block;
     font-size: 1em;
     color: white;
@@ -385,6 +390,7 @@ i {
 .question {
     display: flex;
     border: none;
+    width: 80vw;
     font-size: 2em;
     color: white;
     margin-right: 5vw;
