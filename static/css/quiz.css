@@ -79,7 +79,8 @@ ul, li {
         text-align: center;
         font-size: 0.8em;
         display: none;
-         transition: 1s linear all; 
+        transition: 1s linear all;
+        text-shadow: 1px 1px 1px blue;
     }
     .dark-theme {
       display: none;
