@@ -16,6 +16,10 @@
 #constant {
     color: red;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 title:before {
   content: "Data Beep Boop beep";
@@ -102,7 +106,7 @@ i {
    .results {
      color: #424249;
      text-align: center;
-     font-size: 0.8em;
+     font-size: 1.2em;
      display: none;
      transition: 2s linear all;
      text-shadow: 1px 1px 1px blue;
@@ -358,7 +362,7 @@ i {
 .results {
     color: #424249;
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
     display: none;
     transition: 2s linear all;
     text-shadow: 1px 1px 1px blue;
@@ -373,8 +377,8 @@ i {
     display: none;
     background-color: rgba(29, 36, 99, 0.9);
     border: 5px solid blue;
-    width: 95vw;
-    margin-top: 10%;
+    width: 98vw;
+    margin-top: 5%;
     color: #E5E7F1;
 }
 

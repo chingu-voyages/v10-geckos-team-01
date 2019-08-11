@@ -63,7 +63,7 @@ ul, li {
     .results {
       color: #424249;
       text-align: center;
-      font-size: 0.8em;
+      font-size: 1.2em;
       display: none;
       transition: 2s linear all;
       text-shadow: 1px 1px 1px blue;
@@ -219,7 +219,7 @@ ul, li {
 .results {
     color: #424249;
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
     display: none;
     transition: 2s linear all;
     text-shadow: 1px 1px 1px blue;
