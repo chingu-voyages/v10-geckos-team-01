@@ -20,7 +20,8 @@
 title:before {
   content: "Data Beep Boop beep";
 }
-
+/* This css needs the 50% body padding to keep the image stretched throughout
+the quiz, or items will overflow beyond the body image. */
 body {
     background-image: url("../images/art-big-data-blur-373543.jpg");
     background-repeat: no-repeat;
@@ -31,7 +32,7 @@ body {
     width: 100vw;
     font-family: 'VT323', monospace;
     color: #E5E7F1;
-    padding-bottom: 30%;
+    padding-bottom: 50%;
 }
 main {
   font-family: 'VT323', monospace;
@@ -47,13 +48,15 @@ ul {
     padding-left: 5vw;
 }
 
+/* even thought the question_s width is set to 80, this text will not
+inherit it for some reason.  It has to be set to contain the text.
+The other quiz.css(s) do not define li separately like this css does. */
 li {
   padding-left: 5vw;
-  padding-right: 5vw;
   color: #E5E7F1;
   font-size: 2em;
+  width: 80vw;
   text-shadow: 2px 2px 2px black;
-  width: 100vw;
   border-bottom: solid 1px black;
 }
 
