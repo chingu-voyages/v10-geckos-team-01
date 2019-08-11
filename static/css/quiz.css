@@ -73,7 +73,7 @@ ul, li {
         font-size: 1em;
         color: black;
     }
-
+/* top, right, bottom, left */
     .results {
         color: #424249;
         text-align: center;
@@ -81,6 +81,11 @@ ul, li {
         display: none;
         transition: 1s linear all;
         text-shadow: 1px 1px 1px blue;
+        position: absolute;
+        width: 100vw;
+        border: solid 1px blue;
+        margin: 5vh 0 5vh 0;
+        padding-right: 40vw;
     }
     .dark-theme {
       display: none;
