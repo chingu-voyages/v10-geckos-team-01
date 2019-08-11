@@ -47,14 +47,14 @@ ul, li {
     .question {
         display: inline;
         border: none;
-        font-size: 0.75em;
+        font-size: 1.5em;
         color: cornflowerblue;
     }
 
     .question_s {
         border: none;
         display: inline-block;
-        font-size: 12px;
+        font-size: 1em;
         color: black;
     }
 
@@ -236,7 +236,7 @@ ul, li {
 .question_s {
     border: none;
     display: inline-block;
-    font-size: large;
+    font-size: 1.5em;
     color: black;
 }
 
