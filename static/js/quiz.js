@@ -313,6 +313,19 @@ function hide_element(element) {
     element.style.display = 'none';
 }
 
+// results are in two locations, must address each
+function show_element_results(element){
+  element.forEach(function(node){
+    node.style.display = 'inline-block';
+  })
+}
+
+function hide_element_results(element){
+  element.forEach(function(node){
+    node.style.display = 'none';
+  })
+}
+
 function show_element(element) {
     element.style.display = 'inline-block';
 }
@@ -362,7 +375,7 @@ function setQuizBoxType(multiple, code_inside) {
 function end_quiz(){
   hide_element(quiz_box);
   hide_element(true_false_box);
-  hide_element(results);
+  show_element_results(results);
   hide_element(which_question);
   hide_element(Quiz_question);
   hide_element(quiz_buttons);
@@ -375,7 +388,7 @@ function end_quiz(){
 
 
 function reset_question(){
-  hide_element(results);
+  hide_element_results(results);
   hide_element(continue_btn);
   hide_element(h3Hint);
   hide_element(code_box_display);
@@ -389,8 +402,8 @@ function check_answer(answer) {
     var valid = correct;
     let previous_index = current_index;
     if (answer == valid) {
-        results.style.display = 'inline';
         results.innerHTML = 'Fantastic!';
+        show_element_results(results);
         current_index += 1;
 
         //move on to next question  i = i+1 load_quiz(i)
@@ -405,8 +418,9 @@ function check_answer(answer) {
     }
     else {
         current_index = previous_index;
-        results.style.display = 'inline';
         results.innerHTML = 'Try again.';
+        show_element_results(results);
+
     }
 }
 
@@ -431,7 +445,7 @@ function presentOption() {
   if(selection == 'previous' && min > 0){
     current_index -=1;
     hide_element(continue_btn);
-    hide_element(results);
+    hide_element_results(results)
     hide_element(h3Hint);
     var current_href = window.location.href;
     if(current_href == 'https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html'){
@@ -444,7 +458,7 @@ function presentOption() {
   if(selection == 'skip' && current_index + 1 < max){
     current_index += 1;
     hide_element(continue_btn);
-    hide_element(results);
+    hide_element_results(results);
     hide_element(h3Hint);
     var current_href = window.location.href;
     if(current_href == 'https://chingu-voyages.github.io/v10-geckos-team-01/basicClone.html'){
