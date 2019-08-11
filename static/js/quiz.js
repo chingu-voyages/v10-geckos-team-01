@@ -249,7 +249,7 @@ function setDOMconstants() {
     instructions = document.getElementById("instructions");
     image2_display = document.getElementById("image2");
     congrats = document.getElementById("congrats"); //starts at display: none
-    results = document.getElementById("results");
+    results = document.getElementsByClassName("results");
 
 
     // if we do only one question on the page, these elements don't ever need to change
@@ -314,9 +314,11 @@ function hide_element(element) {
 }
 
 // results are in two locations, must address each
-function show_element_results(element){
+function show_element_results(element, message){
+  console.log(element.length)
 for(var i = 0; i< element.length; i++){
     var node = element[i];
+    node.innerHTML = message;
     node.style.display = 'inline-block';
   }
 }
@@ -404,8 +406,8 @@ function check_answer(answer) {
     var valid = correct;
     let previous_index = current_index;
     if (answer == valid) {
-        results.innerHTML = 'Fantastic!';
-        show_element_results(results);
+        //results.innerHTML = 'Fantastic!';
+        show_element_results(results, 'Fantastic!');
         current_index += 1;
 
         //move on to next question  i = i+1 load_quiz(i)
@@ -420,8 +422,8 @@ function check_answer(answer) {
     }
     else {
         current_index = previous_index;
-        results.innerHTML = 'Try again.';
-        show_element_results(results);
+        //results.innerHTML = 'Try again.';
+        show_element_results(results, 'Try Again');
 
     }
 }
