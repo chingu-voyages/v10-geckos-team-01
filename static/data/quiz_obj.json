@@ -227,6 +227,28 @@
        "c": "This assists browsers and search engines in finding appropriate results.",
        "d": "Screen readers use this as an indicator on which language to read the text on your page in."
      }
+   },
+   {
+     "question_j": "In some languages there are two data types for alphabeticals, char(character) and str(string).",
+     "correct_j": "True",
+     "box_type_j": "TorF",
+     "code_box_j": "none",
+     "hint_j": "With Python there is only str(string).  A character is considered a string of length 1.",
+     "answers_j": {
+      "T": "True, abstraction in a higher-level language uses a compiler to tell the computer a string with one character is a char type.",
+      "F": "False, data types are non-transferrable and non-refundable. Reciept must be present upon return."
+     }
+   },
+   {
+     "question_j": "Strings can be altered and replaced through assignment, but are not mutable (changeable).",
+     "correct_j": "True",
+     "box_type_j": "TorF",
+     "code_box_j": "The_Knights_Who_Say = 'Ni'\ndef present_a_nice_shrubbery():\n\treturn('Ekke Ekke Ekke Ekke Ptang Zoo Boing!')\nThe_Knights_Who_Say = present_a_nice_shrubbery()\nprint(The_Knights_Who_Say)",
+     "hint_j": "Because A nice shrubbery makes even the tallest knights feel less alone.",
+     "answers_j": {
+      "T": "True, In some languages strings can even be added too, and subtracted from due to their storage type in an array.",
+      "F": "False, You must cut down the mightiest tree in the forest—with a herring. Then you can mutate a string."
+     }
    }
   ],
   "quizthree": [
@@ -456,6 +478,44 @@
   "b": "Instead of having pointers like a linked list, the array uses math to determine where an array item is in memory.",
   "c": "The memory address of the first element of an array is called first address, foundation address, or base address.",
   "d": "All of the above.  Thanks Wikipedia."
+}
+},
+{
+
+"question_j": "For a tree data structure, there are nodes starting with a root, like the base of a tree, and branching either left or right on each next node like a tree branch.",
+"correct_j": "True",
+"box_type_j": "TorF",
+"code_box_j": "none",
+"hint_j": "Conceptually a balanced tree would look much like a family tree chart.",
+"answers_j": {
+  "T": "True, there are many types, binary, ternary, AVL.",
+  "F": "False, why would computer science ever take a hint from natural science?"
+}
+},
+{
+
+"question_j": "Dictionary type data structures have a key and value, and in a lot of languages that value can even be another dicionary.",
+"correct_j": "True",
+"box_type_j": "TorF",
+"code_box_j": "none",
+"hint_j": "While a json object looks like a python dictionary, the json is stored as a string, while a python dictionary could hold arrays, tuples, even functions.",
+"answers_j": {
+  "T": "True, json objects(that are stored as strings), can even be loaded into python to become a dictionary.",
+  "F": "False, we're not even gonna talk about hash-tables."
+}
+},
+{
+
+"question_j": "*sorry I lied on the last one* Which of these is true of Hash tables?",
+"correct_j": "d",
+"box_type_j": "multiple",
+"code_box_j": "none",
+"hint_j": "Hash tables are important so the when there are 5 John Wicks in the system, we know which one to run from.",
+"answers_j": {
+  "a": "Also called a hash map.",
+  "b": "It can map keys to values.",
+  "c": "It is widely used because of it's robust uniform efficiency in looking up values for key:value pairs.",
+  "d": "All of the above. Now I'm hungry for hashbrowns... Thanks for learning with us!"
 }
 }
  ]
