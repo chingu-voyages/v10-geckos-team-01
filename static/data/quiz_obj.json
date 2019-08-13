@@ -510,11 +510,11 @@
 "correct_j": "d",
 "box_type_j": "multiple",
 "code_box_j": "none",
-"hint_j": "Hash tables are important so the when there are 5 John Wicks in the system, we know which one to run from.",
+"hint_j": "When determining the air velocity of an unladen swallow, it is important to know if it is an African or European swallow.",
 "answers_j": {
-  "a": "Also called a hash map.",
-  "b": "It can map keys to values.",
-  "c": "It is widely used because of it's robust uniform efficiency in looking up values for key:value pairs.",
+  "a": "It can map keys to values. We need to know which swallow can carry the coconut quickest.",
+  "b": "Also called a hash map. Mapping a key to it's corresponding value through the maze of data is important.",
+  "c": "It is widely used because of it's robust uniform efficiency in looking up values for key:value pairs. Unlike a swallow carring a coconut.",
   "d": "All of the above. Now I'm hungry for hashbrowns... Thanks for learning with us!"
 }
 }

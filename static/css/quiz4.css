@@ -136,6 +136,9 @@ i {
        color: white;
        text-shadow: 2px 2px 2px #150a1d;
    }
+   .true_false {
+     font-size: 1.2em;
+   }
 
    #give_hint {
      margin-left: 12.5vw;
@@ -378,6 +381,7 @@ i {
     background-color: rgba(29, 36, 99, 0.9);
     border: 5px solid blue;
     width: 98vw;
+    font-size: 2em;
     margin-top: 5%;
     color: #E5E7F1;
 }
@@ -397,7 +401,7 @@ i {
     border: 5px solid blue;
     width: 98vw;
     padding-right: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
     color: white;
 }
 /* question = the actual quiz question, question_s = multiple choices. */
