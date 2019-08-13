@@ -404,6 +404,8 @@ function check_answer(answer) {
     // else:  result == try again.
     //hide_element(continue_btn); //<-- should be none' before this is run
     var valid = correct;
+    console.log(valid)
+    console.log(correct)
     let previous_index = current_index;
     if (answer == valid) {
         //results.innerHTML = 'Fantastic!';
