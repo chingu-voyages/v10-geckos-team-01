@@ -267,7 +267,7 @@ a:hover {
     background-color: #F7F7F9;
     border: 5px solid #054DF9;
     width: 95vw;
-    margin-top: 10%;
+    margin-top: 2vh;
 }
 
 #True_line {
@@ -287,7 +287,7 @@ a:hover {
     border: 5px solid #054DF9;
     width: 95vw;
     margin-right: 10px;
-    margin-top: 10%;
+    margin-top: 2vh;
 }
 /* question = the actual quiz question, question_s = multiple choices. */
 .question_s {
