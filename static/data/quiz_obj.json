@@ -241,13 +241,15 @@
    },
    {
      "question_j": "Strings can be altered and replaced through assignment, but are not mutable (changeable).",
-     "correct_j": "True",
-     "box_type_j": "TorF",
+     "correct_j": "a",
+     "box_type_j": "multiple",
      "code_box_j": "The_Knights_Who_Say = 'Ni'\ndef present_a_nice_shrubbery():\n\treturn('Ekke Ekke Ekke Ekke Ptang Zoo Boing!')\nThe_Knights_Who_Say = present_a_nice_shrubbery()\nprint(The_Knights_Who_Say)",
      "hint_j": "Because A nice shrubbery makes even the tallest knights feel less alone.",
      "answers_j": {
-      "T": "True, In some languages strings can even be added too, and subtracted from due to their storage type in an array.",
-      "F": "False, You must cut down the mightiest tree in the forest—with a herring. Then you can mutate a string."
+      "a": "True, In some languages strings can even be added too, and subtracted from due to their storage type in an array.",
+      "b": "False, You must cut down the mightiest tree in the forest—with a herring. Then you can mutate a string.",
+      "c": "info:mutation would mean I have 'one' and want to make it the integer 1 instead.",
+      "d": "info:assigning is changing what the value of a variable is, so the string is not changed, the variable is reassigned."
      }
    }
   ],
